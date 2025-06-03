@@ -1,0 +1,199 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Análisis de Secuencias",
+    "section": "",
+    "text": "BioCode Academy\n\n\n\n\n\n\nInformación general\n\n📋 Descripción del curso📌 Sobre el curso📅 Agenda del Curso👤 Instructores\n\n\n¡Bienvenido a este nuevo viaje bioinformático! 🌟 Este curso integra el análisis de secuencias biológicas con el manejo de bases de datos y herramientas especializadas.\n📚 ¿Qué aprenderás?\n\n🧰 Instalar herramientas bioinformáticas\n\n🔍 Buscar similitud entre secuencias\n\n🧬 Alinear secuencias biológicas\n\n🌿 Construir árboles filogenéticos\n\n🧩 Analizar dominios funcionales\n\n🎨 Visualizar la conservación de secuencias\n\n👁 Explorar visualmente datos biológicos\n\n\n✅ Todo esto a través de ejemplos prácticos, con orientación paso a paso, en un entorno Linux.\n\n\n\n\n⌛ Duración: 8 horas (2 horas diarias)\n💬 Idioma: Español\n📍 Ubicación: Virtual (Teams)\n📝 Modalidad: Práctico (80%) + Teórico (20%)\nRequerimientos:\n\n💻 Laptop\n🌐 Conexión a internet\n🐧 Ambiente Unix/WSL\n\n\n\nSE REQUIERE CONOCIMIENTO PREVIO EN PROGRAMACIÓN\n\n\n\n\n📘 Día 1\n🔧 Módulo 1: Instalación de herramientas y obtención de secuencias\n🎯 Objetivo: Preparar el entorno computacional e introducir la obtención de secuencias desde bases de datos públicas.\nActividades:\n\n🔥 Bienvenida e introducción\n\nPresentación del curso y del instructor\nCódigo de conducta y dinámica rápida de presentación\n\n💻 Instalación de herramientas bioinformáticas\n\nncbi-blast+, seqkit, muscle, clustalo, mafft, trimal, fasttree, iqtree\nVisualizadores: jalview, figtree\nUtilidad adicional: weblogo\n\n🌐 Bases de datos biológicas y descarga de secuencias\n\nNavegación en UniProt y NCBI\nDescarga y visualización de secuencias FASTA\n\n\n\n\n📙 Día 2\n🧬 Módulo 2: Alineamientos locales mediante BLAST\n🎯 Objetivo: Aplicar BLAST para realizar búsquedas de similitud, tanto en línea como localmente.\nActividades:\n\n🧾 Homología\n\nDefinición de homología, ortologos, parálogos\nHerramientas para búsqueda de homología\n\n🌍 Uso de BLAST en línea\n\nBúsqueda contra UniProt y NCBI\nDescarga e interpretación de resultados\n\n🧾 BLAST local en terminal\n\nCreación de bases de datos locales con makeblastdb\nEjecución de blastp y tblastn\nRecuperación de secuencias relevantes con seqkit\n\n📂 Filtrado y organización de resultados\n\nSelección de los mejores hits\nUnión y clasificación de secuencias para análisis posterior\n\n\n\n\n📕 Día 3\n🧩 Módulo 3: Análisis de dominios y conservación de secuencias\n🎯 Objetivo: Identificar dominios funcionales en secuencias y visualizar su conservación.\nActividades:\n\n🔍 Análisis de dominios con InterProScan\n\nEnvío de secuencias y descarga de resultados .tsv\nExtracción de dominios Pfam\n\n🧠 Búsqueda de dominios con HMMER\n\nPreparación de la base de datos Pfam-A\nEjecución de hmmscan, hmmfetch, hmmsearch\nEjemplo práctico: dominio PF00071\n\n🎨 Visualización de conservación con WebLogo\n\nGeneración de logos a partir de alineamientos recortados\nInterpretación de regiones altamente conservadas\n\n\n\n\n📗 Día 4\n🌳 Módulo 4: Alineamiento múltiple y análisis filogenético\n🎯 Objetivo: Generar alineamientos múltiples y construir árboles filogenéticos básicos.\nActividades:\n\n🧬 Alineamiento de secuencias\n\nUso de MAFFT, Clustal Omega y Muscle\nComparación de resultados y calidad\n\n✂️ Recorte de alineamientos\n\nUso de trimal para limpiar alineamientos\nIdentificación de regiones conservadas\n\n🌿 Construcción de árboles filogenéticos\n\nGeneración de árboles con fasttree\nDiscusión de conceptos filogenéticos básicos\n\n👁 Visualización\n\nAlineamientos en Jalview\nÁrboles en FigTree\n\n\n\n\n\nDavid Alberto García Estrada\n\nCandidato a Doctor en Biología Integrativa, UGA, Cinvestav.\nCo-fundador de BioCode Academy\nContacto\n\n🔗 Github\n📨 albert_dge@hotmail.com\n📨 david.garcia.e@cinvestav.mx\n📨 biocodeacademy@gmail.com",
+    "crumbs": [
+      "Información general"
+    ]
+  },
+  {
+    "objectID": "S1_02_instalacion_herramientas.html",
+    "href": "S1_02_instalacion_herramientas.html",
+    "title": "2  Instalación de herramientas",
+    "section": "",
+    "text": "2.1 🔧 Herramientas principales\nEn este módulo aprenderás a instalar y preparar tu entorno bioinformático en sistemas basados en Linux (Ubuntu/Debian).\nPuedes instalar las herramientas con apt (si están disponibles) o descargarlas desde sus sitios oficiales:\n# Herramientas de alineamiento y análisis\nsudo apt install ncbi-blast+ seqkit muscle clustalo mafft fasttree iqtree\n\n# Visualizadores\nsudo apt install jalview figtree\n\n# Instalar trimal (requiere compilar)\nwget https://github.com/inab/trimal/archive/refs/tags/v1.5.0.tar.gz\ntar -xvzf v1.5.0.tar.gz\ncd trimal-1.5.0/source\nmake\nsudo cp trimal /usr/local/bin/\n\n# Instalar weblogo (requiere pip)\npip install weblogo",
+    "crumbs": [
+      "Módulo 1: Instalación de herramientas y obtención de secuencias",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Instalación de herramientas</span>"
+    ]
+  },
+  {
+    "objectID": "S1_02_instalacion_herramientas.html#herramientas-principales",
+    "href": "S1_02_instalacion_herramientas.html#herramientas-principales",
+    "title": "2  Instalación de herramientas",
+    "section": "",
+    "text": "💡 Recomendación: Documenta los pasos en un archivo README o script .sh para facilitar futuras instalaciones.",
+    "crumbs": [
+      "Módulo 1: Instalación de herramientas y obtención de secuencias",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Instalación de herramientas</span>"
+    ]
+  },
+  {
+    "objectID": "S1_02_instalacion_herramientas.html#descargar-la-imagen-docker-personalizada",
+    "href": "S1_02_instalacion_herramientas.html#descargar-la-imagen-docker-personalizada",
+    "title": "2  Instalación de herramientas",
+    "section": "2.2 Descargar la imagen Docker personalizada",
+    "text": "2.2 Descargar la imagen Docker personalizada\nEn caso de usar una imagen Docker, los pasos generales son:\n\nsudo docker pull davidalbertoge/bioinfo_seq-alig:0.0.1\n\nVerificar que se descargó correctamente\n\ndocker images\n\nResultado esperado:\n\nREPOSITORY                             TAG       IMAGE ID       CREATED        SIZE\ndavidalbertoge/bioinfo_seq-alig        0.0.1     b99918d2a909   2 months ago   7.54GB\n\nPara ejecutar un contenedor interactivo:\n\ndocker run -v &lt;directorio/trabajo/&gt;:/home/ -it davidalbertoge/bioinfo_seq-alig:0.0.1\n\n# Deberá generar una terminal nueva",
+    "crumbs": [
+      "Módulo 1: Instalación de herramientas y obtención de secuencias",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Instalación de herramientas</span>"
+    ]
+  },
+  {
+    "objectID": "S1_03_bases_datos.html",
+    "href": "S1_03_bases_datos.html",
+    "title": "3  Bases de datos biológicas",
+    "section": "",
+    "text": "3.1 ¿Qué son las bases de datos biológicas?\nEn este módulo abordaremos lo referente a bases de datos biológicas donde podemos encontrar información valiosa para iniciar un análisis.\nRepositorios organizados que almacenan distintas formas de datos biológicos, tal como nucleótidos y secuencias proteícas, información estructural, anotación funcional, y mas.\nBase de datos primarias\nBases de datos de Nucleótidos\nBases de datos de proteínas",
+    "crumbs": [
+      "Módulo 1: Instalación de herramientas y obtención de secuencias",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bases de datos biológicas</span>"
+    ]
+  },
+  {
+    "objectID": "S1_03_bases_datos.html#qué-son-las-bases-de-datos-biológicas",
+    "href": "S1_03_bases_datos.html#qué-son-las-bases-de-datos-biológicas",
+    "title": "3  Bases de datos biológicas",
+    "section": "",
+    "text": "3.1.1 Consideraciones clave\n\nCalidad y curación de datos\nInteroperatibilidad\nAccesibilidad\n\n\n\n3.1.2 Aplicaciones\n\nGenómia comparativa\nAnotación funcional\nDescubrimiento de fármacos",
+    "crumbs": [
+      "Módulo 1: Instalación de herramientas y obtención de secuencias",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bases de datos biológicas</span>"
+    ]
+  },
+  {
+    "objectID": "S1_03_bases_datos.html#qué-son-uniprot-y-ncbi",
+    "href": "S1_03_bases_datos.html#qué-son-uniprot-y-ncbi",
+    "title": "3  Bases de datos biológicas",
+    "section": "3.2 🔎 ¿Qué son UniProt y NCBI?",
+    "text": "3.2 🔎 ¿Qué son UniProt y NCBI?\n\nUniProt: Base de datos de proteínas, incluye secuencias y anotaciones funcionales.\nNCBI: Proporciona acceso a datos genómicos, proteómicos y de literatura biomédica.",
+    "crumbs": [
+      "Módulo 1: Instalación de herramientas y obtención de secuencias",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bases de datos biológicas</span>"
+    ]
+  },
+  {
+    "objectID": "S1_03_bases_datos.html#navegación-y-descarga-de-secuencias",
+    "href": "S1_03_bases_datos.html#navegación-y-descarga-de-secuencias",
+    "title": "3  Bases de datos biológicas",
+    "section": "3.3 🌍 Navegación y descarga de secuencias",
+    "text": "3.3 🌍 Navegación y descarga de secuencias\n\nIngresa a UniProt y busca una proteína de interés (por ejemplo, “Ras human”).\nCopia la secuencia en formato FASTA y guárdala localmente:\n\n\nwget https://rest.uniprot.org/uniprotkb/P06780.fasta\ncat P06780.fasta",
+    "crumbs": [
+      "Módulo 1: Instalación de herramientas y obtención de secuencias",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bases de datos biológicas</span>"
+    ]
+  },
+  {
+    "objectID": "S2_01_homologia.html",
+    "href": "S2_01_homologia.html",
+    "title": "4  Homología",
+    "section": "",
+    "text": "4.1 🧠 Homología\nUna de las herramientas que mayor uso para la búsqueda de homología de secuencias, es BLAST (Basic Local Alignment Search Tool), en este módulo la útilidad y manejo de esta herramienta",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Homología</span>"
+    ]
+  },
+  {
+    "objectID": "S2_01_homologia.html#homología",
+    "href": "S2_01_homologia.html#homología",
+    "title": "4  Homología",
+    "section": "",
+    "text": "Similitud entre secuencias (ADN, ARN o proteínas) debido a que comparte ancestría. Este concepto infiere una relación evolutiva y predicción funcional.\nSi dos secuencias son homólogas, ellos **probablemente mantienen una estructura similar o características funcionales, aún si ellas tienen divergencia temporal.\n\n\n\n\n\n\n\n4.1.1 Tipos de homología\n\nOrtólogos: Genes en diferentes especies que evolucionaron de un gen acentral en común después de un evento de especiación. Suelen mantener la misma función.\nParálogo: Genes dentro de la misma especie que surgen por un evento de duplicación. Ellos pueden evolucionar a nuevas funciones o se especializan en un subconjunto de la función original.\n\n\n\n\n\n\n\n\n4.1.2 Herramientas para dectectar homología\n\nBLAST (Basic Local Alignment Search Tool): permite comparar una secuencia contra una base de datos para encontrar similitudes.\n\n\n\n\n\n\n\nHMMER: Usa los Modelos Ocultos de Markov (HMMs) para detectar homología remota, particularmente efectiva para motivos conservados.\n\n\n\n\n\n\n\nMas adelante exploraremos estas herramientas de manera individual.",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Homología</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_blast_web.html",
+    "href": "S2_02_blast_web.html",
+    "title": "5  BLAST en línea (web)",
+    "section": "",
+    "text": "5.1 BLAST (Basic Local Alignment Search Tool)\nEn este módulo exploraremos la herramienta BLAST en línea, considerando algunas limitantes.\nEsta herramienta permite comparar una secuencia contra una base de datos para encontrar similitudes.",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>BLAST en línea (web)</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_blast_web.html#blast-basic-local-alignment-search-tool",
+    "href": "S2_02_blast_web.html#blast-basic-local-alignment-search-tool",
+    "title": "5  BLAST en línea (web)",
+    "section": "",
+    "text": "Tipo de BLAST\nConsulta (input)\nBase de datos (db)\nTraducción\nUso típico\n\n\n\n\nblastn\nADN\nADN\nNo\nComparar secuencias de nucleótidos (por ejemplo, genes)\n\n\nblastp\nProteína\nProteína\nNo\nBuscar similitudes entre proteínas\n\n\nblastx\nADN\nProteína\nSí (ADN → 6 proteínas)\nBuscar proteínas codificadas en una secuencia de ADN\n\n\ntblastn\nProteína\nADN\nSí (DB → proteínas)\nBuscar regiones codificantes en genomas o transcriptomas\n\n\ntblastx\nADN\nADN\nSí (ambos → proteínas)\nComparar secuencias de ADN a nivel de proteínas traducidas",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>BLAST en línea (web)</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_blast_web.html#pasos-prácticos",
+    "href": "S2_02_blast_web.html#pasos-prácticos",
+    "title": "5  BLAST en línea (web)",
+    "section": "5.2 Pasos prácticos",
+    "text": "5.2 Pasos prácticos\n\n5.2.1 🔹 BLAST en Uniprot\n\nPega tu secuencia.\nEspera los resultados.\nDescarga los hits como archivo .fasta.\n\n\nmv ~/Downloads/uniprotkb_*.fasta uniprot_blast.fasta\n\n\n\n5.2.2 🔹 BLAST en NCBI\n\nSelecciona “Protein BLAST” (BLASTP o TBLASTN).\nPega la secuencia y ejecuta la búsqueda.\nDescarga resultados:\n\n\nmv ~/Downloads/seqdump.txt ncbi_blast.fasta",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>BLAST en línea (web)</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_blast_local.html",
+    "href": "S2_03_blast_local.html",
+    "title": "6  BLAST en local (terminal)",
+    "section": "",
+    "text": "6.1 ⚙️ Crear bases de datos locales\n# Proteoma de Trichoderma atroviride\nmakeblastdb -in Tatroviride_proteins.fa -dbtype prot -out tatro_protein\n\n# CDS (secuencias codificantes)\nmakeblastdb -in Tatroviride_cds.fa -dbtype nucl -out tatro_cds",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>BLAST en local (terminal)</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_blast_local.html#ejecutar-búsquedas-blast",
+    "href": "S2_03_blast_local.html#ejecutar-búsquedas-blast",
+    "title": "6  BLAST en local (terminal)",
+    "section": "6.2 🚀 Ejecutar búsquedas BLAST",
+    "text": "6.2 🚀 Ejecutar búsquedas BLAST\n\n# Contra proteína\nblastp -query P06780.fasta -db tatro_protein -outfmt 6 -out blastp_Tatro.out -num_alignments 5\n\n# Contra CDS traducido\ntblastn -query P06780.fasta -db tatro_cds -outfmt 6 -out tblastn_Tatro.out -num_alignments 5",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>BLAST en local (terminal)</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_blast_local.html#recuperar-secuencias",
+    "href": "S2_03_blast_local.html#recuperar-secuencias",
+    "title": "6  BLAST en local (terminal)",
+    "section": "6.3 🔎 Recuperar secuencias",
+    "text": "6.3 🔎 Recuperar secuencias\n\nseqkit grep -f &lt;(cut -f2 blastp_Tatro.out) Tatroviride_proteins.fa &gt; blastp_Tatro.fasta\nseqkit grep -f &lt;(cut -f2 tblastn_Tatro.out) Tatroviride_cds.fa &gt; tblastn_Tatro.fasta",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>BLAST en local (terminal)</span>"
+    ]
+  },
+  {
+    "objectID": "S2_04_filtrado_resultados.html",
+    "href": "S2_04_filtrado_resultados.html",
+    "title": "7  Filtrado y organización de resultados",
+    "section": "",
+    "text": "7.1 🎯 Seleccionar los mejores hits\nEn este módulo, evaluaremos los procesos de filtrado y organización de resultados.\nseqkit head -n 50 uniprot_blast.fasta &gt; uniprot_blast_50.fasta\nseqkit head -n 20 ncbi_blast.fasta &gt; ncbi_blast_20.fasta",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Filtrado y organización de resultados</span>"
+    ]
+  },
+  {
+    "objectID": "S2_04_filtrado_resultados.html#unir-secuencias-para-análisis",
+    "href": "S2_04_filtrado_resultados.html#unir-secuencias-para-análisis",
+    "title": "7  Filtrado y organización de resultados",
+    "section": "7.2 📦 Unir secuencias para análisis",
+    "text": "7.2 📦 Unir secuencias para análisis\n\n# Proteínas\ncat uniprot_blast_50.fasta blastp_Tatro.fasta &gt; all_protein.fasta\n\n# CDS\ncat ncbi_blast_20.fasta tblastn_Tatro.fasta &gt; all_cds.fasta",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Filtrado y organización de resultados</span>"
+    ]
+  }
+]
