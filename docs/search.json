@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Análisis de Secuencias",
     "section": "",
-    "text": "BioCode Academy\n\n\n\n\n\n\nInformación general\n\n📋 Descripción del curso📌 Sobre el curso📅 Agenda del Curso👤 Instructores\n\n\n¡Bienvenido a este nuevo viaje bioinformático! 🌟 Este curso integra el análisis de secuencias biológicas con el manejo de bases de datos y herramientas especializadas.\n📚 ¿Qué aprenderás?\n\n🧰 Instalar herramientas bioinformáticas\n\n🔍 Buscar similitud entre secuencias\n\n🧬 Alinear secuencias biológicas\n\n🌿 Construir árboles filogenéticos\n\n🧩 Analizar dominios funcionales\n\n🎨 Visualizar la conservación de secuencias\n\n👁 Explorar visualmente datos biológicos\n\n\n✅ Todo esto a través de ejemplos prácticos, con orientación paso a paso, en un entorno Linux.\n\n\n\n\n⌛ Duración: 8 horas (2 horas diarias)\n💬 Idioma: Español\n📍 Ubicación: Virtual (Teams)\n📝 Modalidad: Práctico (80%) + Teórico (20%)\nRequerimientos:\n\n💻 Laptop\n🌐 Conexión a internet\n🐧 Ambiente Unix/WSL\n\n\n\nSE REQUIERE CONOCIMIENTO PREVIO EN PROGRAMACIÓN\n\n\n\n\n📘 Día 1\n🔧 Módulo 1: Instalación de herramientas y obtención de secuencias\n🎯 Objetivo: Preparar el entorno computacional e introducir la obtención de secuencias desde bases de datos públicas.\nActividades:\n\n🔥 Bienvenida e introducción\n\nPresentación del curso y del instructor\nCódigo de conducta y dinámica rápida de presentación\n\n💻 Instalación de herramientas bioinformáticas\n\nncbi-blast+, seqkit, muscle, clustalo, mafft, trimal, fasttree, iqtree\nVisualizadores: jalview, figtree\nUtilidad adicional: weblogo\n\n🌐 Bases de datos biológicas y descarga de secuencias\n\nNavegación en UniProt y NCBI\nDescarga y visualización de secuencias FASTA\n\n\n\n\n📙 Día 2\n🧬 Módulo 2: Alineamientos locales mediante BLAST\n🎯 Objetivo: Aplicar BLAST para realizar búsquedas de similitud, tanto en línea como localmente.\nActividades:\n\n🧾 Homología\n\nDefinición de homología, ortologos, parálogos\nHerramientas para búsqueda de homología\n\n🌍 Uso de BLAST en línea\n\nBúsqueda contra UniProt y NCBI\nDescarga e interpretación de resultados\n\n🧾 BLAST local en terminal\n\nCreación de bases de datos locales con makeblastdb\nEjecución de blastp y tblastn\nRecuperación de secuencias relevantes con seqkit\n\n📂 Filtrado y organización de resultados\n\nSelección de los mejores hits\nUnión y clasificación de secuencias para análisis posterior\n\n\n\n\n📕 Día 3\n🧩 Módulo 3: Análisis de dominios y conservación de secuencias\n🎯 Objetivo: Identificar dominios funcionales en secuencias y visualizar su conservación.\nActividades:\n\n🔍 Análisis de dominios con InterProScan\n\nEnvío de secuencias y descarga de resultados .tsv\nExtracción de dominios Pfam\n\n🧠 Búsqueda de dominios con HMMER\n\nPreparación de la base de datos Pfam-A\nEjecución de hmmscan, hmmfetch, hmmsearch\nEjemplo práctico: dominio PF00071\n\n🎨 Visualización de conservación con WebLogo\n\nGeneración de logos a partir de alineamientos recortados\nInterpretación de regiones altamente conservadas\n\n\n\n\n📗 Día 4\n🌳 Módulo 4: Alineamiento múltiple y análisis filogenético\n🎯 Objetivo: Generar alineamientos múltiples y construir árboles filogenéticos básicos.\nActividades:\n\n🧬 Alineamiento de secuencias\n\nUso de MAFFT, Clustal Omega y Muscle\nComparación de resultados y calidad\n\n✂️ Recorte de alineamientos\n\nUso de trimal para limpiar alineamientos\nIdentificación de regiones conservadas\n\n🌿 Construcción de árboles filogenéticos\n\nGeneración de árboles con fasttree\nDiscusión de conceptos filogenéticos básicos\n\n👁 Visualización\n\nAlineamientos en Jalview\nÁrboles en FigTree\n\n\n\n\n\nDavid Alberto García Estrada\n\nCandidato a Doctor en Biología Integrativa, UGA, Cinvestav.\nCo-fundador de BioCode Academy\nContacto\n\n🔗 Github\n📨 albert_dge@hotmail.com\n📨 david.garcia.e@cinvestav.mx\n📨 biocodeacademy@gmail.com",
+    "text": "BioCode Academy\n\n\n\n\n\n\nInformación general\n\n📋 Descripción del curso📌 Sobre el curso📅 Agenda del Curso👤 Instructores\n\n\n¡Bienvenido a este nuevo viaje bioinformático! 🌟 Este curso integra el análisis de secuencias biológicas con el manejo de bases de datos y herramientas especializadas.\n📚 ¿Qué aprenderás?\n\n🧰 Instalar herramientas bioinformáticas\n\n🔍 Buscar similitud entre secuencias\n\n🧬 Alinear secuencias biológicas\n\n🌿 Construir árboles filogenéticos\n\n🧩 Analizar dominios funcionales\n\n🎨 Visualizar la conservación de secuencias\n\n👁 Explorar visualmente datos biológicos\n\n\n✅ Todo esto a través de ejemplos prácticos, con orientación paso a paso, en un entorno Linux.\n\n\n\n\n⌛ Duración: 8 horas (2 horas diarias)\n💬 Idioma: Español\n📍 Ubicación: Virtual (Teams)\n📝 Modalidad: Práctico (80%) + Teórico (20%)\nRequerimientos:\n\n💻 Laptop\n🌐 Conexión a internet\n🐧 Ambiente Unix/WSL\n\n\n\nSE REQUIERE CONOCIMIENTO PREVIO EN PROGRAMACIÓN\n\n\n\n\n📘 Día 1\n🔧 Módulo 1: Instalación de herramientas y obtención de secuencias\n🎯 Objetivo: Preparar el entorno computacional e introducir la obtención de secuencias desde bases de datos públicas.\nActividades:\n\n🔥 Bienvenida e introducción\n\nPresentación del curso y del instructor\nCódigo de conducta y dinámica rápida de presentación\n\n💻 Instalación de herramientas bioinformáticas\n\nncbi-blast+, seqkit, muscle, clustalo, mafft, trimal, fasttree, iqtree\nVisualizadores: jalview, figtree\nUtilidad adicional: weblogo\n\n🌐 Bases de datos biológicas y descarga de secuencias\n\nNavegación en UniProt y NCBI\nDescarga y visualización de secuencias FASTA\n\n\n\n\n📙 Día 2\n🧬 Módulo 2: Alineamientos locales mediante BLAST\n🎯 Objetivo: Aplicar BLAST para realizar búsquedas de similitud, tanto en línea como localmente.\nActividades:\n\n🧾 Homología\n\nDefinición de homología, ortologos, parálogos\nHerramientas para búsqueda de homología\n\n🌍 Uso de BLAST en línea\n\nBúsqueda contra UniProt y NCBI\nDescarga e interpretación de resultados\n\n🧾 BLAST local en terminal\n\nCreación de bases de datos locales con makeblastdb\nEjecución de blastp y tblastn\nRecuperación de secuencias relevantes con seqkit\n\n📂 Filtrado y organización de resultados\n\nSelección de los mejores hits\nUnión y clasificación de secuencias para análisis posterior\n\n\n\n\n📗 Día 3\n🌳 Módulo 3: Alineamiento múltiple y análisis filogenético\n🎯 Objetivo: Generar alineamientos múltiples y construir árboles filogenéticos básicos.\nActividades:\n\n🧬 Alineamiento de secuencias\n\nUso de MAFFT, Clustal Omega y Muscle\nComparación de resultados y calidad\n\n✂️ Recorte de alineamientos\n\nUso de trimal para limpiar alineamientos\nIdentificación de regiones conservadas\n\n🌿 Construcción de árboles filogenéticos\n\nGeneración de árboles con fasttree\nDiscusión de conceptos filogenéticos básicos\n\n👁 Visualización de arboles\n\nAlineamientos en Jalview\nÁrboles en FigTree\n\n\n\n\n📕 Día 4\n🧩 Módulo 4: Análisis de dominios y conservación de secuencias\n🎯 Objetivo: Identificar dominios funcionales en secuencias y visualizar su conservación.\nActividades:\n\n🔍 Análisis de dominios con InterProScan\n\nEnvío de secuencias y descarga de resultados .tsv\nExtracción de dominios Pfam\n\n🧠 Búsqueda de dominios con HMMER\n\nPreparación de la base de datos Pfam-A\nEjecución de hmmscan, hmmfetch, hmmsearch\nEjemplo práctico: dominio PF00071\n\n🎨 Visualización de conservación con WebLogo\n\nGeneración de logos a partir de alineamientos recortados\nInterpretación de regiones altamente conservada\n\n\n\n\n📕 Día 5\n🧬 Módulo 5: Modelado proteico y análisis estructural\n🎯 Objetivo: Predecir estructuras de proteínas con herramientas de inteligencia artificial, visualizarlas y compararlas estructuralmente.\nActividades:\n\n🧠 Introducción al modelado estructural\n\nTipos de estructura: primaria a cuaternaria\nPrincipios del modelado con IA: AlphaFold, Boltz-1, entre otras\n\n⚙️ Predicción de estructuras\n\nEntrada de secuencia FASTA\nInterpretación de resultados: pLDDT, PAE\n\n🔍 Comparación con otras herramientas\n\nIntroducción a Boltz-1, RoseTTAFold y ESMFold\nDiscusión sobre precisión, velocidad y aplicabilidad\n\n🧩 Visualización y análisis en ChimeraX\n\nCarga y exploración de archivos .pdb\nColoreado por confianza estructural\nIdentificación de regiones funcionales\n\n🔄 Alineamiento de modelos estructurales\n\nSuperposición de estructuras con ChimeraX\nEvaluación visual de similitudes y diferencias\n\n\n\n\n\nDavid Alberto García Estrada\n\nCandidato a Doctor en Biología Integrativa, UGA, Cinvestav.\nCo-fundador de BioCode Academy\nContacto\n\n🔗 Github\n📨 albert_dge@hotmail.com\n📨 david.garcia.e@cinvestav.mx\n📨 biocodeacademy@gmail.com",
     "crumbs": [
       "Información general"
     ]
@@ -102,7 +102,7 @@
     "href": "S2_01_homologia.html#homología",
     "title": "4  Homología",
     "section": "",
-    "text": "Similitud entre secuencias (ADN, ARN o proteínas) debido a que comparte ancestría. Este concepto infiere una relación evolutiva y predicción funcional.\nSi dos secuencias son homólogas, ellos **probablemente mantienen una estructura similar o características funcionales, aún si ellas tienen divergencia temporal.\n\n\n\n\n\n\n\n4.1.1 Tipos de homología\n\nOrtólogos: Genes en diferentes especies que evolucionaron de un gen acentral en común después de un evento de especiación. Suelen mantener la misma función.\nParálogo: Genes dentro de la misma especie que surgen por un evento de duplicación. Ellos pueden evolucionar a nuevas funciones o se especializan en un subconjunto de la función original.\n\n\n\n\n\n\n\n\n4.1.2 Herramientas para dectectar homología\n\nBLAST (Basic Local Alignment Search Tool): permite comparar una secuencia contra una base de datos para encontrar similitudes.\n\n\n\n\n\n\n\nHMMER: Usa los Modelos Ocultos de Markov (HMMs) para detectar homología remota, particularmente efectiva para motivos conservados.\n\n\n\n\n\n\n\nMas adelante exploraremos estas herramientas de manera individual.",
+    "text": "Similitud entre secuencias (ADN, ARN o proteínas) debido a que comparte ancestría. Este concepto infiere una relación evolutiva y predicción funcional.\nSi dos secuencias son homólogas, ellos probablemente mantienen una estructura similar o características funcionales, aún si ellas tienen divergencia temporal.\n\n\n\n\n\n\n\n4.1.1 Tipos de homología\n\nOrtólogos: Genes en diferentes especies que evolucionaron de un gen acentral en común después de un evento de especiación. Suelen mantener la misma función.\nParálogo: Genes dentro de la misma especie que surgen por un evento de duplicación. Ellos pueden evolucionar a nuevas funciones o se especializan en un subconjunto de la función original.\n\n\n\n\n\n\n\n\n4.1.2 Herramientas para dectectar homología\n\nBLAST (Basic Local Alignment Search Tool): permite comparar una secuencia contra una base de datos para encontrar similitudes.\n\n\n\n\n\n\n\nHMMER: Usa los Modelos Ocultos de Markov (HMMs) para detectar homología remota, particularmente efectiva para motivos conservados.\n\n\n\n\n\n\n\nMas adelante exploraremos estas herramientas de manera individual.",
     "crumbs": [
       "Módulo 2: Alineamientos locales mediante BLAST",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Homología</span>"
@@ -113,18 +113,29 @@
     "href": "S2_02_blast_web.html",
     "title": "5  BLAST en línea (web)",
     "section": "",
-    "text": "5.1 BLAST (Basic Local Alignment Search Tool)\nEn este módulo exploraremos la herramienta BLAST en línea, considerando algunas limitantes.\nEsta herramienta permite comparar una secuencia contra una base de datos para encontrar similitudes.",
+    "text": "5.1 Resumen de los programas BLAST\nEn este módulo exploraremos cómo utilizar las herramientas BLAST (Basic Local Alignment Search Tool) disponibles en línea en Uniprot y NCBI. Revisaremos los distintos programas BLAST, sus casos de uso más comunes, limitaciones y presentaremos ejemplos prácticos para obtener y organizar resultados.\nBLAST permite comparar una secuencia de consulta contra una base de datos para identificar regiones de similitud local. A continuación, se muestra un resumen de las variantes más utilizadas:",
     "crumbs": [
       "Módulo 2: Alineamientos locales mediante BLAST",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>BLAST en línea (web)</span>"
     ]
   },
   {
-    "objectID": "S2_02_blast_web.html#blast-basic-local-alignment-search-tool",
-    "href": "S2_02_blast_web.html#blast-basic-local-alignment-search-tool",
+    "objectID": "S2_02_blast_web.html#resumen-de-los-programas-blast",
+    "href": "S2_02_blast_web.html#resumen-de-los-programas-blast",
     "title": "5  BLAST en línea (web)",
     "section": "",
-    "text": "Tipo de BLAST\nConsulta (input)\nBase de datos (db)\nTraducción\nUso típico\n\n\n\n\nblastn\nADN\nADN\nNo\nComparar secuencias de nucleótidos (por ejemplo, genes)\n\n\nblastp\nProteína\nProteína\nNo\nBuscar similitudes entre proteínas\n\n\nblastx\nADN\nProteína\nSí (ADN → 6 proteínas)\nBuscar proteínas codificadas en una secuencia de ADN\n\n\ntblastn\nProteína\nADN\nSí (DB → proteínas)\nBuscar regiones codificantes en genomas o transcriptomas\n\n\ntblastx\nADN\nADN\nSí (ambos → proteínas)\nComparar secuencias de ADN a nivel de proteínas traducidas",
+    "text": "Programa BLAST\nConsulta (input)\nBase de datos (db)\nTraducción\nUso típico\n\n\n\n\nblastn\nADN\nADN\nNo\nComparar secuencias de nucleótidos (por ejemplo, genes o regiones génicas)\n\n\nblastp\nProteína\nProteína\nNo\nBuscar similitudes entre proteínas en una base de datos\n\n\nblastx\nADN\nProteína\nSí (ADN → 6 cuadros de lectura)\nIdentificar posibles proteínas codificadas por una secuencia de ADN\n\n\ntblastn\nProteína\nADN\nSí (DB → proteínas)\nLocalizar regiones codificantes en ensamblajes genómicos o transcriptómicos\n\n\ntblastx\nADN\nADN\nSí (ambos → proteínas)\nComparar secuencias de ADN a nivel de proteínas traducidas\n\n\n\n\nConsejo: La elección del programa BLAST adecuado es crucial. Por ejemplo, si tienes una secuencia génica no anotada y deseas saber qué proteínas podría codificar, utiliza blastx. Si tienes una secuencia de proteína y quieres ubicar su origen en el genoma, emplea tblastn.",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>BLAST en línea (web)</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_blast_web.html#parámetros-clave-e-interpretación-de-resultados",
+    "href": "S2_02_blast_web.html#parámetros-clave-e-interpretación-de-resultados",
+    "title": "5  BLAST en línea (web)",
+    "section": "5.2 Parámetros clave e interpretación de resultados",
+    "text": "5.2 Parámetros clave e interpretación de resultados\nAl ejecutar cualquier búsqueda BLAST en línea, encontrarás parámetros y campos de salida como los siguientes:\n\nValor E (E-value): Número esperado de coincidencias de similar calidad que podrían ocurrir por azar. Valores E bajos indican coincidencias más significativas.\nPorcentaje de identidad (Percent Identity): Porcentaje de residuos idénticos entre la consulta y la secuencia objetivo en la región alineada.\nCobertura de la consulta (Query Coverage): Proporción de la secuencia de consulta que se alinea con la secuencia objetivo.\nPuntuación en bits (Bit Score): Puntuación normalizada que permite comparar resultados entre distintas búsquedas; puntuaciones más altas indican alineamientos de mejor calidad.\nNúmero máximo de secuencias objetivo (Max Target Sequences): Cantidad máxima de hits que se mostrarán (por ejemplo, 100, 500 o 1000).\nOpciones de filtrado (Filter Options): Filtros de regiones de baja complejidad (por ejemplo, DUST para nucleótidos, SEG para proteínas) que reducen coincidencias espurias, aunque podrían enmascarar regiones biológicamente relevantes.\n\n\nNota sobre limitaciones:\n- Los servidores BLAST en línea suelen imponer límites en la longitud de la secuencia (por ejemplo, 10 000 nt para blastn) y en el número de consultas diarias.\n- Los resultados pueden no incluir entradas de base de datos muy recientes si el servidor no se actualizó recientemente. Siempre verifica el campo “Base de datos actualizada” o “Database last updated” en la página de resultados.",
     "crumbs": [
       "Módulo 2: Alineamientos locales mediante BLAST",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>BLAST en línea (web)</span>"
@@ -134,8 +145,19 @@
     "objectID": "S2_02_blast_web.html#pasos-prácticos",
     "href": "S2_02_blast_web.html#pasos-prácticos",
     "title": "5  BLAST en línea (web)",
-    "section": "5.2 Pasos prácticos",
-    "text": "5.2 Pasos prácticos\n\n5.2.1 🔹 BLAST en Uniprot\n\nPega tu secuencia.\nEspera los resultados.\nDescarga los hits como archivo .fasta.\n\n\nmv ~/Downloads/uniprotkb_*.fasta uniprot_blast.fasta\n\n\n\n5.2.2 🔹 BLAST en NCBI\n\nSelecciona “Protein BLAST” (BLASTP o TBLASTN).\nPega la secuencia y ejecuta la búsqueda.\nDescarga resultados:\n\n\nmv ~/Downloads/seqdump.txt ncbi_blast.fasta",
+    "section": "5.3 Pasos prácticos",
+    "text": "5.3 Pasos prácticos\nA continuación se describen ejemplos paso a paso para realizar búsquedas BLAST en Uniprot y NCBI. Veremos cómo enviar la secuencia, ajustar parámetros, interpretar los resultados y descargar los hits para análisis posteriores.\n\n5.3.1 🔹 BLAST en Uniprot\n\nAcceder a la página de BLAST de Uniprot:\n\nIngresa a Uniprot BLAST.\n\nSeleccionar el programa BLAST apropiado:\n\nSelecciona “Protein BLAST” (blastp) si dispones de una secuencia de proteína.\nSi tienes una secuencia de nucleótidos y quieres buscar contra una base de datos de proteínas, escoge “BLASTX”.\n\nPegar la secuencia de consulta:\n\nCopia y pega tu secuencia en formato FASTA en el cuadro de texto correspondiente.\n\nConfigurar parámetros adicionales (opcional):\n\nAjusta el número máximo de secuencias objetivo (Max Target Sequences).\nAplica filtros de baja complejidad si lo consideras necesario.\nSelecciona la base de datos deseada (por defecto suele ser “UniProtKB/Swiss-Prot”).\n\nEjecutar la búsqueda y esperar resultados:\n\nHaz clic en “Run BLAST” y espera a que se complete la búsqueda.\n\nRevisar e interpretar la salida:\n\nExamina la tabla de resultados, prestando atención a los valores E, porcentajes de identidad y cobertura.\nSelecciona los hits de interés.\n\nDescargar los hits en formato FASTA:\n\nEn la sección de resultados, elige la opción “Download” &gt; “Hits (FASTA)” para guardar un archivo .fasta con las secuencias alineadas.\n\n\nRenombramos los archivos descargados\n\nmv ~/Downloads/uniprotkb_*.fasta uniprot_blastp.fasta\nmv ~/Downloads/&lt;table.tsv&gt; uniprot_blastp.tsv\n\n\n\n5.3.2 🔹 BLAST en NCBI\n\nAcceder a la página de BLAST de NCBI:\n\nDirígete a NCBI BLAST.\n\nSeleccionar el programa BLAST:\n\nPara búsquedas de proteína contra proteína, elige “Protein BLAST” (blastp).\nPara búsquedas de proteína contra bases de datos de nucleótidos traducidas, selecciona “tblastn”.\nPara consultas de ADN contra bases de datos de proteínas, elige “blastx”.\n\nPegar la secuencia de consulta:\n\nCopia y pega tu secuencia (fasta) en el campo “Enter Query Sequence”.\n\nAjustar parámetros opcionales:\n\nElige la base de datos apropiada (por ejemplo, “nr” para proteínas no redundantes o “refseq_rna” para transcriptomas).\nConfigura el número máximo de hits y filtros de complejidad.\n\nEjecutar la búsqueda:\n\nHaz clic en “BLAST” y espera a que se procesen los resultados.\n\nInterpretar los resultados:\n\nEn la pestaña “Descriptions” observarás los hits ordenados por el valor E.\nEn la pestaña “Alignments” podrás ver los alineamientos detallados.\n\nDescargar los resultados en formato FASTA:\n\nVe a “Download” (opción ubicada arriba a la derecha) y selecciona “FASTA” para guardar las secuencias de los hits en un archivo .fasta.\n\n\nRenombramos los archivos descargados\n\n# blastp\nmv ~/Downloads/seqdump.txt ncbi_blastp.fasta\nmv ~/Downloads/&lt;table.csv&gt; ncbi_blastp.csv\n\n# tblastn\nmv ~/Downloads/seqdump.txt ncbi_tblastn.fasta\nmv ~/Downloads/&lt;table.csv&gt; ncbi_tblastn.csv",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>BLAST en línea (web)</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_blast_web.html#recomendaciones-finales",
+    "href": "S2_02_blast_web.html#recomendaciones-finales",
+    "title": "5  BLAST en línea (web)",
+    "section": "5.4 Recomendaciones finales",
+    "text": "5.4 Recomendaciones finales\n\nVerificar la versión de la base de datos: Antes de confiar en los resultados, revisa la fecha de última actualización de la base de datos en cada servidor BLAST.\nGuardar metadatos de búsqueda: Anota en un archivo de texto o Excel los parámetros usados (tipo de BLAST, base de datos, filtros, valor E umbral) para futura referencia o reproducibilidad.\nCombinar resultados de Uniprot y NCBI: Si buscas coberturas más amplias, compara los hits obtenidos en ambas plataformas y filtra duplicados.\nAutomatizar descargas: Para grandes volúmenes de secuencias, considera usar la línea de comandos de NCBI (NCBI BLAST+ packages) y scripts en bash o Python para automatizar búsquedas y descargas.",
     "crumbs": [
       "Módulo 2: Alineamientos locales mediante BLAST",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>BLAST en línea (web)</span>"
@@ -146,29 +168,62 @@
     "href": "S2_03_blast_local.html",
     "title": "6  BLAST en local (terminal)",
     "section": "",
-    "text": "6.1 ⚙️ Crear bases de datos locales\n# Proteoma de Trichoderma atroviride\nmakeblastdb -in Tatroviride_proteins.fa -dbtype prot -out tatro_protein\n\n# CDS (secuencias codificantes)\nmakeblastdb -in Tatroviride_cds.fa -dbtype nucl -out tatro_cds",
+    "text": "6.1 Creación de bases de datos locales\nEn este módulo aprenderemos a ejecutar BLAST de forma local desde la terminal. Utilizar BLAST local es útil cuando se trabaja con bases de datos personalizadas, grandes volúmenes de secuencias o cuando se requiere automatizar búsquedas en scripts. Cubriremos cómo crear bases de datos locales, ejecutar distintos tipos de búsquedas BLAST y recuperar las secuencias obtenidas para análisis posteriores.\nPara poder buscar de forma local, primero debemos convertir nuestros archivos FASTA en bases de datos con makeblastdb, parte del paquete NCBI BLAST+. A continuación se muestran ejemplos de cómo crear:\nA modo de ejemplo, supongamos que tenemos dos archivos FASTA de Trichoderma atroviride:\nLos comandos serían:\n# 1. Crear base de datos de proteínas\nmakeblastdb -in Tatroviride_proteins.fa -dbtype prot -out tatro_protein \\\n    -title \"Tatroviride Proteínas\" \\\n    -hash_index\n\n# 2. Crear base de datos de nucleótidos (CDS)\nmakeblastdb -in Tatroviride_cds.fa -dbtype nucl -out tatro_cds \\\n    -title \"Tatroviride CDS\" \\\n    -parse_seqids\nParámetros clave de makeblastdb:",
     "crumbs": [
       "Módulo 2: Alineamientos locales mediante BLAST",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>BLAST en local (terminal)</span>"
     ]
   },
   {
-    "objectID": "S2_03_blast_local.html#ejecutar-búsquedas-blast",
-    "href": "S2_03_blast_local.html#ejecutar-búsquedas-blast",
+    "objectID": "S2_03_blast_local.html#creación-de-bases-de-datos-locales",
+    "href": "S2_03_blast_local.html#creación-de-bases-de-datos-locales",
     "title": "6  BLAST en local (terminal)",
-    "section": "6.2 🚀 Ejecutar búsquedas BLAST",
-    "text": "6.2 🚀 Ejecutar búsquedas BLAST\n\n# Contra proteína\nblastp -query P06780.fasta -db tatro_protein -outfmt 6 -out blastp_Tatro.out -num_alignments 5\n\n# Contra CDS traducido\ntblastn -query P06780.fasta -db tatro_cds -outfmt 6 -out tblastn_Tatro.out -num_alignments 5",
+    "section": "",
+    "text": "Tipo de base de datos\nComando\nDescripción\n\n\n\n\nProteína\nmakeblastdb -in &lt;archivo_proteínas&gt;.fa -dbtype prot -out &lt;nombre_db&gt;\nCrea una base de datos de secuencias de proteína.\n\n\nNúcleo (CDS/ADN)\nmakeblastdb -in &lt;archivo_nucleótidos&gt;.fa -dbtype nucl -out &lt;nombre_db&gt;\nCrea una base de datos de secuencias de nucleótidos (genes, CDS, genomas).\n\n\n\n\n\nTatroviride_proteins.fa (proteínas predichas)\nTatroviride_cds.fa (secuencias codificantes)\n\n\n\n\n\n-in: ruta al archivo FASTA con las secuencias.\n-dbtype: tipo de secuencia, prot para proteínas o nucl para nucleótidos.\n-out: prefijo del nombre de la base de datos que se generará.\n-title: (opcional) nombre descriptivo de la base de datos.\n-hash_index: acelera búsquedas en bases de datos de proteínas grandes.\n-parse_seqids: necesario si deseamos extraer secuencias por identificador (recomendado).",
     "crumbs": [
       "Módulo 2: Alineamientos locales mediante BLAST",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>BLAST en local (terminal)</span>"
     ]
   },
   {
-    "objectID": "S2_03_blast_local.html#recuperar-secuencias",
-    "href": "S2_03_blast_local.html#recuperar-secuencias",
+    "objectID": "S2_03_blast_local.html#ejecución-de-búsquedas-blast",
+    "href": "S2_03_blast_local.html#ejecución-de-búsquedas-blast",
     "title": "6  BLAST en local (terminal)",
-    "section": "6.3 🔎 Recuperar secuencias",
-    "text": "6.3 🔎 Recuperar secuencias\n\nseqkit grep -f &lt;(cut -f2 blastp_Tatro.out) Tatroviride_proteins.fa &gt; blastp_Tatro.fasta\nseqkit grep -f &lt;(cut -f2 tblastn_Tatro.out) Tatroviride_cds.fa &gt; tblastn_Tatro.fasta",
+    "section": "6.2 Ejecución de búsquedas BLAST",
+    "text": "6.2 Ejecución de búsquedas BLAST\nUna vez creadas las bases de datos locales, podemos usar los distintos programas BLAST para realizar comparaciones. A continuación se muestran ejemplos de búsquedas contra las bases de datos de T. atroviride.\n\n\n\n\n\n\n\n\nPrograma BLAST\nDescripción\nEjemplo de comando\n\n\n\n\nblastp\nBusca tu proteína de interés contra una base de datos de proteínas.\nblastp -query P06780.fasta -db tatro_protein -outfmt 6 -out blastp_Tatro.out -num_alignments 5\n\n\ntblastn\nBusca tu proteína contra una base de datos de nucleótidos traducidos.\ntblastn -query P06780.fasta -db tatro_cds -outfmt 6 -out tblastn_Tatro.out -num_alignments 5\n\n\nblastn\nCompara una secuencia de ADN contra una base de datos de ADN (nucl).\nblastn -query secuencia_nuc.fa -db tatro_cds -outfmt 6 -out blastn_Tatro.out -perc_identity 90 -max_hsps 1\n\n\nblastx\nTraduce tu secuencia de ADN en seis cuadros y busca contra proteínas.\nblastx -query secuencia_nuc.fa -db tatro_protein -outfmt 6 -out blastx_Tatro.out -evalue 1e-5 -max_target_seqs 10\n\n\ntblastx\nTraduce ambas secuencias (consulta y BD) y realiza la búsqueda de proteínas.\ntblastx -query secuencia_nuc.fa -db tatro_cds -outfmt 6 -out tblastx_Tatro.out -evalue 1e-10 -num_threads 4\n\n\n\n\n6.2.1 Explicación de parámetros comunes\n\n-query &lt;archivo&gt;.fasta: Archivo FASTA con la secuencia de consulta.\n-db &lt;nombre_db&gt;: Prefijo de la base de datos generada con makeblastdb.\n-outfmt 6: Formato de salida tabular (campos: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, e-value, bit score). Ideal para procesamiento con scripts.\n-out &lt;salida&gt;.out: Nombre del archivo donde se guardará el resultado.\n-num_alignments o -max_target_seqs: Número máximo de alineamientos a reportar (5, 10, 100, etc.).\n-evalue &lt;valor&gt;: Umbral de valor E para definir cuán significativas deben ser las coincidencias.\n-perc_identity &lt;valor&gt;: Porcentaje mínimo de identidad para filtrar hits (solo en algunos programas como blastn).\n-num_threads &lt;n&gt;: Número de hilos a emplear para acelerar la búsqueda (útil en servidores o multicore).",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>BLAST en local (terminal)</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_blast_local.html#recuperacion-de-secuencias-hits",
+    "href": "S2_03_blast_local.html#recuperacion-de-secuencias-hits",
+    "title": "6  BLAST en local (terminal)",
+    "section": "6.3 Recuperacion de secuencias hits",
+    "text": "6.3 Recuperacion de secuencias hits\nPor lo general, después de obtener los archivos de salida en formato tabular (-outfmt 6), querrás recuperar las secuencias originales (o extendidas) de los hits para hacer análisis posteriores (alineamientos múltiples, modelado, anotaciones, etc.). Para ello, utilizaremos la herramienta SeqKit:\n\n# 1. Extraer los IDs de la columna 2 (subject id) del archivo blastp_Tatro.out\ncut -f2 blastp_Tatro.out &gt; hits_blastp_ids.txt\n\n# 2. Recuperar las secuencias de proteínas correspondientes\nseqkit grep -f hits_blastp_ids.txt Tatroviride_proteins.fa &gt; blastp_Tatro_hits.fasta\n\n# 3. Para tblastn, extraer IDs de CDS (columna 2) y recuperar secuencias de nucleótidos\ncut -f2 tblastn_Tatro.out &gt; hits_tblastn_ids.txt\nseqkit grep -f hits_tblastn_ids.txt Tatroviride_cds.fa &gt; tblastn_Tatro_hits.fasta\n\nPasos detallados:\n\nCon cut -f2 &lt;archivo.out&gt; extraemos la segunda columna de la salida tabular, que corresponde al identificador de la secuencia objetivo (subject id).\nCon seqkit grep -f &lt;lista_ids&gt; &lt;archivo_original.fa&gt; buscamos en el FASTA original las entradas cuyo identificador coincida con los solicitados.\nRedirigimos la salida a un nuevo archivo FASTA que contendrá únicamente las secuencias obtenidas.",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>BLAST en local (terminal)</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_blast_local.html#ejemplos-de-formatos-y-campos-de-salida",
+    "href": "S2_03_blast_local.html#ejemplos-de-formatos-y-campos-de-salida",
+    "title": "6  BLAST en local (terminal)",
+    "section": "6.4 Ejemplos de formatos y campos de salida",
+    "text": "6.4 Ejemplos de formatos y campos de salida\nCuando usas -outfmt 6, obtienes un archivo de texto con once (u doce) columnas, sin encabezados. Suelen aparecer así:\n\nquery1    subjectA    98.5    350  2  0  1  350  10  359  1e-120  450\nquery1    subjectB    90.0    300  30 2  5  304  15  314  2e-80   320\n...\n\nDescripción de cada campo (por defecto en -outfmt 6):\n\nQuery ID\nSubject ID\n% Identity\nLongitud del alineamiento (alignment length)\nNúmero de mismatches\nAperturas de gap (gap opens)\nInicio en la consulta (qstart)\nFin en la consulta (qend)\nInicio en el sujeto (sstart)\nFin en el sujeto (send)\nValor E (E-value)\nPuntuación en bits (bit score)",
+    "crumbs": [
+      "Módulo 2: Alineamientos locales mediante BLAST",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>BLAST en local (terminal)</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_blast_local.html#recomendaciones-y-buenas-prácticas",
+    "href": "S2_03_blast_local.html#recomendaciones-y-buenas-prácticas",
+    "title": "6  BLAST en local (terminal)",
+    "section": "6.5 Recomendaciones y buenas prácticas",
+    "text": "6.5 Recomendaciones y buenas prácticas\n\nVersionado y entornos reproducibles:\n\nAnota la versión de BLAST+ que utilizas (blastp -version).\nSi trabajas en distintos equipos, instala BLAST+ mediante Conda o Docker para garantizar consistencia.\n\nTamaño de la base de datos y uso de recursos:\n\nBases de datos muy grandes pueden requerir más memoria RAM. Verifica que dispones de suficiente espacio en disco (los índices pueden ocupar varias decenas de GB).\nUtiliza -num_threads para acelerar búsquedas en multicore, pero mantén un número razonable para no saturar la máquina.\n\nAutomatización de tareas repetitivas:\n\nPara múltiples consultas, crea un script en bash o Python que recorra un directorio con archivos FASTA de consulta.\nDentro del script, ejecuta BLAST, extrae IDs y recupera secuencias de forma automática.\n\n\nEjemplo de script básico en bash (run_all_blast.sh):\n\n#!/usr/bin/env bash\n\n# Directorios\nQUERY_DIR=\"queries/\"\nDB_PROT=\"blast_db/tatro_protein\"\nDB_CDS=\"blast_db/tatro_cds\"\nOUT_DIR=\"blast_results/\"\n\nmkdir -p \"${OUT_DIR}/blastp\" \"${OUT_DIR}/tblastn\" \"${OUT_DIR}/ids_blastp\" \"${OUT_DIR}/ids_tblastn\" \"${OUT_DIR}/hits_blastp\" \"${OUT_DIR}/hits_tblastn\"\n\nfor qfile in \"${QUERY_DIR}\"*.fasta; do\n    base=$(basename \"${qfile}\" .fasta)\n\n    # blastp\n    blastp -query \"${qfile}\" -db \"${DB_PROT}\" -outfmt 6 -max_target_seqs 5 \\\n        -num_threads 4 -out \"${OUT_DIR}/blastp/${base}_blastp.out\"\n    cut -f2 \"${OUT_DIR}/blastp/${base}_blastp.out\" &gt; \"${OUT_DIR}/ids_blastp/${base}_ids.txt\"\n    seqkit grep -f \"${OUT_DIR}/ids_blastp/${base}_ids.txt\" Tatroviride_proteins.fa &gt; \"${OUT_DIR}/hits_blastp/${base}_hits.fasta\"\n\n    # tblastn\n    tblastn -query \"${qfile}\" -db \"${DB_CDS}\" -outfmt 6 -max_target_seqs 5 \\\n        -num_threads 4 -out \"${OUT_DIR}/tblastn/${base}_tblastn.out\"\n    cut -f2 \"${OUT_DIR}/tblastn/${base}_tblastn.out\" &gt; \"${OUT_DIR}/ids_tblastn/${base}_ids.txt\"\n    seqkit grep -f \"${OUT_DIR}/ids_tblastn/${base}_ids.txt\" Tatroviride_cds.fa &gt; \"${OUT_DIR}/hits_tblastn/${base}_hits.fasta\"\ndone\n\n\nDocumentación y metadatos:\n\nMantén un archivo README.md en tu proyecto donde describas cada paso: cómo crear las bases de datos, qué parámetros usaste en BLAST, versiones de herramientas y organización de carpetas.\nEsto facilitará la colaboración y reproducibilidad a largo plazo.\n\nInterpretación de resultados y filtrado post-BLAST:\n\nDespués de recuperar las secuencias, realiza alineamientos múltiples (con MAFFT o Clustal Omega) para verificar la calidad de las coincidencias.\nAplica filtros según valor E, % de identidad y cobertura para quedarte con hits de alta confianza antes de análisis posteriores (como árboles filogenéticos o modelado estructural).",
     "crumbs": [
       "Módulo 2: Alineamientos locales mediante BLAST",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>BLAST en local (terminal)</span>"
@@ -179,7 +234,7 @@
     "href": "S2_04_filtrado_resultados.html",
     "title": "7  Filtrado y organización de resultados",
     "section": "",
-    "text": "7.1 🎯 Seleccionar los mejores hits\nEn este módulo, evaluaremos los procesos de filtrado y organización de resultados.\nseqkit head -n 50 uniprot_blast.fasta &gt; uniprot_blast_50.fasta\nseqkit head -n 20 ncbi_blast.fasta &gt; ncbi_blast_20.fasta",
+    "text": "7.1 🔍 Seleccionar los mejores hits\nEn este módulo filtraremos los mejores resultados de BLAST y organizaremos las secuencias para análisis posteriores, como alineamiento y filogenia.\nDespués de realizar búsquedas en UniProt y NCBI, seleccionamos los primeros resultados (según el orden del output) para trabajar con un subconjunto representativo:\n# De UniProt: tomar los 50 mejores resultados\nseqkit head -n 50 uniprot_blast.fasta &gt; uniprot_blast_50.fasta\n\n# De NCBI: tomar los 20 mejores resultados\nseqkit head -n 20 ncbi_blast.fasta &gt; ncbi_blast_20.fasta",
     "crumbs": [
       "Módulo 2: Alineamientos locales mediante BLAST",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Filtrado y organización de resultados</span>"
@@ -190,10 +245,164 @@
     "href": "S2_04_filtrado_resultados.html#unir-secuencias-para-análisis",
     "title": "7  Filtrado y organización de resultados",
     "section": "7.2 📦 Unir secuencias para análisis",
-    "text": "7.2 📦 Unir secuencias para análisis\n\n# Proteínas\ncat uniprot_blast_50.fasta blastp_Tatro.fasta &gt; all_protein.fasta\n\n# CDS\ncat ncbi_blast_20.fasta tblastn_Tatro.fasta &gt; all_cds.fasta",
+    "text": "7.2 📦 Unir secuencias para análisis\nUnimos los resultados filtrados de bases externas con las secuencias obtenidas localmente por BLAST para tener un conjunto consolidado.\n\n# Proteínas\ncat uniprot_blast_50.fasta blastp_Tatroviride_P06780.fasta &gt; all_protein.fasta\n\n# CDS\ncat ncbi_blast_20.fasta tblastn_Tatroviride_P06780.fasta &gt; all_cds.fasta",
     "crumbs": [
       "Módulo 2: Alineamientos locales mediante BLAST",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Filtrado y organización de resultados</span>"
+    ]
+  },
+  {
+    "objectID": "S3_01_alineamiento_global.html",
+    "href": "S3_01_alineamiento_global.html",
+    "title": "8  Alineamiento de secuencias",
+    "section": "",
+    "text": "8.1 🔧 Herramientas de alineamiento\nEn este módulo realizaremos alineamientos múltiples de secuencias utilizando diferentes herramientas. Evaluaremos los resultados y discutiremos su calidad.",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Alineamiento de secuencias</span>"
+    ]
+  },
+  {
+    "objectID": "S3_01_alineamiento_global.html#herramientas-de-alineamiento",
+    "href": "S3_01_alineamiento_global.html#herramientas-de-alineamiento",
+    "title": "8  Alineamiento de secuencias",
+    "section": "",
+    "text": "8.1.1 🧰 Comparación de herramientas de alineamiento múltiple\n\n\n\n\n\n\n\n\n\n\n\nHerramienta\nUsos principales\nTamaño recomendado de secuencias\nVentajas\nDesventajas\nCuándo se recomienda usar\n\n\n\n\nMAFFT\nProteínas, ADN/ARN; grandes datasets\nPequeño a muy grande\nRápido, preciso, buena gestión de gaps; varios algoritmos (FFT-NS, L-INS-i, etc.)\nPuede requerir más memoria con algoritmos más precisos\nRecomendado para la mayoría de alineamientos, especialmente si se busca equilibrio entre velocidad y calidad\n\n\nClustal Omega\nProteínas; alineamientos generales\nPequeño a grande\nBuen rendimiento; interfaz web amigable; genera árboles guía\nMenos preciso que MAFFT en regiones con alta variabilidad\nIdeal para análisis rápidos o integrados en flujos automatizados\n\n\nMUSCLE\nProteínas, ADN; evolución y estructura\nPequeño a mediano\nPrecisión alta; buena opción para árboles filogenéticos\nMás lento que MAFFT y Clustal con muchos datos\nRecomendado cuando se busca precisión en datasets moderados o para árboles confiables\n\n\nT-Coffee\nAlineamiento estructural o guiado\nPequeño\nIntegra múltiples fuentes (estructura, perfiles, etc.); muy preciso\nMuy lento; no apto para grandes datasets\nPara alineamientos donde se desea integrar información estructural o validar calidad\n\n\nProbCons\nAlineamiento de proteínas con alta precisión\nMuy pequeño\nBasado en modelos probabilísticos; muy preciso\nExtremadamente lento, descontinuado\nCasos de validación o comparación con otros alineamientos\n\n\nKalign\nADN, ARN, proteínas\nMediano a grande\nMuy rápido; buena precisión general\nMenos popular, opciones limitadas\nAnálisis preliminares o en pipelines donde la velocidad es crítica\n\n\nDialign\nAlineamiento por regiones conservadas\nPequeño a mediano\nAlinea sin penalizar gaps globales; útil con secuencias muy divergentes\nMenos efectivo en alineamientos globales\nCuando las secuencias son muy divergentes y los métodos estándar fallan\n\n\n\n🔎 Recomendaciones prácticas\n\nSi tienes muchas secuencias (&gt;100) o largas, comienza con MAFFT (FFT-NS-2).\nPara resultados más precisos y si el número de secuencias es mediano (20-50), puedes usar MUSCLE o MAFFT L-INS-i.\nUsa Clustal Omega si quieres un flujo rápido y simple o si estás integrando con herramientas como Jalview, MEGA o Galaxy.\nPara publicaciones o validaciones, considera correr también con T-Coffee para comparar resultados.\n\n\n\n8.1.2 Herramientas de prueba\nUtilizaremos tres herramientas ampliamente utilizadas:\n\nMAFFT\nClustal Omega\nMUSCLE",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Alineamiento de secuencias</span>"
+    ]
+  },
+  {
+    "objectID": "S3_01_alineamiento_global.html#ejecutar-alineamientos",
+    "href": "S3_01_alineamiento_global.html#ejecutar-alineamientos",
+    "title": "8  Alineamiento de secuencias",
+    "section": "8.2 ▶️ Ejecutar alineamientos",
+    "text": "8.2 ▶️ Ejecutar alineamientos\n\n# Con MAFFT\nmafft all_protein.fasta &gt; all_protein_mafft.aln\nmafft all_cds.fasta &gt; all_cds_mafft.aln\n\n# Con Clustal Omega\nclustalo -i all_protein.fasta -o all_protein_clustalo.aln\nclustalo -i all_cds.fasta -o all_cds_clustalo.aln\n\n# Con MUSCLE\nmuscle -in all_protein.fasta -out all_protein_muscle.aln\nmuscle -in all_cds.fasta -out all_cds_muscle.aln",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Alineamiento de secuencias</span>"
+    ]
+  },
+  {
+    "objectID": "S3_01_alineamiento_global.html#comparación-y-calidad-del-alineamiento",
+    "href": "S3_01_alineamiento_global.html#comparación-y-calidad-del-alineamiento",
+    "title": "8  Alineamiento de secuencias",
+    "section": "8.3 🧪 Comparación y calidad del alineamiento",
+    "text": "8.3 🧪 Comparación y calidad del alineamiento\nA la hora de evaluar los alineamientos, ten en cuenta:\n\nConsistencia en regiones conservadas.\nGaps excesivos o inconsistentes pueden indicar errores.\nMAFFT suele ser rápido y preciso; MUSCLE y Clustal Omega pueden producir resultados ligeramente distintos.\nSe recomienda visualizar los alineamientos con Jalview para inspección manual.",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Alineamiento de secuencias</span>"
+    ]
+  },
+  {
+    "objectID": "S3_02_trimal.html",
+    "href": "S3_02_trimal.html",
+    "title": "9  Recorte de alineamientos",
+    "section": "",
+    "text": "9.1 🔧 Herramienta: trimal\nEn este módulo aprenderás a recortar alineamientos múltiples para eliminar regiones poco informativas o mal alineadas, lo cual es clave para análisis filogenéticos robustos.\ntrimAl es una herramienta eficiente para automatizar el filtrado de alineamientos eliminando columnas con demasiados gaps o baja conservación.",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Recorte de alineamientos</span>"
+    ]
+  },
+  {
+    "objectID": "S3_02_trimal.html#recorte-automático",
+    "href": "S3_02_trimal.html#recorte-automático",
+    "title": "9  Recorte de alineamientos",
+    "section": "9.2 ▶️ Recorte automático",
+    "text": "9.2 ▶️ Recorte automático\nUtilizamos la opción -automated1, que aplica criterios estándares automáticos para identificar y eliminar posiciones no confiables.\n\n# Recorte de proteínas alineadas con MAFFT\ntrimal -in all_protein_mafft.aln -out all_protein_trimmed.aln -automated1\n\n# Recorte de CDS alineados con MAFFT\ntrimal -in all_cds_mafft.aln -out all_cds_trimmed.aln -automated1",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Recorte de alineamientos</span>"
+    ]
+  },
+  {
+    "objectID": "S3_02_trimal.html#qué-hace--automated1",
+    "href": "S3_02_trimal.html#qué-hace--automated1",
+    "title": "9  Recorte de alineamientos",
+    "section": "9.3 🔎 ¿Qué hace -automated1?",
+    "text": "9.3 🔎 ¿Qué hace -automated1?\nEsta opción evalúa varias métricas como:\n\nProporción de gaps por columna\nNivel de conservación\nLongitud del alineamiento\n\nY elimina automáticamente las regiones que podrían introducir ruido.",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Recorte de alineamientos</span>"
+    ]
+  },
+  {
+    "objectID": "S3_02_trimal.html#recomendaciones",
+    "href": "S3_02_trimal.html#recomendaciones",
+    "title": "9  Recorte de alineamientos",
+    "section": "9.4 📌 Recomendaciones",
+    "text": "9.4 📌 Recomendaciones\n\nVisualiza el resultado antes y después con Jalview para entender qué fue eliminado.\nSi tu análisis es sensible (como construcción de árboles), siempre recorta el alineamiento.\nPara mayor control, trimal permite opciones como -gt (gap threshold) o -cons (conservación mínima), útiles en contextos específicos.",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Recorte de alineamientos</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_arboles.html",
+    "href": "S3_03_arboles.html",
+    "title": "10  Construcción de árboles filogenéticos",
+    "section": "",
+    "text": "10.1 ⚡ Generación de árboles con FastTree\nEn este módulo aprenderás a generar árboles filogenéticos a partir de alineamientos múltiples recortados, utilizando herramientas rápidas y robustas como FastTree e IQ-TREE.\nFastTree es una herramienta rápida y eficiente para construir árboles a partir de alineamientos, especialmente útil para grandes conjuntos de datos.\n# Árbol con proteínas\nfasttree all_protein_trimmed.aln &gt; all_protein.tree\n\n# Árbol con CDS\nfasttree all_cds_trimmed.aln &gt; all_cds.tree",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Construcción de árboles filogenéticos</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_arboles.html#generación-de-árboles-con-fasttree",
+    "href": "S3_03_arboles.html#generación-de-árboles-con-fasttree",
+    "title": "10  Construcción de árboles filogenéticos",
+    "section": "",
+    "text": "🔍 Usa aproximaciones de máxima verosimilitud (ML) con heurísticas rápidas.",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Construcción de árboles filogenéticos</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_arboles.html#construcción-con-iq-tree",
+    "href": "S3_03_arboles.html#construcción-con-iq-tree",
+    "title": "10  Construcción de árboles filogenéticos",
+    "section": "10.2 🧠 Construcción con IQ-TREE",
+    "text": "10.2 🧠 Construcción con IQ-TREE\nIQ-TREE es una herramienta más avanzada que permite:\n\nSelección automática del mejor modelo evolutivo\nBootstrapping ultrarrápido\nAnálisis más detallado\n\n\n# Árbol con proteínas (modelo automático)\niqtree -s all_protein_trimmed.aln -m TEST -bb 1000 -nt AUTO\n\n# Árbol con CDS (modelo automático)\niqtree -s all_cds_trimmed.aln -m TEST -bb 1000 -nt AUTO\n\n\n📌 -m TEST: prueba múltiples modelos y selecciona el mejor. 📌 -bb 1000: realiza 1000 replicaciones de bootstrap ultrarrápido.\n\n\n10.2.1 📘 Conceptos básicos (para profundizar)\n\nModelos de sustitución: Determinan cómo cambian los residuos a lo largo del tiempo.\nBootstrap: Mide la confiabilidad de las ramas.\nTopología: La forma del árbol; refleja relaciones evolutivas.",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Construcción de árboles filogenéticos</span>"
+    ]
+  },
+  {
+    "objectID": "S3_04_visualizacion_arboles.html",
+    "href": "S3_04_visualizacion_arboles.html",
+    "title": "11  Visualización de árboles filogenéticos",
+    "section": "",
+    "text": "11.1 🔬 Visualización de alineamientos con Jalview\nEn este módulo aprenderás a visualizar y explorar árboles filogenéticos, así como los alineamientos que los originan. Esto es fundamental para interpretar relaciones evolutivas y evaluar la calidad del análisis.\nJalview es una herramienta gráfica para visualizar y editar alineamientos múltiples. Permite observar regiones conservadas, gaps y otras características.\njalview all_protein_trimmed.aln\njalview all_cds_trimmed.aln",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Visualización de árboles filogenéticos</span>"
+    ]
+  },
+  {
+    "objectID": "S3_04_visualizacion_arboles.html#visualización-de-alineamientos-con-jalview",
+    "href": "S3_04_visualizacion_arboles.html#visualización-de-alineamientos-con-jalview",
+    "title": "11  Visualización de árboles filogenéticos",
+    "section": "",
+    "text": "🧩 Puedes colorear por identidad, conservar anotaciones y exportar imágenes o datos.",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Visualización de árboles filogenéticos</span>"
+    ]
+  },
+  {
+    "objectID": "S3_04_visualizacion_arboles.html#visualización-de-árboles-con-figtree",
+    "href": "S3_04_visualizacion_arboles.html#visualización-de-árboles-con-figtree",
+    "title": "11  Visualización de árboles filogenéticos",
+    "section": "11.2 🌳 Visualización de árboles con FigTree",
+    "text": "11.2 🌳 Visualización de árboles con FigTree\nFigTree permite ver árboles en forma gráfica, personalizar etiquetas, cambiar el formato y exportar figuras para publicación.\n\nfigtree all_protein.tree\nfigtree all_cds.tree\n\n\n🎨 Puedes ajustar la forma del árbol (radial, rectangular), visualizar valores de soporte y reorganizar ramas.",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Visualización de árboles filogenéticos</span>"
     ]
   }
 ]

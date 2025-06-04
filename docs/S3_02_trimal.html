@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; Código de Conducta – Análisis de Secuencias</title>
+<title>9&nbsp; Recorte de alineamientos – Análisis de Secuencias</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./S1_02_instalacion_herramientas.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./S3_03_arboles.html" rel="next">
+<link href="./S3_01_alineamiento_global.html" rel="prev">
 <link href="./images/LogoDavidAlberto.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S1_01_codigo_conducta.html">Módulo 1: Instalación de herramientas y obtención de secuencias</a></li><li class="breadcrumb-item"><a href="./S1_01_codigo_conducta.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Código de Conducta</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_02_trimal.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Recorte de alineamientos</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -153,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S1_01_codigo_conducta.html" class="sidebar-item-text sidebar-link active">
+  <a href="./S1_01_codigo_conducta.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Código de Conducta</span></span></a>
   </div>
 </li>
@@ -223,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S3_02_trimal.html" class="sidebar-item-text sidebar-link">
+  <a href="./S3_02_trimal.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Recorte de alineamientos</span></span></a>
   </div>
 </li>
@@ -252,15 +286,24 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#herramienta-trimal" id="toc-herramienta-trimal" class="nav-link active" data-scroll-target="#herramienta-trimal"><span class="header-section-number">9.1</span> 🔧 Herramienta: <code>trimal</code></a></li>
+  <li><a href="#recorte-automático" id="toc-recorte-automático" class="nav-link" data-scroll-target="#recorte-automático"><span class="header-section-number">9.2</span> ▶️ Recorte automático</a></li>
+  <li><a href="#qué-hace--automated1" id="toc-qué-hace--automated1" class="nav-link" data-scroll-target="#qué-hace--automated1"><span class="header-section-number">9.3</span> 🔎 ¿Qué hace <code>-automated1</code>?</a></li>
+  <li><a href="#recomendaciones" id="toc-recomendaciones" class="nav-link" data-scroll-target="#recomendaciones"><span class="header-section-number">9.4</span> 📌 Recomendaciones</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S1_01_codigo_conducta.html">Módulo 1: Instalación de herramientas y obtención de secuencias</a></li><li class="breadcrumb-item"><a href="./S1_01_codigo_conducta.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Código de Conducta</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_02_trimal.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Recorte de alineamientos</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Código de Conducta</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Recorte de alineamientos</span></h1>
 </div>
 
 
@@ -277,13 +320,42 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><embed src="conducta.pdf" class="quarto-figure quarto-figure-center" width="650" height="800"></p>
-</figure>
+<p>En este módulo aprenderás a <strong>recortar alineamientos múltiples</strong> para eliminar regiones poco informativas o mal alineadas, lo cual es clave para análisis filogenéticos robustos.</p>
+<section id="herramienta-trimal" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="herramienta-trimal"><span class="header-section-number">9.1</span> 🔧 Herramienta: <code>trimal</code></h2>
+<p><a href="http://trimal.cgenomics.org/"><code>trimAl</code></a> es una herramienta eficiente para automatizar el filtrado de alineamientos eliminando columnas con demasiados gaps o baja conservación.</p>
+</section>
+<section id="recorte-automático" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="recorte-automático"><span class="header-section-number">9.2</span> ▶️ Recorte automático</h2>
+<p>Utilizamos la opción <code>-automated1</code>, que aplica criterios estándares automáticos para identificar y eliminar posiciones no confiables.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Recorte de proteínas alineadas con MAFFT</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">trimal</span> <span class="at">-in</span> all_protein_mafft.aln <span class="at">-out</span> all_protein_trimmed.aln <span class="at">-automated1</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Recorte de CDS alineados con MAFFT</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">trimal</span> <span class="at">-in</span> all_cds_mafft.aln <span class="at">-out</span> all_cds_trimmed.aln <span class="at">-automated1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="qué-hace--automated1" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="qué-hace--automated1"><span class="header-section-number">9.3</span> 🔎 ¿Qué hace <code>-automated1</code>?</h2>
+<p>Esta opción evalúa varias métricas como:</p>
+<ul>
+<li>Proporción de gaps por columna</li>
+<li>Nivel de conservación</li>
+<li>Longitud del alineamiento</li>
+</ul>
+<p>Y elimina automáticamente las regiones que podrían introducir ruido.</p>
+</section>
+<section id="recomendaciones" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="recomendaciones"><span class="header-section-number">9.4</span> 📌 Recomendaciones</h2>
+<ul>
+<li>Visualiza el resultado antes y después con <strong>Jalview</strong> para entender qué fue eliminado.</li>
+<li>Si tu análisis es sensible (como construcción de árboles), siempre recorta el alineamiento.</li>
+<li>Para mayor control, <code>trimal</code> permite opciones como <code>-gt</code> (gap threshold) o <code>-cons</code> (conservación mínima), útiles en contextos específicos.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -849,13 +921,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Información general">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Información general</span>
+      <a href="./S3_01_alineamiento_global.html" class="pagination-link" aria-label="Alineamiento de secuencias">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Alineamiento de secuencias</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./S1_02_instalacion_herramientas.html" class="pagination-link" aria-label="Instalación de herramientas">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instalación de herramientas</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./S3_03_arboles.html" class="pagination-link" aria-label="Construcción de árboles filogenéticos">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

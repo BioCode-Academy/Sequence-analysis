@@ -240,6 +240,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Módulo 3: Alineamiento múltiple y análisis filogenético</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_01_alineamiento_global.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Alineamiento de secuencias</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_02_trimal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Recorte de alineamientos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_03_arboles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_04_visualizacion_arboles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
@@ -256,9 +291,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#crear-bases-de-datos-locales" id="toc-crear-bases-de-datos-locales" class="nav-link active" data-scroll-target="#crear-bases-de-datos-locales"><span class="header-section-number">6.1</span> ⚙️ Crear bases de datos locales</a></li>
-  <li><a href="#ejecutar-búsquedas-blast" id="toc-ejecutar-búsquedas-blast" class="nav-link" data-scroll-target="#ejecutar-búsquedas-blast"><span class="header-section-number">6.2</span> 🚀 Ejecutar búsquedas BLAST</a></li>
-  <li><a href="#recuperar-secuencias" id="toc-recuperar-secuencias" class="nav-link" data-scroll-target="#recuperar-secuencias"><span class="header-section-number">6.3</span> 🔎 Recuperar secuencias</a></li>
+  <li><a href="#creación-de-bases-de-datos-locales" id="toc-creación-de-bases-de-datos-locales" class="nav-link active" data-scroll-target="#creación-de-bases-de-datos-locales"><span class="header-section-number">6.1</span> Creación de bases de datos locales</a></li>
+  <li><a href="#ejecución-de-búsquedas-blast" id="toc-ejecución-de-búsquedas-blast" class="nav-link" data-scroll-target="#ejecución-de-búsquedas-blast"><span class="header-section-number">6.2</span> Ejecución de búsquedas BLAST</a>
+  <ul>
+  <li><a href="#explicación-de-parámetros-comunes" id="toc-explicación-de-parámetros-comunes" class="nav-link" data-scroll-target="#explicación-de-parámetros-comunes"><span class="header-section-number">6.2.1</span> Explicación de parámetros comunes</a></li>
+  </ul></li>
+  <li><a href="#recuperacion-de-secuencias-hits" id="toc-recuperacion-de-secuencias-hits" class="nav-link" data-scroll-target="#recuperacion-de-secuencias-hits"><span class="header-section-number">6.3</span> Recuperacion de secuencias hits</a></li>
+  <li><a href="#ejemplos-de-formatos-y-campos-de-salida" id="toc-ejemplos-de-formatos-y-campos-de-salida" class="nav-link" data-scroll-target="#ejemplos-de-formatos-y-campos-de-salida"><span class="header-section-number">6.4</span> Ejemplos de formatos y campos de salida</a></li>
+  <li><a href="#recomendaciones-y-buenas-prácticas" id="toc-recomendaciones-y-buenas-prácticas" class="nav-link" data-scroll-target="#recomendaciones-y-buenas-prácticas"><span class="header-section-number">6.5</span> Recomendaciones y buenas prácticas</a></li>
   </ul>
 </nav>
     </div>
@@ -284,32 +324,225 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="crear-bases-de-datos-locales" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="crear-bases-de-datos-locales"><span class="header-section-number">6.1</span> ⚙️ Crear bases de datos locales</h2>
+<p>En este módulo aprenderemos a ejecutar BLAST de forma local desde la terminal. Utilizar BLAST local es útil cuando se trabaja con bases de datos personalizadas, grandes volúmenes de secuencias o cuando se requiere automatizar búsquedas en scripts. Cubriremos cómo crear bases de datos locales, ejecutar distintos tipos de búsquedas BLAST y recuperar las secuencias obtenidas para análisis posteriores.</p>
+<section id="creación-de-bases-de-datos-locales" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="creación-de-bases-de-datos-locales"><span class="header-section-number">6.1</span> Creación de bases de datos locales</h2>
+<p>Para poder buscar de forma local, primero debemos convertir nuestros archivos FASTA en bases de datos con <code>makeblastdb</code>, parte del paquete <strong>NCBI BLAST+</strong>. A continuación se muestran ejemplos de cómo crear:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Tipo de base de datos</strong></th>
+<th><strong>Comando</strong></th>
+<th><strong>Descripción</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Proteína</td>
+<td><code>makeblastdb -in &lt;archivo_proteínas&gt;.fa -dbtype prot -out &lt;nombre_db&gt;</code></td>
+<td>Crea una base de datos de secuencias de proteína.</td>
+</tr>
+<tr class="even">
+<td>Núcleo (CDS/ADN)</td>
+<td><code>makeblastdb -in &lt;archivo_nucleótidos&gt;.fa -dbtype nucl -out &lt;nombre_db&gt;</code></td>
+<td>Crea una base de datos de secuencias de nucleótidos (genes, CDS, genomas).</td>
+</tr>
+</tbody>
+</table>
+<p>A modo de ejemplo, supongamos que tenemos dos archivos FASTA de <em>Trichoderma atroviride</em>:</p>
+<ul>
+<li><code>Tatroviride_proteins.fa</code> (proteínas predichas)</li>
+<li><code>Tatroviride_cds.fa</code> (secuencias codificantes)</li>
+</ul>
+<p>Los comandos serían:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Proteoma de Trichoderma atroviride</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">makeblastdb</span> <span class="at">-in</span> Tatroviride_proteins.fa <span class="at">-dbtype</span> prot <span class="at">-out</span> tatro_protein</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># CDS (secuencias codificantes)</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">makeblastdb</span> <span class="at">-in</span> Tatroviride_cds.fa <span class="at">-dbtype</span> nucl <span class="at">-out</span> tatro_cds</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Crear base de datos de proteínas</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">makeblastdb</span> <span class="at">-in</span> Tatroviride_proteins.fa <span class="at">-dbtype</span> prot <span class="at">-out</span> tatro_protein <span class="dt">\</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">-title</span> <span class="st">"Tatroviride Proteínas"</span> <span class="dt">\</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">-hash_index</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Crear base de datos de nucleótidos (CDS)</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">makeblastdb</span> <span class="at">-in</span> Tatroviride_cds.fa <span class="at">-dbtype</span> nucl <span class="at">-out</span> tatro_cds <span class="dt">\</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">-title</span> <span class="st">"Tatroviride CDS"</span> <span class="dt">\</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">-parse_seqids</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p><strong>Parámetros clave de <code>makeblastdb</code>:</strong></p>
+<ul>
+<li><strong><code>-in</code>:</strong> ruta al archivo FASTA con las secuencias.</li>
+<li><strong><code>-dbtype</code>:</strong> tipo de secuencia, prot para proteínas o nucl para nucleótidos.</li>
+<li><strong><code>-out</code>:</strong> prefijo del nombre de la base de datos que se generará.</li>
+<li><strong><code>-title</code>:</strong> (opcional) nombre descriptivo de la base de datos.</li>
+<li><strong><code>-hash_index</code>:</strong> acelera búsquedas en bases de datos de proteínas grandes.</li>
+<li><strong><code>-parse_seqids</code>:</strong> necesario si deseamos extraer secuencias por identificador (recomendado).</li>
+</ul>
 </section>
-<section id="ejecutar-búsquedas-blast" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="ejecutar-búsquedas-blast"><span class="header-section-number">6.2</span> 🚀 Ejecutar búsquedas BLAST</h2>
+<section id="ejecución-de-búsquedas-blast" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="ejecución-de-búsquedas-blast"><span class="header-section-number">6.2</span> Ejecución de búsquedas BLAST</h2>
+<p>Una vez creadas las bases de datos locales, podemos usar los distintos programas BLAST para realizar comparaciones. A continuación se muestran ejemplos de búsquedas contra las bases de datos de T. atroviride.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Programa BLAST</strong></th>
+<th><strong>Descripción</strong></th>
+<th><strong>Ejemplo de comando</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>blastp</code></td>
+<td>Busca tu proteína de interés contra una base de datos de proteínas.</td>
+<td><code>blastp -query P06780.fasta -db tatro_protein -outfmt 6 -out blastp_Tatro.out -num_alignments 5</code></td>
+</tr>
+<tr class="even">
+<td><code>tblastn</code></td>
+<td>Busca tu proteína contra una base de datos de nucleótidos traducidos.</td>
+<td><code>tblastn -query P06780.fasta -db tatro_cds -outfmt 6 -out tblastn_Tatro.out -num_alignments 5</code></td>
+</tr>
+<tr class="odd">
+<td><code>blastn</code></td>
+<td>Compara una secuencia de ADN contra una base de datos de ADN (nucl).</td>
+<td><code>blastn -query secuencia_nuc.fa -db tatro_cds -outfmt 6 -out blastn_Tatro.out -perc_identity 90 -max_hsps 1</code></td>
+</tr>
+<tr class="even">
+<td><code>blastx</code></td>
+<td>Traduce tu secuencia de ADN en seis cuadros y busca contra proteínas.</td>
+<td><code>blastx -query secuencia_nuc.fa -db tatro_protein -outfmt 6 -out blastx_Tatro.out -evalue 1e-5 -max_target_seqs 10</code></td>
+</tr>
+<tr class="odd">
+<td><code>tblastx</code></td>
+<td>Traduce ambas secuencias (consulta y BD) y realiza la búsqueda de proteínas.</td>
+<td><code>tblastx -query secuencia_nuc.fa -db tatro_cds -outfmt 6 -out tblastx_Tatro.out -evalue 1e-10 -num_threads 4</code></td>
+</tr>
+</tbody>
+</table>
+<section id="explicación-de-parámetros-comunes" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="explicación-de-parámetros-comunes"><span class="header-section-number">6.2.1</span> Explicación de parámetros comunes</h3>
+<ul>
+<li><strong><code>-query &lt;archivo&gt;.fasta</code>:</strong> Archivo FASTA con la secuencia de consulta.</li>
+<li><strong><code>-db &lt;nombre_db&gt;</code>:</strong> Prefijo de la base de datos generada con <code>makeblastdb</code>.</li>
+<li><strong><code>-outfmt 6</code>:</strong> Formato de salida tabular (campos: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, e-value, bit score). Ideal para procesamiento con scripts.</li>
+<li><strong><code>-out &lt;salida&gt;.out</code>:</strong> Nombre del archivo donde se guardará el resultado.</li>
+<li><strong><code>-num_alignments</code> o <code>-max_target_seqs</code>:</strong> Número máximo de alineamientos a reportar (5, 10, 100, etc.).</li>
+<li><strong><code>-evalue &lt;valor&gt;</code>:</strong> Umbral de valor E para definir cuán significativas deben ser las coincidencias.</li>
+<li><strong><code>-perc_identity &lt;valor&gt;</code>:</strong> Porcentaje mínimo de identidad para filtrar hits (solo en algunos programas como <code>blastn</code>).</li>
+<li><strong><code>-num_threads &lt;n&gt;</code>:</strong> Número de hilos a emplear para acelerar la búsqueda (útil en servidores o multicore).</li>
+</ul>
+</section>
+</section>
+<section id="recuperacion-de-secuencias-hits" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="recuperacion-de-secuencias-hits"><span class="header-section-number">6.3</span> Recuperacion de secuencias hits</h2>
+<p>Por lo general, después de obtener los archivos de salida en formato tabular (<code>-outfmt 6</code>), querrás recuperar las secuencias originales (o extendidas) de los hits para hacer análisis posteriores (alineamientos múltiples, modelado, anotaciones, etc.). Para ello, utilizaremos la herramienta <strong>SeqKit</strong>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Contra proteína</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">blastp</span> <span class="at">-query</span> P06780.fasta <span class="at">-db</span> tatro_protein <span class="at">-outfmt</span> 6 <span class="at">-out</span> blastp_Tatro.out <span class="at">-num_alignments</span> 5</span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Extraer los IDs de la columna 2 (subject id) del archivo blastp_Tatro.out</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cut</span> <span class="at">-f2</span> blastp_Tatro.out <span class="op">&gt;</span> hits_blastp_ids.txt</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Contra CDS traducido</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">tblastn</span> <span class="at">-query</span> P06780.fasta <span class="at">-db</span> tatro_cds <span class="at">-outfmt</span> 6 <span class="at">-out</span> tblastn_Tatro.out <span class="at">-num_alignments</span> 5</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Recuperar las secuencias de proteínas correspondientes</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">seqkit</span> grep <span class="at">-f</span> hits_blastp_ids.txt Tatroviride_proteins.fa <span class="op">&gt;</span> blastp_Tatro_hits.fasta</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Para tblastn, extraer IDs de CDS (columna 2) y recuperar secuencias de nucleótidos</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">cut</span> <span class="at">-f2</span> tblastn_Tatro.out <span class="op">&gt;</span> hits_tblastn_ids.txt</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="ex">seqkit</span> grep <span class="at">-f</span> hits_tblastn_ids.txt Tatroviride_cds.fa <span class="op">&gt;</span> tblastn_Tatro_hits.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p><strong>Pasos detallados:</strong></p>
+<ol type="1">
+<li>Con <code>cut -f2 &lt;archivo.out&gt;</code> extraemos la segunda columna de la salida tabular, que corresponde al identificador de la secuencia objetivo (subject id).</li>
+<li>Con <code>seqkit grep -f &lt;lista_ids&gt; &lt;archivo_original.fa&gt;</code> buscamos en el FASTA original las entradas cuyo identificador coincida con los solicitados.</li>
+<li>Redirigimos la salida a un nuevo archivo FASTA que contendrá únicamente las secuencias obtenidas.</li>
+</ol>
 </section>
-<section id="recuperar-secuencias" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="recuperar-secuencias"><span class="header-section-number">6.3</span> 🔎 Recuperar secuencias</h2>
+<section id="ejemplos-de-formatos-y-campos-de-salida" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="ejemplos-de-formatos-y-campos-de-salida"><span class="header-section-number">6.4</span> Ejemplos de formatos y campos de salida</h2>
+<p>Cuando usas <code>-outfmt 6</code>, obtienes un archivo de texto con once (u doce) columnas, sin encabezados. Suelen aparecer así:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">seqkit</span> grep <span class="at">-f</span> <span class="op">&lt;(</span><span class="fu">cut</span> <span class="at">-f2</span> blastp_Tatro.out<span class="op">)</span> Tatroviride_proteins.fa <span class="op">&gt;</span> blastp_Tatro.fasta</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">seqkit</span> grep <span class="at">-f</span> <span class="op">&lt;(</span><span class="fu">cut</span> <span class="at">-f2</span> tblastn_Tatro.out<span class="op">)</span> Tatroviride_cds.fa <span class="op">&gt;</span> tblastn_Tatro.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">query1</span>    subjectA    98.5    350  2  0  1  350  10  359  1e-120  450</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">query1</span>    subjectB    90.0    300  30 2  5  304  15  314  2e-80   320</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p><strong>Descripción de cada campo (por defecto en <code>-outfmt 6</code>):</strong></p>
+<ol type="1">
+<li>Query ID</li>
+<li>Subject ID</li>
+<li>% Identity</li>
+<li>Longitud del alineamiento (alignment length)</li>
+<li>Número de mismatches</li>
+<li>Aperturas de gap (gap opens)</li>
+<li>Inicio en la consulta (qstart)</li>
+<li>Fin en la consulta (qend)</li>
+<li>Inicio en el sujeto (sstart)</li>
+<li>Fin en el sujeto (send)</li>
+<li>Valor E (E-value)</li>
+<li>Puntuación en bits (bit score)</li>
+</ol>
+</section>
+<section id="recomendaciones-y-buenas-prácticas" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="recomendaciones-y-buenas-prácticas"><span class="header-section-number">6.5</span> Recomendaciones y buenas prácticas</h2>
+<ol type="1">
+<li><p><strong>Versionado y entornos reproducibles:</strong></p>
+<ul>
+<li>Anota la versión de BLAST+ que utilizas (<code>blastp -version</code>).</li>
+<li>Si trabajas en distintos equipos, instala BLAST+ mediante Conda o Docker para garantizar consistencia.</li>
+</ul></li>
+<li><p><strong>Tamaño de la base de datos y uso de recursos:</strong></p>
+<ul>
+<li>Bases de datos muy grandes pueden requerir más memoria RAM. Verifica que dispones de suficiente espacio en disco (los índices pueden ocupar varias decenas de GB).</li>
+<li>Utiliza <code>-num_threads</code> para acelerar búsquedas en multicore, pero mantén un número razonable para no saturar la máquina.</li>
+</ul></li>
+<li><p><strong>Automatización de tareas repetitivas:</strong></p>
+<ul>
+<li>Para múltiples consultas, crea un script en bash o Python que recorra un directorio con archivos FASTA de consulta.</li>
+<li>Dentro del script, ejecuta BLAST, extrae IDs y recupera secuencias de forma automática.</li>
+</ul></li>
+</ol>
+<p>Ejemplo de script básico en bash (<code>run_all_blast.sh</code>):</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Directorios</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="va">QUERY_DIR</span><span class="op">=</span><span class="st">"queries/"</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="va">DB_PROT</span><span class="op">=</span><span class="st">"blast_db/tatro_protein"</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="va">DB_CDS</span><span class="op">=</span><span class="st">"blast_db/tatro_cds"</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="va">OUT_DIR</span><span class="op">=</span><span class="st">"blast_results/"</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/blastp"</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/tblastn"</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/ids_blastp"</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/ids_tblastn"</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/hits_blastp"</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/hits_tblastn"</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> qfile <span class="kw">in</span> <span class="st">"</span><span class="va">${QUERY_DIR}</span><span class="st">"</span><span class="pp">*</span>.fasta<span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="va">base</span><span class="op">=</span><span class="va">$(</span><span class="fu">basename</span> <span class="st">"</span><span class="va">${qfile}</span><span class="st">"</span> .fasta<span class="va">)</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># blastp</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="ex">blastp</span> <span class="at">-query</span> <span class="st">"</span><span class="va">${qfile}</span><span class="st">"</span> <span class="at">-db</span> <span class="st">"</span><span class="va">${DB_PROT}</span><span class="st">"</span> <span class="at">-outfmt</span> 6 <span class="at">-max_target_seqs</span> 5 <span class="dt">\</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">-num_threads</span> 4 <span class="at">-out</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/blastp/</span><span class="va">${base}</span><span class="st">_blastp.out"</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cut</span> <span class="at">-f2</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/blastp/</span><span class="va">${base}</span><span class="st">_blastp.out"</span> <span class="op">&gt;</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/ids_blastp/</span><span class="va">${base}</span><span class="st">_ids.txt"</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="ex">seqkit</span> grep <span class="at">-f</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/ids_blastp/</span><span class="va">${base}</span><span class="st">_ids.txt"</span> Tatroviride_proteins.fa <span class="op">&gt;</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/hits_blastp/</span><span class="va">${base}</span><span class="st">_hits.fasta"</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># tblastn</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    <span class="ex">tblastn</span> <span class="at">-query</span> <span class="st">"</span><span class="va">${qfile}</span><span class="st">"</span> <span class="at">-db</span> <span class="st">"</span><span class="va">${DB_CDS}</span><span class="st">"</span> <span class="at">-outfmt</span> 6 <span class="at">-max_target_seqs</span> 5 <span class="dt">\</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>        <span class="at">-num_threads</span> 4 <span class="at">-out</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/tblastn/</span><span class="va">${base}</span><span class="st">_tblastn.out"</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cut</span> <span class="at">-f2</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/tblastn/</span><span class="va">${base}</span><span class="st">_tblastn.out"</span> <span class="op">&gt;</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/ids_tblastn/</span><span class="va">${base}</span><span class="st">_ids.txt"</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    <span class="ex">seqkit</span> grep <span class="at">-f</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/ids_tblastn/</span><span class="va">${base}</span><span class="st">_ids.txt"</span> Tatroviride_cds.fa <span class="op">&gt;</span> <span class="st">"</span><span class="va">${OUT_DIR}</span><span class="st">/hits_tblastn/</span><span class="va">${base}</span><span class="st">_hits.fasta"</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="4" type="1">
+<li><p><strong>Documentación y metadatos:</strong></p>
+<ul>
+<li>Mantén un archivo <code>README.md</code> en tu proyecto donde describas cada paso: cómo crear las bases de datos, qué parámetros usaste en BLAST, versiones de herramientas y organización de carpetas.</li>
+<li>Esto facilitará la colaboración y reproducibilidad a largo plazo.</li>
+</ul></li>
+<li><p><strong>Interpretación de resultados y filtrado post-BLAST:</strong></p>
+<ul>
+<li>Después de recuperar las secuencias, realiza alineamientos múltiples (con MAFFT o Clustal Omega) para verificar la calidad de las coincidencias.</li>
+<li>Aplica filtros según valor E, % de identidad y cobertura para quedarte con hits de alta confianza antes de análisis posteriores (como árboles filogenéticos o modelado estructural).</li>
+</ul></li>
+</ol>
 
 
 </section>

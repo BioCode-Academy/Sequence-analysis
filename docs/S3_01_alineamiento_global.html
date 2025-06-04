@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; Código de Conducta – Análisis de Secuencias</title>
+<title>8&nbsp; Alineamiento de secuencias – Análisis de Secuencias</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./S1_02_instalacion_herramientas.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./S3_02_trimal.html" rel="next">
+<link href="./S2_04_filtrado_resultados.html" rel="prev">
 <link href="./images/LogoDavidAlberto.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S1_01_codigo_conducta.html">Módulo 1: Instalación de herramientas y obtención de secuencias</a></li><li class="breadcrumb-item"><a href="./S1_01_codigo_conducta.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Código de Conducta</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Alineamiento de secuencias</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -153,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S1_01_codigo_conducta.html" class="sidebar-item-text sidebar-link active">
+  <a href="./S1_01_codigo_conducta.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Código de Conducta</span></span></a>
   </div>
 </li>
@@ -217,7 +251,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S3_01_alineamiento_global.html" class="sidebar-item-text sidebar-link">
+  <a href="./S3_01_alineamiento_global.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Alineamiento de secuencias</span></span></a>
   </div>
 </li>
@@ -252,15 +286,27 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#herramientas-de-alineamiento" id="toc-herramientas-de-alineamiento" class="nav-link active" data-scroll-target="#herramientas-de-alineamiento"><span class="header-section-number">8.1</span> 🔧 Herramientas de alineamiento</a>
+  <ul>
+  <li><a href="#comparación-de-herramientas-de-alineamiento-múltiple" id="toc-comparación-de-herramientas-de-alineamiento-múltiple" class="nav-link" data-scroll-target="#comparación-de-herramientas-de-alineamiento-múltiple"><span class="header-section-number">8.1.1</span> 🧰 Comparación de herramientas de alineamiento múltiple</a></li>
+  <li><a href="#herramientas-de-prueba" id="toc-herramientas-de-prueba" class="nav-link" data-scroll-target="#herramientas-de-prueba"><span class="header-section-number">8.1.2</span> Herramientas de prueba</a></li>
+  </ul></li>
+  <li><a href="#ejecutar-alineamientos" id="toc-ejecutar-alineamientos" class="nav-link" data-scroll-target="#ejecutar-alineamientos"><span class="header-section-number">8.2</span> ▶️ Ejecutar alineamientos</a></li>
+  <li><a href="#comparación-y-calidad-del-alineamiento" id="toc-comparación-y-calidad-del-alineamiento" class="nav-link" data-scroll-target="#comparación-y-calidad-del-alineamiento"><span class="header-section-number">8.3</span> 🧪 Comparación y calidad del alineamiento</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S1_01_codigo_conducta.html">Módulo 1: Instalación de herramientas y obtención de secuencias</a></li><li class="breadcrumb-item"><a href="./S1_01_codigo_conducta.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Código de Conducta</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Alineamiento de secuencias</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Código de Conducta</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Alineamiento de secuencias</span></h1>
 </div>
 
 
@@ -277,13 +323,135 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><embed src="conducta.pdf" class="quarto-figure quarto-figure-center" width="650" height="800"></p>
-</figure>
+<p>En este módulo realizaremos alineamientos múltiples de secuencias utilizando diferentes herramientas. Evaluaremos los resultados y discutiremos su calidad.</p>
+<section id="herramientas-de-alineamiento" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="herramientas-de-alineamiento"><span class="header-section-number">8.1</span> 🔧 Herramientas de alineamiento</h2>
+<section id="comparación-de-herramientas-de-alineamiento-múltiple" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="comparación-de-herramientas-de-alineamiento-múltiple"><span class="header-section-number">8.1.1</span> 🧰 Comparación de herramientas de alineamiento múltiple</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Herramienta</th>
+<th>Usos principales</th>
+<th>Tamaño recomendado de secuencias</th>
+<th>Ventajas</th>
+<th>Desventajas</th>
+<th>Cuándo se recomienda usar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>MAFFT</strong></td>
+<td>Proteínas, ADN/ARN; grandes datasets</td>
+<td>Pequeño a muy grande</td>
+<td>Rápido, preciso, buena gestión de gaps; varios algoritmos (FFT-NS, L-INS-i, etc.)</td>
+<td>Puede requerir más memoria con algoritmos más precisos</td>
+<td>Recomendado para la mayoría de alineamientos, especialmente si se busca equilibrio entre velocidad y calidad</td>
+</tr>
+<tr class="even">
+<td><strong>Clustal Omega</strong></td>
+<td>Proteínas; alineamientos generales</td>
+<td>Pequeño a grande</td>
+<td>Buen rendimiento; interfaz web amigable; genera árboles guía</td>
+<td>Menos preciso que MAFFT en regiones con alta variabilidad</td>
+<td>Ideal para análisis rápidos o integrados en flujos automatizados</td>
+</tr>
+<tr class="odd">
+<td><strong>MUSCLE</strong></td>
+<td>Proteínas, ADN; evolución y estructura</td>
+<td>Pequeño a mediano</td>
+<td>Precisión alta; buena opción para árboles filogenéticos</td>
+<td>Más lento que MAFFT y Clustal con muchos datos</td>
+<td>Recomendado cuando se busca precisión en datasets moderados o para árboles confiables</td>
+</tr>
+<tr class="even">
+<td><strong>T-Coffee</strong></td>
+<td>Alineamiento estructural o guiado</td>
+<td>Pequeño</td>
+<td>Integra múltiples fuentes (estructura, perfiles, etc.); muy preciso</td>
+<td>Muy lento; no apto para grandes datasets</td>
+<td>Para alineamientos donde se desea integrar información estructural o validar calidad</td>
+</tr>
+<tr class="odd">
+<td><strong>ProbCons</strong></td>
+<td>Alineamiento de proteínas con alta precisión</td>
+<td>Muy pequeño</td>
+<td>Basado en modelos probabilísticos; muy preciso</td>
+<td>Extremadamente lento, descontinuado</td>
+<td>Casos de validación o comparación con otros alineamientos</td>
+</tr>
+<tr class="even">
+<td><strong>Kalign</strong></td>
+<td>ADN, ARN, proteínas</td>
+<td>Mediano a grande</td>
+<td>Muy rápido; buena precisión general</td>
+<td>Menos popular, opciones limitadas</td>
+<td>Análisis preliminares o en pipelines donde la velocidad es crítica</td>
+</tr>
+<tr class="odd">
+<td><strong>Dialign</strong></td>
+<td>Alineamiento por regiones conservadas</td>
+<td>Pequeño a mediano</td>
+<td>Alinea sin penalizar gaps globales; útil con secuencias muy divergentes</td>
+<td>Menos efectivo en alineamientos globales</td>
+<td>Cuando las secuencias son muy divergentes y los métodos estándar fallan</td>
+</tr>
+</tbody>
+</table>
+<p><strong>🔎 Recomendaciones prácticas</strong></p>
+<ul>
+<li>Si tienes <strong>muchas secuencias (&gt;100)</strong> o <strong>largas</strong>, comienza con <strong>MAFFT (FFT-NS-2)</strong>.</li>
+<li>Para resultados más precisos y si el número de secuencias es <strong>mediano (20-50)</strong>, puedes usar <strong>MUSCLE</strong> o <strong>MAFFT L-INS-i</strong>.</li>
+<li>Usa <strong>Clustal Omega</strong> si quieres un flujo rápido y simple o si estás integrando con herramientas como Jalview, MEGA o Galaxy.</li>
+<li>Para publicaciones o validaciones, considera correr también con <strong>T-Coffee</strong> para comparar resultados.</li>
+</ul>
+</section>
+<section id="herramientas-de-prueba" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="herramientas-de-prueba"><span class="header-section-number">8.1.2</span> Herramientas de prueba</h3>
+<p>Utilizaremos tres herramientas ampliamente utilizadas:</p>
+<ul>
+<li><a href="https://mafft.cbrc.jp/alignment/software/"><strong>MAFFT</strong></a></li>
+<li><a href="https://www.ebi.ac.uk/Tools/msa/clustalo/"><strong>Clustal Omega</strong></a></li>
+<li><a href="https://www.drive5.com/muscle/"><strong>MUSCLE</strong></a></li>
+</ul>
+</section>
+</section>
+<section id="ejecutar-alineamientos" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="ejecutar-alineamientos"><span class="header-section-number">8.2</span> ▶️ Ejecutar alineamientos</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Con MAFFT</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">mafft</span> all_protein.fasta <span class="op">&gt;</span> all_protein_mafft.aln</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">mafft</span> all_cds.fasta <span class="op">&gt;</span> all_cds_mafft.aln</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Con Clustal Omega</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">clustalo</span> <span class="at">-i</span> all_protein.fasta <span class="at">-o</span> all_protein_clustalo.aln</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">clustalo</span> <span class="at">-i</span> all_cds.fasta <span class="at">-o</span> all_cds_clustalo.aln</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Con MUSCLE</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">muscle</span> <span class="at">-in</span> all_protein.fasta <span class="at">-out</span> all_protein_muscle.aln</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">muscle</span> <span class="at">-in</span> all_cds.fasta <span class="at">-out</span> all_cds_muscle.aln</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="comparación-y-calidad-del-alineamiento" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="comparación-y-calidad-del-alineamiento"><span class="header-section-number">8.3</span> 🧪 Comparación y calidad del alineamiento</h2>
+<p>A la hora de evaluar los alineamientos, ten en cuenta:</p>
+<ul>
+<li>Consistencia en regiones conservadas.</li>
+<li>Gaps excesivos o inconsistentes pueden indicar errores.</li>
+<li>MAFFT suele ser rápido y preciso; MUSCLE y Clustal Omega pueden producir resultados ligeramente distintos.</li>
+<li>Se recomienda visualizar los alineamientos con <a href="https://www.jalview.org/">Jalview</a> para inspección manual.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -849,13 +1017,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Información general">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Información general</span>
+      <a href="./S2_04_filtrado_resultados.html" class="pagination-link" aria-label="Filtrado y organización de resultados">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Filtrado y organización de resultados</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./S1_02_instalacion_herramientas.html" class="pagination-link" aria-label="Instalación de herramientas">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instalación de herramientas</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./S3_02_trimal.html" class="pagination-link" aria-label="Recorte de alineamientos">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Recorte de alineamientos</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

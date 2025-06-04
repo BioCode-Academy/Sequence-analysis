@@ -240,6 +240,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Módulo 3: Alineamiento múltiple y análisis filogenético</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_01_alineamiento_global.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Alineamiento de secuencias</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_02_trimal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Recorte de alineamientos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_03_arboles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_04_visualizacion_arboles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
@@ -256,12 +291,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#blast-basic-local-alignment-search-tool" id="toc-blast-basic-local-alignment-search-tool" class="nav-link active" data-scroll-target="#blast-basic-local-alignment-search-tool"><span class="header-section-number">5.1</span> BLAST (Basic Local Alignment Search Tool)</a></li>
-  <li><a href="#pasos-prácticos" id="toc-pasos-prácticos" class="nav-link" data-scroll-target="#pasos-prácticos"><span class="header-section-number">5.2</span> Pasos prácticos</a>
+  <li><a href="#resumen-de-los-programas-blast" id="toc-resumen-de-los-programas-blast" class="nav-link active" data-scroll-target="#resumen-de-los-programas-blast"><span class="header-section-number">5.1</span> Resumen de los programas BLAST</a></li>
+  <li><a href="#parámetros-clave-e-interpretación-de-resultados" id="toc-parámetros-clave-e-interpretación-de-resultados" class="nav-link" data-scroll-target="#parámetros-clave-e-interpretación-de-resultados"><span class="header-section-number">5.2</span> Parámetros clave e interpretación de resultados</a></li>
+  <li><a href="#pasos-prácticos" id="toc-pasos-prácticos" class="nav-link" data-scroll-target="#pasos-prácticos"><span class="header-section-number">5.3</span> Pasos prácticos</a>
   <ul>
-  <li><a href="#blast-en-uniprot" id="toc-blast-en-uniprot" class="nav-link" data-scroll-target="#blast-en-uniprot"><span class="header-section-number">5.2.1</span> 🔹 BLAST en Uniprot</a></li>
-  <li><a href="#blast-en-ncbi" id="toc-blast-en-ncbi" class="nav-link" data-scroll-target="#blast-en-ncbi"><span class="header-section-number">5.2.2</span> 🔹 BLAST en NCBI</a></li>
+  <li><a href="#blast-en-uniprot" id="toc-blast-en-uniprot" class="nav-link" data-scroll-target="#blast-en-uniprot"><span class="header-section-number">5.3.1</span> 🔹 BLAST en Uniprot</a></li>
+  <li><a href="#blast-en-ncbi" id="toc-blast-en-ncbi" class="nav-link" data-scroll-target="#blast-en-ncbi"><span class="header-section-number">5.3.2</span> 🔹 BLAST en NCBI</a></li>
   </ul></li>
+  <li><a href="#recomendaciones-finales" id="toc-recomendaciones-finales" class="nav-link" data-scroll-target="#recomendaciones-finales"><span class="header-section-number">5.4</span> Recomendaciones finales</a></li>
   </ul>
 </nav>
     </div>
@@ -287,25 +324,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En este módulo exploraremos la herramienta BLAST en línea, considerando algunas limitantes.</p>
-<section id="blast-basic-local-alignment-search-tool" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="blast-basic-local-alignment-search-tool"><span class="header-section-number">5.1</span> BLAST (Basic Local Alignment Search Tool)</h2>
-<p>Esta herramienta permite comparar una secuencia contra una base de datos para encontrar similitudes.</p>
+<p>En este módulo exploraremos cómo utilizar las herramientas <strong>BLAST</strong> (<strong>Basic Local Alignment Search Tool</strong>) disponibles en línea en Uniprot y NCBI. Revisaremos los distintos programas BLAST, sus casos de uso más comunes, limitaciones y presentaremos ejemplos prácticos para obtener y organizar resultados.</p>
+<section id="resumen-de-los-programas-blast" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="resumen-de-los-programas-blast"><span class="header-section-number">5.1</span> Resumen de los programas BLAST</h2>
+<p>BLAST permite comparar una secuencia de consulta contra una base de datos para identificar regiones de similitud local. A continuación, se muestra un resumen de las variantes más utilizadas:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 35%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Tipo de BLAST</th>
-<th>Consulta (input)</th>
-<th>Base de datos (db)</th>
-<th>Traducción</th>
-<th>Uso típico</th>
+<th><strong>Programa BLAST</strong></th>
+<th><strong>Consulta (input)</strong></th>
+<th><strong>Base de datos (db)</strong></th>
+<th><strong>Traducción</strong></th>
+<th><strong>Uso típico</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -314,28 +351,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>ADN</td>
 <td>ADN</td>
 <td>No</td>
-<td>Comparar secuencias de nucleótidos (por ejemplo, genes)</td>
+<td>Comparar secuencias de nucleótidos (por ejemplo, genes o regiones génicas)</td>
 </tr>
 <tr class="even">
 <td><code>blastp</code></td>
 <td>Proteína</td>
 <td>Proteína</td>
 <td>No</td>
-<td>Buscar similitudes entre proteínas</td>
+<td>Buscar similitudes entre proteínas en una base de datos</td>
 </tr>
 <tr class="odd">
 <td><code>blastx</code></td>
 <td>ADN</td>
 <td>Proteína</td>
-<td>Sí (ADN → 6 proteínas)</td>
-<td>Buscar proteínas codificadas en una secuencia de ADN</td>
+<td>Sí (ADN → 6 cuadros de lectura)</td>
+<td>Identificar posibles proteínas codificadas por una secuencia de ADN</td>
 </tr>
 <tr class="even">
 <td><code>tblastn</code></td>
 <td>Proteína</td>
 <td>ADN</td>
 <td>Sí (DB → proteínas)</td>
-<td>Buscar regiones codificantes en genomas o transcriptomas</td>
+<td>Localizar regiones codificantes en ensamblajes genómicos o transcriptómicos</td>
 </tr>
 <tr class="odd">
 <td><code>tblastx</code></td>
@@ -346,33 +383,130 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
+<blockquote class="blockquote">
+<p><strong>Consejo:</strong> La elección del programa BLAST adecuado es crucial. Por ejemplo, si tienes una secuencia génica no anotada y deseas saber qué proteínas podría codificar, utiliza <code>blastx</code>. Si tienes una secuencia de proteína y quieres ubicar su origen en el genoma, emplea <code>tblastn</code>.</p>
+</blockquote>
 </section>
-<section id="pasos-prácticos" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="pasos-prácticos"><span class="header-section-number">5.2</span> Pasos prácticos</h2>
-<section id="blast-en-uniprot" class="level3" data-number="5.2.1">
-<h3 data-number="5.2.1" class="anchored" data-anchor-id="blast-en-uniprot"><span class="header-section-number">5.2.1</span> 🔹 BLAST en <a href="https://www.uniprot.org/blast/">Uniprot</a></h3>
+<section id="parámetros-clave-e-interpretación-de-resultados" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="parámetros-clave-e-interpretación-de-resultados"><span class="header-section-number">5.2</span> Parámetros clave e interpretación de resultados</h2>
+<p>Al ejecutar cualquier búsqueda BLAST en línea, encontrarás parámetros y campos de salida como los siguientes:</p>
+<ul>
+<li><strong>Valor E (E-value):</strong> Número esperado de coincidencias de similar calidad que podrían ocurrir por azar. Valores E bajos indican coincidencias más significativas.</li>
+<li><strong>Porcentaje de identidad (Percent Identity):</strong> Porcentaje de residuos idénticos entre la consulta y la secuencia objetivo en la región alineada.</li>
+<li><strong>Cobertura de la consulta (Query Coverage):</strong> Proporción de la secuencia de consulta que se alinea con la secuencia objetivo.</li>
+<li><strong>Puntuación en bits (Bit Score):</strong> Puntuación normalizada que permite comparar resultados entre distintas búsquedas; puntuaciones más altas indican alineamientos de mejor calidad.</li>
+<li><strong>Número máximo de secuencias objetivo (Max Target Sequences):</strong> Cantidad máxima de hits que se mostrarán (por ejemplo, 100, 500 o 1000).</li>
+<li><strong>Opciones de filtrado (Filter Options):</strong> Filtros de regiones de baja complejidad (por ejemplo, DUST para nucleótidos, SEG para proteínas) que reducen coincidencias espurias, aunque podrían enmascarar regiones biológicamente relevantes.</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Nota sobre limitaciones:</strong><br>
+- Los servidores BLAST en línea suelen imponer límites en la longitud de la secuencia (por ejemplo, 10 000 nt para <code>blastn</code>) y en el número de consultas diarias.<br>
+- Los resultados pueden no incluir entradas de base de datos muy recientes si el servidor no se actualizó recientemente. Siempre verifica el campo “Base de datos actualizada” o “Database last updated” en la página de resultados.</p>
+</blockquote>
+</section>
+<section id="pasos-prácticos" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="pasos-prácticos"><span class="header-section-number">5.3</span> Pasos prácticos</h2>
+<p>A continuación se describen ejemplos paso a paso para realizar búsquedas BLAST en Uniprot y NCBI. Veremos cómo enviar la secuencia, ajustar parámetros, interpretar los resultados y descargar los hits para análisis posteriores.</p>
+<section id="blast-en-uniprot" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="blast-en-uniprot"><span class="header-section-number">5.3.1</span> 🔹 BLAST en Uniprot</h3>
 <ol type="1">
-<li>Pega tu secuencia.</li>
-<li>Espera los resultados.</li>
-<li>Descarga los hits como archivo <code>.fasta</code>.</li>
+<li><p><strong>Acceder a la página de BLAST de Uniprot:</strong></p>
+<ul>
+<li>Ingresa a <a href="https://www.uniprot.org/blast/">Uniprot BLAST</a>.</li>
+</ul></li>
+<li><p><strong>Seleccionar el programa BLAST apropiado:</strong></p>
+<ul>
+<li>Selecciona “Protein BLAST” (<code>blastp</code>) si dispones de una secuencia de proteína.</li>
+<li>Si tienes una secuencia de nucleótidos y quieres buscar contra una base de datos de proteínas, escoge “BLASTX”.</li>
+</ul></li>
+<li><p><strong>Pegar la secuencia de consulta:</strong></p>
+<ul>
+<li>Copia y pega tu secuencia en formato FASTA en el cuadro de texto correspondiente.</li>
+</ul></li>
+<li><p><strong>Configurar parámetros adicionales (opcional):</strong></p>
+<ul>
+<li>Ajusta el número máximo de secuencias objetivo (Max Target Sequences).</li>
+<li>Aplica filtros de baja complejidad si lo consideras necesario.</li>
+<li>Selecciona la base de datos deseada (por defecto suele ser “UniProtKB/Swiss-Prot”).</li>
+</ul></li>
+<li><p><strong>Ejecutar la búsqueda y esperar resultados:</strong></p>
+<ul>
+<li>Haz clic en “Run BLAST” y espera a que se complete la búsqueda.</li>
+</ul></li>
+<li><p><strong>Revisar e interpretar la salida:</strong></p>
+<ul>
+<li>Examina la tabla de resultados, prestando atención a los valores E, porcentajes de identidad y cobertura.</li>
+<li>Selecciona los hits de interés.</li>
+</ul></li>
+<li><p><strong>Descargar los hits en formato FASTA:</strong></p>
+<ul>
+<li>En la sección de resultados, elige la opción “Download” &gt; “Hits (FASTA)” para guardar un archivo <code>.fasta</code> con las secuencias alineadas.</li>
+</ul></li>
 </ol>
+<p><strong>Renombramos los archivos descargados</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> ~/Downloads/uniprotkb_<span class="pp">*</span>.fasta uniprot_blast.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> ~/Downloads/uniprotkb_<span class="pp">*</span>.fasta uniprot_blastp.fasta</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> ~/Downloads/<span class="op">&lt;</span>table.tsv<span class="op">&gt;</span> uniprot_blastp.tsv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="blast-en-ncbi" class="level3" data-number="5.2.2">
-<h3 data-number="5.2.2" class="anchored" data-anchor-id="blast-en-ncbi"><span class="header-section-number">5.2.2</span> 🔹 BLAST en <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">NCBI</a></h3>
+<section id="blast-en-ncbi" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="blast-en-ncbi"><span class="header-section-number">5.3.2</span> 🔹 BLAST en NCBI</h3>
 <ol type="1">
-<li>Selecciona “Protein BLAST” (BLASTP o TBLASTN).</li>
-<li>Pega la secuencia y ejecuta la búsqueda.</li>
-<li>Descarga resultados:</li>
+<li><p><strong>Acceder a la página de BLAST de NCBI:</strong></p>
+<ul>
+<li>Dirígete a NCBI BLAST.</li>
+</ul></li>
+<li><p><strong>Seleccionar el programa BLAST:</strong></p>
+<ul>
+<li>Para búsquedas de proteína contra proteína, elige “Protein BLAST” (blastp).</li>
+<li>Para búsquedas de proteína contra bases de datos de nucleótidos traducidas, selecciona “tblastn”.</li>
+<li>Para consultas de ADN contra bases de datos de proteínas, elige “blastx”.</li>
+</ul></li>
+<li><p><strong>Pegar la secuencia de consulta:</strong></p>
+<ul>
+<li>Copia y pega tu secuencia (fasta) en el campo “Enter Query Sequence”.</li>
+</ul></li>
+<li><p><strong>Ajustar parámetros opcionales:</strong></p>
+<ul>
+<li>Elige la base de datos apropiada (por ejemplo, “nr” para proteínas no redundantes o “refseq_rna” para transcriptomas).</li>
+<li>Configura el número máximo de hits y filtros de complejidad.</li>
+</ul></li>
+<li><p><strong>Ejecutar la búsqueda:</strong></p>
+<ul>
+<li>Haz clic en “BLAST” y espera a que se procesen los resultados.</li>
+</ul></li>
+<li><p><strong>Interpretar los resultados:</strong></p>
+<ul>
+<li>En la pestaña “Descriptions” observarás los hits ordenados por el valor E.</li>
+<li>En la pestaña “Alignments” podrás ver los alineamientos detallados.</li>
+</ul></li>
+<li><p><strong>Descargar los resultados en formato FASTA</strong>:</p>
+<ul>
+<li>Ve a “Download” (opción ubicada arriba a la derecha) y selecciona “FASTA” para guardar las secuencias de los hits en un archivo .fasta.</li>
+</ul></li>
 </ol>
+<p><strong>Renombramos los archivos descargados</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> ~/Downloads/seqdump.txt ncbi_blast.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># blastp</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> ~/Downloads/seqdump.txt ncbi_blastp.fasta</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> ~/Downloads/<span class="op">&lt;</span>table.csv<span class="op">&gt;</span> ncbi_blastp.csv</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># tblastn</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> ~/Downloads/seqdump.txt ncbi_tblastn.fasta</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> ~/Downloads/<span class="op">&lt;</span>table.csv<span class="op">&gt;</span> ncbi_tblastn.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-
-
 </section>
+</section>
+<section id="recomendaciones-finales" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="recomendaciones-finales"><span class="header-section-number">5.4</span> Recomendaciones finales</h2>
+<ol type="1">
+<li><strong>Verificar la versión de la base de datos:</strong> Antes de confiar en los resultados, revisa la fecha de última actualización de la base de datos en cada servidor BLAST.</li>
+<li><strong>Guardar metadatos de búsqueda:</strong> Anota en un archivo de texto o Excel los parámetros usados (tipo de BLAST, base de datos, filtros, valor E umbral) para futura referencia o reproducibilidad.</li>
+<li><strong>Combinar resultados de Uniprot y NCBI:</strong> Si buscas coberturas más amplias, compara los hits obtenidos en ambas plataformas y filtra duplicados.</li>
+<li><strong>Automatizar descargas:</strong> Para grandes volúmenes de secuencias, considera usar la línea de comandos de NCBI (NCBI BLAST+ packages) y scripts en bash o Python para automatizar búsquedas y descargas.</li>
+</ol>
+
+
 </section>
 
 </main> <!-- /main -->

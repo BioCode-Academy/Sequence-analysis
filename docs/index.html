@@ -206,6 +206,41 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Módulo 3: Alineamiento múltiple y análisis filogenético</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_01_alineamiento_global.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Alineamiento de secuencias</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_02_trimal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Recorte de alineamientos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_03_arboles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_04_visualizacion_arboles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
@@ -364,32 +399,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 <section id="día-3" class="level3">
-<h3 class="anchored" data-anchor-id="día-3">📕 Día 3</h3>
-<p><strong>🧩 Módulo 3: Análisis de dominios y conservación de secuencias</strong></p>
-<p>🎯 <em>Objetivo:</em> Identificar dominios funcionales en secuencias y visualizar su conservación.</p>
-<p><strong>Actividades:</strong></p>
-<ul>
-<li>🔍 <strong>Análisis de dominios con InterProScan</strong>
-<ul>
-<li>Envío de secuencias y descarga de resultados <code>.tsv</code></li>
-<li>Extracción de dominios Pfam</li>
-</ul></li>
-<li>🧠 <strong>Búsqueda de dominios con HMMER</strong>
-<ul>
-<li>Preparación de la base de datos Pfam-A</li>
-<li>Ejecución de <code>hmmscan</code>, <code>hmmfetch</code>, <code>hmmsearch</code></li>
-<li>Ejemplo práctico: dominio PF00071</li>
-</ul></li>
-<li>🎨 <strong>Visualización de conservación con WebLogo</strong>
-<ul>
-<li>Generación de logos a partir de alineamientos recortados</li>
-<li>Interpretación de regiones altamente conservadas</li>
-</ul></li>
-</ul>
-</section>
-<section id="día-4" class="level3">
-<h3 class="anchored" data-anchor-id="día-4">📗 Día 4</h3>
-<p><strong>🌳 Módulo 4: Alineamiento múltiple y análisis filogenético</strong></p>
+<h3 class="anchored" data-anchor-id="día-3">📗 Día 3</h3>
+<p><strong>🌳 Módulo 3: Alineamiento múltiple y análisis filogenético</strong></p>
 <p>🎯 <em>Objetivo:</em> Generar alineamientos múltiples y construir árboles filogenéticos básicos.</p>
 <p><strong>Actividades:</strong></p>
 <ul>
@@ -408,10 +419,68 @@ ul.task-list li input[type="checkbox"] {
 <li>Generación de árboles con <code>fasttree</code></li>
 <li>Discusión de conceptos filogenéticos básicos</li>
 </ul></li>
-<li>👁 <strong>Visualización</strong>
+<li>👁 <strong>Visualización de arboles</strong>
 <ul>
 <li>Alineamientos en Jalview</li>
 <li>Árboles en FigTree</li>
+</ul></li>
+</ul>
+</section>
+<section id="día-4" class="level3">
+<h3 class="anchored" data-anchor-id="día-4">📕 Día 4</h3>
+<p><strong>🧩 Módulo 4: Análisis de dominios y conservación de secuencias</strong></p>
+<p>🎯 <em>Objetivo:</em> Identificar dominios funcionales en secuencias y visualizar su conservación.</p>
+<p><strong>Actividades:</strong></p>
+<ul>
+<li>🔍 <strong>Análisis de dominios con InterProScan</strong>
+<ul>
+<li>Envío de secuencias y descarga de resultados <code>.tsv</code></li>
+<li>Extracción de dominios Pfam</li>
+</ul></li>
+<li>🧠 <strong>Búsqueda de dominios con HMMER</strong>
+<ul>
+<li>Preparación de la base de datos Pfam-A</li>
+<li>Ejecución de <code>hmmscan</code>, <code>hmmfetch</code>, <code>hmmsearch</code></li>
+<li>Ejemplo práctico: dominio PF00071</li>
+</ul></li>
+<li>🎨 <strong>Visualización de conservación con WebLogo</strong>
+<ul>
+<li>Generación de logos a partir de alineamientos recortados</li>
+<li>Interpretación de regiones altamente conservada</li>
+</ul></li>
+</ul>
+</section>
+<section id="día-5" class="level3">
+<h3 class="anchored" data-anchor-id="día-5">📕 Día 5</h3>
+<p><strong>🧬 Módulo 5: Modelado proteico y análisis estructural</strong></p>
+<p>🎯 <em>Objetivo:</em> Predecir estructuras de proteínas con herramientas de inteligencia artificial, visualizarlas y compararlas estructuralmente.</p>
+<p><strong>Actividades:</strong></p>
+<ul>
+<li>🧠 <strong>Introducción al modelado estructural</strong>
+<ul>
+<li>Tipos de estructura: primaria a cuaternaria</li>
+<li>Principios del modelado con IA: AlphaFold, Boltz-1, entre otras</li>
+</ul></li>
+<li>⚙️ <strong>Predicción de estructuras</strong>
+<ul>
+<li>Entrada de secuencia FASTA</li>
+<li>Interpretación de resultados: pLDDT, PAE</li>
+</ul></li>
+<li>🔍 <strong>Comparación con otras herramientas</strong>
+<ul>
+<li>Introducción a Boltz-1, RoseTTAFold y ESMFold</li>
+<li>Discusión sobre precisión, velocidad y aplicabilidad</li>
+</ul></li>
+<li>🧩 <strong>Visualización y análisis en ChimeraX</strong>
+<ul>
+<li>Carga y exploración de archivos .pdb</li>
+<li>Coloreado por confianza estructural</li>
+<li>Identificación de regiones funcionales</li>
+</ul></li>
+<li>🔄 <strong>Alineamiento de modelos estructurales</strong>
+<ul>
+<li>Superposición de estructuras con ChimeraX</li>
+<li>Evaluación visual de similitudes y diferencias</li>
 </ul></li>
 </ul>
 </section>

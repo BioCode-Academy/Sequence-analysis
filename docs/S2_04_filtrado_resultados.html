@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./S3_01_alineamiento_global.html" rel="next">
 <link href="./S2_03_blast_local.html" rel="prev">
 <link href="./images/LogoDavidAlberto.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -240,6 +240,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Módulo 3: Alineamiento múltiple y análisis filogenético</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_01_alineamiento_global.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Alineamiento de secuencias</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_02_trimal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Recorte de alineamientos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_03_arboles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_04_visualizacion_arboles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
@@ -256,7 +291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#seleccionar-los-mejores-hits" id="toc-seleccionar-los-mejores-hits" class="nav-link active" data-scroll-target="#seleccionar-los-mejores-hits"><span class="header-section-number">7.1</span> 🎯 Seleccionar los mejores hits</a></li>
+  <li><a href="#seleccionar-los-mejores-hits" id="toc-seleccionar-los-mejores-hits" class="nav-link active" data-scroll-target="#seleccionar-los-mejores-hits"><span class="header-section-number">7.1</span> 🔍 Seleccionar los mejores <em>hits</em></a></li>
   <li><a href="#unir-secuencias-para-análisis" id="toc-unir-secuencias-para-análisis" class="nav-link" data-scroll-target="#unir-secuencias-para-análisis"><span class="header-section-number">7.2</span> 📦 Unir secuencias para análisis</a></li>
   </ul>
 </nav>
@@ -283,22 +318,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En este módulo, evaluaremos los procesos de filtrado y organización de resultados.</p>
+<p>En este módulo filtraremos los mejores resultados de BLAST y organizaremos las secuencias para análisis posteriores, como alineamiento y filogenia.</p>
 <section id="seleccionar-los-mejores-hits" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="seleccionar-los-mejores-hits"><span class="header-section-number">7.1</span> 🎯 Seleccionar los mejores hits</h2>
+<h2 data-number="7.1" class="anchored" data-anchor-id="seleccionar-los-mejores-hits"><span class="header-section-number">7.1</span> 🔍 Seleccionar los mejores <em>hits</em></h2>
+<p>Después de realizar búsquedas en UniProt y NCBI, seleccionamos los primeros resultados (según el orden del output) para trabajar con un subconjunto representativo:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">seqkit</span> head <span class="at">-n</span> 50 uniprot_blast.fasta <span class="op">&gt;</span> uniprot_blast_50.fasta</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">seqkit</span> head <span class="at">-n</span> 20 ncbi_blast.fasta <span class="op">&gt;</span> ncbi_blast_20.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># De UniProt: tomar los 50 mejores resultados</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">seqkit</span> head <span class="at">-n</span> 50 uniprot_blast.fasta <span class="op">&gt;</span> uniprot_blast_50.fasta</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># De NCBI: tomar los 20 mejores resultados</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">seqkit</span> head <span class="at">-n</span> 20 ncbi_blast.fasta <span class="op">&gt;</span> ncbi_blast_20.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="unir-secuencias-para-análisis" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="unir-secuencias-para-análisis"><span class="header-section-number">7.2</span> 📦 Unir secuencias para análisis</h2>
+<p>Unimos los resultados filtrados de bases externas con las secuencias obtenidas localmente por BLAST para tener un conjunto consolidado.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Proteínas</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> uniprot_blast_50.fasta blastp_Tatro.fasta <span class="op">&gt;</span> all_protein.fasta</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> uniprot_blast_50.fasta blastp_Tatroviride_P06780.fasta <span class="op">&gt;</span> all_protein.fasta</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># CDS</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> ncbi_blast_20.fasta tblastn_Tatro.fasta <span class="op">&gt;</span> all_cds.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> ncbi_blast_20.fasta tblastn_Tatroviride_P06780.fasta <span class="op">&gt;</span> all_cds.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
@@ -873,8 +913,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./S3_01_alineamiento_global.html" class="pagination-link" aria-label="Alineamiento de secuencias">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Alineamiento de secuencias</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
