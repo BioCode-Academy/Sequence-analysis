@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Análisis de Secuencias",
     "section": "",
-    "text": "BioCode Academy\n\n\n\n\n\n\nInformación general\n\n📋 Descripción del curso📌 Sobre el curso📅 Agenda del Curso👤 Instructores\n\n\n¡Bienvenido a este nuevo viaje bioinformático! 🌟 Este curso integra el análisis de secuencias biológicas con el manejo de bases de datos y herramientas especializadas.\n📚 ¿Qué aprenderás?\n\n🧰 Instalar herramientas bioinformáticas\n\n🔍 Buscar similitud entre secuencias\n\n🧬 Alinear secuencias biológicas\n\n🌿 Construir árboles filogenéticos\n\n🧩 Analizar dominios funcionales\n\n🎨 Visualizar la conservación de secuencias\n\n👁 Explorar visualmente datos biológicos\n\n\n✅ Todo esto a través de ejemplos prácticos, con orientación paso a paso, en un entorno Linux.\n\n\n\n\n⌛ Duración: 8 horas (2 horas diarias)\n💬 Idioma: Español\n📍 Ubicación: Virtual (Teams)\n📝 Modalidad: Práctico (80%) + Teórico (20%)\nRequerimientos:\n\n💻 Laptop\n🌐 Conexión a internet\n🐧 Ambiente Unix/WSL\n\n\n\nSE REQUIERE CONOCIMIENTO PREVIO EN PROGRAMACIÓN\n\n\n\n\n📘 Día 1\n🔧 Módulo 1: Instalación de herramientas y obtención de secuencias\n🎯 Objetivo: Preparar el entorno computacional e introducir la obtención de secuencias desde bases de datos públicas.\nActividades:\n\n🔥 Bienvenida e introducción\n\nPresentación del curso y del instructor\nCódigo de conducta y dinámica rápida de presentación\n\n💻 Instalación de herramientas bioinformáticas\n\nncbi-blast+, seqkit, muscle, clustalo, mafft, trimal, fasttree, iqtree\nVisualizadores: jalview, figtree\nUtilidad adicional: weblogo\n\n🌐 Bases de datos biológicas y descarga de secuencias\n\nNavegación en UniProt y NCBI\nDescarga y visualización de secuencias FASTA\n\n\n\n\n📙 Día 2\n🧬 Módulo 2: Alineamientos locales mediante BLAST\n🎯 Objetivo: Aplicar BLAST para realizar búsquedas de similitud, tanto en línea como localmente.\nActividades:\n\n🧾 Homología\n\nDefinición de homología, ortologos, parálogos\nHerramientas para búsqueda de homología\n\n🌍 Uso de BLAST en línea\n\nBúsqueda contra UniProt y NCBI\nDescarga e interpretación de resultados\n\n🧾 BLAST local en terminal\n\nCreación de bases de datos locales con makeblastdb\nEjecución de blastp y tblastn\nRecuperación de secuencias relevantes con seqkit\n\n📂 Filtrado y organización de resultados\n\nSelección de los mejores hits\nUnión y clasificación de secuencias para análisis posterior\n\n\n\n\n📗 Día 3\n🌳 Módulo 3: Alineamiento múltiple y análisis filogenético\n🎯 Objetivo: Generar alineamientos múltiples y construir árboles filogenéticos básicos.\nActividades:\n\n🧬 Alineamiento de secuencias\n\nUso de MAFFT, Clustal Omega y Muscle\nComparación de resultados y calidad\n\n✂️ Recorte de alineamientos\n\nUso de trimal para limpiar alineamientos\nIdentificación de regiones conservadas\n\n🌿 Construcción de árboles filogenéticos\n\nGeneración de árboles con fasttree\nDiscusión de conceptos filogenéticos básicos\n\n👁 Visualización de arboles\n\nAlineamientos en Jalview\nÁrboles en FigTree\n\n\n\n\n📕 Día 4\n🧩 Módulo 4: Análisis de dominios y conservación de secuencias\n🎯 Objetivo: Identificar dominios funcionales en secuencias y visualizar su conservación.\nActividades:\n\n🔍 Análisis de dominios con InterProScan\n\nEnvío de secuencias y descarga de resultados .tsv\nExtracción de dominios Pfam\n\n🧠 Búsqueda de dominios con HMMER\n\nPreparación de la base de datos Pfam-A\nEjecución de hmmscan, hmmfetch, hmmsearch\nEjemplo práctico: dominio PF00071\n\n🎨 Visualización de conservación con WebLogo\n\nGeneración de logos a partir de alineamientos recortados\nInterpretación de regiones altamente conservada\n\n\n\n\n📕 Día 5\n🧬 Módulo 5: Modelado proteico y análisis estructural\n🎯 Objetivo: Predecir estructuras de proteínas con herramientas de inteligencia artificial, visualizarlas y compararlas estructuralmente.\nActividades:\n\n🧠 Introducción al modelado estructural\n\nTipos de estructura: primaria a cuaternaria\nPrincipios del modelado con IA: AlphaFold, Boltz-1, entre otras\n\n⚙️ Predicción de estructuras\n\nEntrada de secuencia FASTA\nInterpretación de resultados: pLDDT, PAE\n\n🔍 Comparación con otras herramientas\n\nIntroducción a Boltz-1, RoseTTAFold y ESMFold\nDiscusión sobre precisión, velocidad y aplicabilidad\n\n🧩 Visualización y análisis en ChimeraX\n\nCarga y exploración de archivos .pdb\nColoreado por confianza estructural\nIdentificación de regiones funcionales\n\n🔄 Alineamiento de modelos estructurales\n\nSuperposición de estructuras con ChimeraX\nEvaluación visual de similitudes y diferencias\n\n\n\n\n\nDavid Alberto García Estrada\n\nCandidato a Doctor en Biología Integrativa, UGA, Cinvestav.\nCo-fundador de BioCode Academy\nContacto\n\n🔗 Github\n📨 albert_dge@hotmail.com\n📨 david.garcia.e@cinvestav.mx\n📨 biocodeacademy@gmail.com",
+    "text": "BioCode Academy\n\n\n\n\n\n\nInformación general\n\n📋 Descripción del curso📌 Sobre el curso📅 Agenda del Curso👤 Instructores\n\n\n¡Bienvenido a este nuevo viaje bioinformático! 🌟 Este curso integra el análisis de secuencias biológicas con el manejo de bases de datos y herramientas especializadas.\n📚 ¿Qué aprenderás?\n\n🧰 Instalar herramientas bioinformáticas\n\n🔍 Buscar similitud entre secuencias\n\n🧬 Alinear secuencias biológicas\n\n🌿 Construir árboles filogenéticos\n\n🧩 Analizar dominios funcionales\n\n🎨 Visualizar la conservación de secuencias\n\n👁 Explorar visualmente datos biológicos\n\n\n✅ Todo esto a través de ejemplos prácticos, con orientación paso a paso, en un entorno Linux.\n\n\n\n\n⌛ Duración: 8 horas (2 horas diarias)\n💬 Idioma: Español\n📍 Ubicación: Virtual (Teams)\n📝 Modalidad: Práctico (80%) + Teórico (20%)\nRequerimientos:\n\n💻 Laptop\n🌐 Conexión a internet\n🐧 Ambiente Unix/WSL\n\n\n\nSE REQUIERE CONOCIMIENTO PREVIO EN PROGRAMACIÓN\n\n\n\n\n📘 Día 1\n🔧 Módulo 1: Instalación de herramientas y obtención de secuencias\n🎯 Objetivo: Preparar el entorno computacional e introducir la obtención de secuencias desde bases de datos públicas.\nActividades:\n\n🔥 Bienvenida e introducción\n\nPresentación del curso y del instructor\nCódigo de conducta y dinámica rápida de presentación\n\n💻 Instalación de herramientas bioinformáticas\n\nncbi-blast+, seqkit, muscle, clustalo, mafft, trimal, fasttree, iqtree\nVisualizadores: jalview, figtree\nUtilidad adicional: weblogo\n\n🌐 Bases de datos biológicas y descarga de secuencias\n\nNavegación en UniProt y NCBI\nDescarga y visualización de secuencias FASTA\n\n\n\n\n📙 Día 2\n🧬 Módulo 2: Alineamientos locales mediante BLAST\n🎯 Objetivo: Aplicar BLAST para realizar búsquedas de similitud, tanto en línea como localmente.\nActividades:\n\n🧾 Homología\n\nDefinición de homología, ortologos, parálogos\nHerramientas para búsqueda de homología\n\n🌍 Uso de BLAST en línea\n\nBúsqueda contra UniProt y NCBI\nDescarga e interpretación de resultados\n\n🧾 BLAST local en terminal\n\nCreación de bases de datos locales con makeblastdb\nEjecución de blastp y tblastn\nRecuperación de secuencias relevantes con seqkit\n\n📂 Filtrado y organización de resultados\n\nSelección de los mejores hits\nUnión y clasificación de secuencias para análisis posterior\n\n\n\n\n📗 Día 3\n🌳 Módulo 3: Alineamiento múltiple y análisis filogenético\n🎯 Objetivo: Generar alineamientos múltiples y construir árboles filogenéticos básicos.\nActividades:\n\n🧬 Alineamiento de secuencias\n\nUso de MAFFT, Clustal Omega y Muscle\nComparación de resultados y calidad\n\n✂️ Recorte de alineamientos\n\nUso de trimal para limpiar alineamientos\nIdentificación de regiones conservadas\n\n🎨 Visualización de conservación con WebLogo\n\nGeneración de logos a partir de alineamientos recortados\nInterpretación de regiones altamente conservada\n\n🌿 Construcción de árboles filogenéticos\n\nGeneración de árboles con fasttree\nDiscusión de conceptos filogenéticos básicos\n\n👁 Visualización de arboles\n\nAlineamientos en Jalview\nÁrboles en FigTree\n\n\n\n\n📕 Día 4\n🧩 Módulo 4: Análisis de dominios y conservación de secuencias\n🎯 Objetivo: Identificar dominios funcionales en secuencias y visualizar su conservación.\nActividades:\n\n🔍 Análisis de dominios con InterProScan\n\nEnvío de secuencias y descarga de resultados .tsv\nExtracción de dominios Pfam\n\n🧠 Búsqueda de dominios con HMMER\n\nPreparación de la base de datos Pfam-A\nEjecución de hmmscan, hmmfetch, hmmsearch\n\n\n\n\n📕 Día 5\n🧬 Módulo 5: Modelado proteico y análisis estructural\n🎯 Objetivo: Predecir estructuras de proteínas con herramientas de inteligencia artificial, visualizarlas y compararlas estructuralmente.\nActividades:\n\n🧠 Introducción al modelado estructural\n\nTipos de estructura: primaria a cuaternaria\nPrincipios del modelado con IA: AlphaFold, Boltz-1, entre otras\n\n⚙️ Predicción de estructuras\n\nEntrada de secuencia FASTA\nInterpretación de resultados: pLDDT, PAE\n\n🔍 Comparación con otras herramientas\n\nIntroducción a Boltz-1, RoseTTAFold y ESMFold\nDiscusión sobre precisión, velocidad y aplicabilidad\n\n🧩 Visualización y análisis en ChimeraX\n\nCarga y exploración de archivos .pdb\nColoreado por confianza estructural\nIdentificación de regiones funcionales\n\n🔄 Alineamiento de modelos estructurales\n\nSuperposición de estructuras con ChimeraX\nEvaluación visual de similitudes y diferencias\n\n\n\n\n\nDavid Alberto García Estrada\n\nCandidato a Doctor en Biología Integrativa, UGA, Cinvestav.\nCo-fundador de BioCode Academy\nContacto\n\n🔗 Github\n📨 albert_dge@hotmail.com\n📨 david.garcia.e@cinvestav.mx\n📨 biocodeacademy@gmail.com",
     "crumbs": [
       "Información general"
     ]
@@ -340,69 +340,146 @@
     ]
   },
   {
-    "objectID": "S3_03_arboles.html",
-    "href": "S3_03_arboles.html",
-    "title": "10  Construcción de árboles filogenéticos",
+    "objectID": "S3_03_weblogo.html",
+    "href": "S3_03_weblogo.html",
+    "title": "10  Visualización de conservación con WebLogo",
     "section": "",
-    "text": "10.1 ⚡ Generación de árboles con FastTree\nEn este módulo aprenderás a generar árboles filogenéticos a partir de alineamientos múltiples recortados, utilizando herramientas rápidas y robustas como FastTree e IQ-TREE.\nFastTree es una herramienta rápida y eficiente para construir árboles a partir de alineamientos, especialmente útil para grandes conjuntos de datos.\n# Árbol con proteínas\nfasttree all_protein_trimmed.aln &gt; all_protein.tree\n\n# Árbol con CDS\nfasttree all_cds_trimmed.aln &gt; all_cds.tree",
+    "text": "10.1 🧬 ¿Qué es un logo de secuencia?\nEn este módulo aprenderás a generar representaciones gráficas de regiones conservadas a partir de alineamientos múltiples utilizando la herramienta WebLogo. Estas representaciones permiten identificar posiciones clave en secuencias homólogas.\nUn logo de secuencia es una representación gráfica de la conservación de residuos en un alineamiento múltiple. Las letras más grandes indican mayor conservación en una posición específica. Es útil para:",
     "crumbs": [
       "Módulo 3: Alineamiento múltiple y análisis filogenético",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Construcción de árboles filogenéticos</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Visualización de conservación con WebLogo</span>"
     ]
   },
   {
-    "objectID": "S3_03_arboles.html#generación-de-árboles-con-fasttree",
-    "href": "S3_03_arboles.html#generación-de-árboles-con-fasttree",
-    "title": "10  Construcción de árboles filogenéticos",
+    "objectID": "S3_03_weblogo.html#qué-es-un-logo-de-secuencia",
+    "href": "S3_03_weblogo.html#qué-es-un-logo-de-secuencia",
+    "title": "10  Visualización de conservación con WebLogo",
+    "section": "",
+    "text": "Visualizar motivos funcionales (ej. sitios activos).\nComparar conservación entre proteínas ortólogas.\nDetectar regiones variables o divergentes.",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Visualización de conservación con WebLogo</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_weblogo.html#generación-de-logos-con-weblogo",
+    "href": "S3_03_weblogo.html#generación-de-logos-con-weblogo",
+    "title": "10  Visualización de conservación con WebLogo",
+    "section": "10.2 🛠️ Generación de logos con WebLogo",
+    "text": "10.2 🛠️ Generación de logos con WebLogo\nWebLogo puede usarse en línea (sitio web) o en terminal (requiere instalación previa).\n\n# Logo para proteínas\nweblogo -f all_protein_trimmed.aln -o all_protein_logo.png\n\n# Logo para CDS\nweblogo -f all_cds_trimmed.aln -o all_cds_logo.png\n\n\n-f: archivo de entrada en formato FASTA o CLUSTAL.\n-o: archivo de salida, usualmente .png o .pdf.",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Visualización de conservación con WebLogo</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_weblogo.html#interpretación-del-logo",
+    "href": "S3_03_weblogo.html#interpretación-del-logo",
+    "title": "10  Visualización de conservación con WebLogo",
+    "section": "10.3 🔍 Interpretación del logo",
+    "text": "10.3 🔍 Interpretación del logo\n\n\n\n\n\n\n\nElemento\nSignificado\n\n\n\n\nLetra grande\nResiduo altamente conservado\n\n\nLetra pequeña\nResiduo variable\n\n\nAltura total de la columna\nInformación en bits (conservación total en esa posición)\n\n\nColores\nRepresentan tipos de residuos (pueden personalizarse)",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Visualización de conservación con WebLogo</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_weblogo.html#recomendaciones",
+    "href": "S3_03_weblogo.html#recomendaciones",
+    "title": "10  Visualización de conservación con WebLogo",
+    "section": "10.4 📘 Recomendaciones",
+    "text": "10.4 📘 Recomendaciones\n\nAsegúrate de usar alineamientos recortados y de calidad (por ejemplo, generados con trimal).\nPara mejorar la legibilidad, puedes ajustar el rango de posiciones con --first-index y --last-index.\nWebLogo admite formatos como FASTA, CLUSTAL, MSF y PHYLIP.",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Visualización de conservación con WebLogo</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_weblogo.html#consejos",
+    "href": "S3_03_weblogo.html#consejos",
+    "title": "10  Visualización de conservación con WebLogo",
+    "section": "10.5 💡 Consejos",
+    "text": "10.5 💡 Consejos\n\nUsa WebLogo para crear figuras interpretables en artículos o presentaciones.\nPuedes exportar en SVG para edición en Inkscape o Illustrator.\nConsidera hacer logos separados por grupos (por ejemplo, ortólogos vs. parálogos) si estás comparando familias.",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Visualización de conservación con WebLogo</span>"
+    ]
+  },
+  {
+    "objectID": "S3_04_arboles.html",
+    "href": "S3_04_arboles.html",
+    "title": "11  Construcción de árboles filogenéticos",
+    "section": "",
+    "text": "11.1 ⚡ Generación de árboles con FastTree\nEn este módulo aprenderás a generar árboles filogenéticos a partir de alineamientos múltiples recortados, utilizando herramientas rápidas y robustas como FastTree e IQ-TREE.\nFastTree es una herramienta rápida y eficiente para construir árboles a partir de alineamientos, especialmente útil para grandes conjuntos de datos.\n# Árbol con proteínas\nfasttree all_protein_trimmed.aln &gt; all_protein.tree\n\n# Árbol con CDS\nfasttree all_cds_trimmed.aln &gt; all_cds.tree",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Construcción de árboles filogenéticos</span>"
+    ]
+  },
+  {
+    "objectID": "S3_04_arboles.html#generación-de-árboles-con-fasttree",
+    "href": "S3_04_arboles.html#generación-de-árboles-con-fasttree",
+    "title": "11  Construcción de árboles filogenéticos",
     "section": "",
     "text": "🔍 Usa aproximaciones de máxima verosimilitud (ML) con heurísticas rápidas.",
     "crumbs": [
       "Módulo 3: Alineamiento múltiple y análisis filogenético",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Construcción de árboles filogenéticos</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Construcción de árboles filogenéticos</span>"
     ]
   },
   {
-    "objectID": "S3_03_arboles.html#construcción-con-iq-tree",
-    "href": "S3_03_arboles.html#construcción-con-iq-tree",
-    "title": "10  Construcción de árboles filogenéticos",
-    "section": "10.2 🧠 Construcción con IQ-TREE",
-    "text": "10.2 🧠 Construcción con IQ-TREE\nIQ-TREE es una herramienta más avanzada que permite:\n\nSelección automática del mejor modelo evolutivo\nBootstrapping ultrarrápido\nAnálisis más detallado\n\n\n# Árbol con proteínas (modelo automático)\niqtree -s all_protein_trimmed.aln -m TEST -bb 1000 -nt AUTO\n\n# Árbol con CDS (modelo automático)\niqtree -s all_cds_trimmed.aln -m TEST -bb 1000 -nt AUTO\n\n\n📌 -m TEST: prueba múltiples modelos y selecciona el mejor. 📌 -bb 1000: realiza 1000 replicaciones de bootstrap ultrarrápido.\n\n\n10.2.1 📘 Conceptos básicos (para profundizar)\n\nModelos de sustitución: Determinan cómo cambian los residuos a lo largo del tiempo.\nBootstrap: Mide la confiabilidad de las ramas.\nTopología: La forma del árbol; refleja relaciones evolutivas.",
+    "objectID": "S3_04_arboles.html#construcción-con-iq-tree",
+    "href": "S3_04_arboles.html#construcción-con-iq-tree",
+    "title": "11  Construcción de árboles filogenéticos",
+    "section": "11.2 🧠 Construcción con IQ-TREE",
+    "text": "11.2 🧠 Construcción con IQ-TREE\nIQ-TREE es una herramienta más avanzada que permite:\n\nSelección automática del mejor modelo evolutivo\nBootstrapping ultrarrápido\nAnálisis más detallado\n\n\n# Árbol con proteínas (modelo automático)\niqtree -s all_protein_trimmed.aln -m TEST -bb 1000 -nt AUTO\n\n# Árbol con CDS (modelo automático)\niqtree -s all_cds_trimmed.aln -m TEST -bb 1000 -nt AUTO\n\n\n📌 -m TEST: prueba múltiples modelos y selecciona el mejor. 📌 -bb 1000: realiza 1000 replicaciones de bootstrap ultrarrápido.\n\n\n11.2.1 📘 Conceptos básicos (para profundizar)\n\nModelos de sustitución: Determinan cómo cambian los residuos a lo largo del tiempo.\nBootstrap: Mide la confiabilidad de las ramas.\nTopología: La forma del árbol; refleja relaciones evolutivas.",
     "crumbs": [
       "Módulo 3: Alineamiento múltiple y análisis filogenético",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Construcción de árboles filogenéticos</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Construcción de árboles filogenéticos</span>"
     ]
   },
   {
-    "objectID": "S3_04_visualizacion_arboles.html",
-    "href": "S3_04_visualizacion_arboles.html",
-    "title": "11  Visualización de árboles filogenéticos",
+    "objectID": "S3_05_visualizacion_arboles.html",
+    "href": "S3_05_visualizacion_arboles.html",
+    "title": "12  Visualización de árboles filogenéticos",
     "section": "",
-    "text": "11.1 🔬 Visualización de alineamientos con Jalview\nEn este módulo aprenderás a visualizar y explorar árboles filogenéticos, así como los alineamientos que los originan. Esto es fundamental para interpretar relaciones evolutivas y evaluar la calidad del análisis.\nJalview es una herramienta gráfica para visualizar y editar alineamientos múltiples. Permite observar regiones conservadas, gaps y otras características.\njalview all_protein_trimmed.aln\njalview all_cds_trimmed.aln",
+    "text": "12.1 🔬 Visualización de alineamientos con Jalview\nEn este módulo aprenderás a visualizar y explorar árboles filogenéticos, así como los alineamientos que los originan. Esto es fundamental para interpretar relaciones evolutivas y evaluar la calidad del análisis.\nJalview es una herramienta gráfica para visualizar y editar alineamientos múltiples. Permite observar regiones conservadas, gaps y otras características.\njalview all_protein_trimmed.aln\njalview all_cds_trimmed.aln",
     "crumbs": [
       "Módulo 3: Alineamiento múltiple y análisis filogenético",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Visualización de árboles filogenéticos</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Visualización de árboles filogenéticos</span>"
     ]
   },
   {
-    "objectID": "S3_04_visualizacion_arboles.html#visualización-de-alineamientos-con-jalview",
-    "href": "S3_04_visualizacion_arboles.html#visualización-de-alineamientos-con-jalview",
-    "title": "11  Visualización de árboles filogenéticos",
+    "objectID": "S3_05_visualizacion_arboles.html#visualización-de-alineamientos-con-jalview",
+    "href": "S3_05_visualizacion_arboles.html#visualización-de-alineamientos-con-jalview",
+    "title": "12  Visualización de árboles filogenéticos",
     "section": "",
     "text": "🧩 Puedes colorear por identidad, conservar anotaciones y exportar imágenes o datos.",
     "crumbs": [
       "Módulo 3: Alineamiento múltiple y análisis filogenético",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Visualización de árboles filogenéticos</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Visualización de árboles filogenéticos</span>"
     ]
   },
   {
-    "objectID": "S3_04_visualizacion_arboles.html#visualización-de-árboles-con-figtree",
-    "href": "S3_04_visualizacion_arboles.html#visualización-de-árboles-con-figtree",
-    "title": "11  Visualización de árboles filogenéticos",
-    "section": "11.2 🌳 Visualización de árboles con FigTree",
-    "text": "11.2 🌳 Visualización de árboles con FigTree\nFigTree permite ver árboles en forma gráfica, personalizar etiquetas, cambiar el formato y exportar figuras para publicación.\n\nfigtree all_protein.tree\nfigtree all_cds.tree\n\n\n🎨 Puedes ajustar la forma del árbol (radial, rectangular), visualizar valores de soporte y reorganizar ramas.",
+    "objectID": "S3_05_visualizacion_arboles.html#visualización-de-árboles-con-figtree",
+    "href": "S3_05_visualizacion_arboles.html#visualización-de-árboles-con-figtree",
+    "title": "12  Visualización de árboles filogenéticos",
+    "section": "12.2 🌳 Visualización de árboles con FigTree",
+    "text": "12.2 🌳 Visualización de árboles con FigTree\nFigTree permite ver árboles en forma gráfica, personalizar etiquetas, cambiar el formato y exportar figuras para publicación.\n\nfigtree all_protein.tree\nfigtree all_cds.tree\n\n\n🎨 Puedes ajustar la forma del árbol (radial, rectangular), visualizar valores de soporte y reorganizar ramas.",
     "crumbs": [
       "Módulo 3: Alineamiento múltiple y análisis filogenético",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Visualización de árboles filogenéticos</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Visualización de árboles filogenéticos</span>"
+    ]
+  },
+  {
+    "objectID": "S3_05_visualizacion_arboles.html#comparativa-de-herramientas-para-visualizar-árboles-filogenéticos",
+    "href": "S3_05_visualizacion_arboles.html#comparativa-de-herramientas-para-visualizar-árboles-filogenéticos",
+    "title": "12  Visualización de árboles filogenéticos",
+    "section": "12.3 🛠️ Comparativa de herramientas para visualizar árboles filogenéticos",
+    "text": "12.3 🛠️ Comparativa de herramientas para visualizar árboles filogenéticos\n\n\n\n\n\n\n\n\n\n\n\nHerramienta\nInterfaz\nFormatos soportados\nVentajas principales\nLimitaciones\nRecomendado para…\n\n\n\n\nFigTree\nGráfica (desktop)\n.tree, .nwk, .nex\nFácil de usar, personalizable, ideal para publicaciones\nNo soporta grandes árboles; desarrollo detenido\nÁrboles pequeños a medianos\n\n\niTOL\nWeb\n.newick, .nexus, etc.\nMuy interactivo, admite anotaciones, integración con metadatos\nRequiere cuenta para funciones avanzadas\nVisualización rica y compartible en la web\n\n\nDendroscope\nGráfica (Java)\n.newick, .nexus\nManejo eficiente de árboles grandes, herramientas para edición\nInterfaz menos intuitiva\nÁrboles grandes o redes filogenéticas\n\n\nETE Toolkit\nProgramática (Python)\n.newick, .nexus, .phyloxml\nMuy flexible, permite anotaciones automáticas, integración con scripts\nRequiere conocimientos de Python\nAutomatización y análisis filogenético a escala\n\n\nArchaeopteryx\nJava (GUI o web)\n.phyloxml, .newick\nPermite explorar árboles enriquecidos con anotaciones evolutivas\nInterfaz antigua, poco intuitiva\nEstudios con anotaciones funcionales complejas\n\n\nJalview\nGráfica\n.aln, .fasta, .nexus\nVisualiza alineamientos con árboles combinados\nÁrboles simples; limitado en edición de topología\nRelación entre alineamiento y filogenia\n\n\n\n\n12.3.1 🧭 Sugerencia de uso\n\nPara análisis rápidos y simples, FigTree es suficiente.\nPara publicaciones interactivas o enriquecidas, iTOL es ideal.\nPara árboles grandes o integrados en pipelines, usa ETE o Dendroscope.\nPara combinar alineamientos y árboles, Jalview ofrece una vista complementaria.",
+    "crumbs": [
+      "Módulo 3: Alineamiento múltiple y análisis filogenético",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Visualización de árboles filogenéticos</span>"
     ]
   }
 ]

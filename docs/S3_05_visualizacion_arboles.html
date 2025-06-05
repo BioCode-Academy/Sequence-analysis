@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>10&nbsp; Construcción de árboles filogenéticos – Análisis de Secuencias</title>
+<title>12&nbsp; Visualización de árboles filogenéticos – Análisis de Secuencias</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./S3_04_visualizacion_arboles.html" rel="next">
-<link href="./S3_02_trimal.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./S3_04_arboles.html" rel="prev">
 <link href="./images/LogoDavidAlberto.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_03_arboles.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_05_visualizacion_arboles.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -263,14 +263,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S3_03_arboles.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span></a>
+  <a href="./S3_03_weblogo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Visualización de conservación con WebLogo</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S3_04_visualizacion_arboles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></span></a>
+  <a href="./S3_04_arboles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./S3_05_visualizacion_arboles.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></span></a>
   </div>
 </li>
       </ul>
@@ -291,10 +297,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#generación-de-árboles-con-fasttree" id="toc-generación-de-árboles-con-fasttree" class="nav-link active" data-scroll-target="#generación-de-árboles-con-fasttree"><span class="header-section-number">10.1</span> ⚡ Generación de árboles con <code>FastTree</code></a></li>
-  <li><a href="#construcción-con-iq-tree" id="toc-construcción-con-iq-tree" class="nav-link" data-scroll-target="#construcción-con-iq-tree"><span class="header-section-number">10.2</span> 🧠 Construcción con IQ-TREE</a>
+  <li><a href="#visualización-de-alineamientos-con-jalview" id="toc-visualización-de-alineamientos-con-jalview" class="nav-link active" data-scroll-target="#visualización-de-alineamientos-con-jalview"><span class="header-section-number">12.1</span> 🔬 Visualización de alineamientos con <code>Jalview</code></a></li>
+  <li><a href="#visualización-de-árboles-con-figtree" id="toc-visualización-de-árboles-con-figtree" class="nav-link" data-scroll-target="#visualización-de-árboles-con-figtree"><span class="header-section-number">12.2</span> 🌳 Visualización de árboles con FigTree</a></li>
+  <li><a href="#comparativa-de-herramientas-para-visualizar-árboles-filogenéticos" id="toc-comparativa-de-herramientas-para-visualizar-árboles-filogenéticos" class="nav-link" data-scroll-target="#comparativa-de-herramientas-para-visualizar-árboles-filogenéticos"><span class="header-section-number">12.3</span> 🛠️ Comparativa de herramientas para visualizar árboles filogenéticos</a>
   <ul>
-  <li><a href="#conceptos-básicos-para-profundizar" id="toc-conceptos-básicos-para-profundizar" class="nav-link" data-scroll-target="#conceptos-básicos-para-profundizar"><span class="header-section-number">10.2.1</span> 📘 Conceptos básicos (para profundizar)</a></li>
+  <li><a href="#sugerencia-de-uso" id="toc-sugerencia-de-uso" class="nav-link" data-scroll-target="#sugerencia-de-uso"><span class="header-section-number">12.3.1</span> 🧭 Sugerencia de uso</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -302,9 +309,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_03_arboles.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_05_visualizacion_arboles.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></h1>
 </div>
 
 
@@ -321,45 +328,108 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En este módulo aprenderás a <strong>generar árboles filogenéticos</strong> a partir de alineamientos múltiples recortados, utilizando herramientas rápidas y robustas como <code>FastTree</code> e <code>IQ-TREE</code>.</p>
-<section id="generación-de-árboles-con-fasttree" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="generación-de-árboles-con-fasttree"><span class="header-section-number">10.1</span> ⚡ Generación de árboles con <code>FastTree</code></h2>
-<p><code>FastTree</code> es una herramienta rápida y eficiente para construir árboles a partir de alineamientos, especialmente útil para grandes conjuntos de datos.</p>
+<p>En este módulo aprenderás a <strong>visualizar y explorar árboles filogenéticos</strong>, así como los <strong>alineamientos</strong> que los originan. Esto es fundamental para interpretar relaciones evolutivas y evaluar la calidad del análisis.</p>
+<section id="visualización-de-alineamientos-con-jalview" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="visualización-de-alineamientos-con-jalview"><span class="header-section-number">12.1</span> 🔬 Visualización de alineamientos con <code>Jalview</code></h2>
+<p><a href="https://www.jalview.org/"><code>Jalview</code></a> es una herramienta gráfica para visualizar y editar alineamientos múltiples. Permite observar regiones conservadas, gaps y otras características.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con proteínas</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">fasttree</span> all_protein_trimmed.aln <span class="op">&gt;</span> all_protein.tree</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con CDS</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">fasttree</span> all_cds_trimmed.aln <span class="op">&gt;</span> all_cds.tree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">jalview</span> all_protein_trimmed.aln</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">jalview</span> all_cds_trimmed.aln</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <blockquote class="blockquote">
-<p>🔍 Usa aproximaciones de máxima verosimilitud (ML) con heurísticas rápidas.</p>
+<p>🧩 Puedes colorear por identidad, conservar anotaciones y exportar imágenes o datos.</p>
 </blockquote>
 </section>
-<section id="construcción-con-iq-tree" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="construcción-con-iq-tree"><span class="header-section-number">10.2</span> 🧠 Construcción con IQ-TREE</h2>
-<p><code>IQ-TREE</code> es una herramienta más avanzada que permite:</p>
-<ul>
-<li>Selección automática del mejor modelo evolutivo</li>
-<li>Bootstrapping ultrarrápido</li>
-<li>Análisis más detallado</li>
-</ul>
+<section id="visualización-de-árboles-con-figtree" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="visualización-de-árboles-con-figtree"><span class="header-section-number">12.2</span> 🌳 Visualización de árboles con FigTree</h2>
+<p><code>FigTree</code> permite ver árboles en forma gráfica, personalizar etiquetas, cambiar el formato y exportar figuras para publicación.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con proteínas (modelo automático)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree</span> <span class="at">-s</span> all_protein_trimmed.aln <span class="at">-m</span> TEST <span class="at">-bb</span> 1000 <span class="at">-nt</span> AUTO</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con CDS (modelo automático)</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree</span> <span class="at">-s</span> all_cds_trimmed.aln <span class="at">-m</span> TEST <span class="at">-bb</span> 1000 <span class="at">-nt</span> AUTO</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">figtree</span> all_protein.tree</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">figtree</span> all_cds.tree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <blockquote class="blockquote">
-<p>📌 -m TEST: prueba múltiples modelos y selecciona el mejor. 📌 -bb 1000: realiza 1000 replicaciones de bootstrap ultrarrápido.</p>
+<p>🎨 Puedes ajustar la forma del árbol (radial, rectangular), visualizar valores de soporte y reorganizar ramas.</p>
 </blockquote>
-<section id="conceptos-básicos-para-profundizar" class="level3" data-number="10.2.1">
-<h3 data-number="10.2.1" class="anchored" data-anchor-id="conceptos-básicos-para-profundizar"><span class="header-section-number">10.2.1</span> 📘 Conceptos básicos (para profundizar)</h3>
+</section>
+<section id="comparativa-de-herramientas-para-visualizar-árboles-filogenéticos" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="comparativa-de-herramientas-para-visualizar-árboles-filogenéticos"><span class="header-section-number">12.3</span> 🛠️ Comparativa de herramientas para visualizar árboles filogenéticos</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 8%">
+<col style="width: 13%">
+<col style="width: 29%">
+<col style="width: 20%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Herramienta</th>
+<th>Interfaz</th>
+<th>Formatos soportados</th>
+<th>Ventajas principales</th>
+<th>Limitaciones</th>
+<th>Recomendado para…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>FigTree</strong></td>
+<td>Gráfica (desktop)</td>
+<td><code>.tree</code>, <code>.nwk</code>, <code>.nex</code></td>
+<td>Fácil de usar, personalizable, ideal para publicaciones</td>
+<td>No soporta grandes árboles; desarrollo detenido</td>
+<td>Árboles pequeños a medianos</td>
+</tr>
+<tr class="even">
+<td><strong>iTOL</strong></td>
+<td>Web</td>
+<td><code>.newick</code>, <code>.nexus</code>, etc.</td>
+<td>Muy interactivo, admite anotaciones, integración con metadatos</td>
+<td>Requiere cuenta para funciones avanzadas</td>
+<td>Visualización rica y compartible en la web</td>
+</tr>
+<tr class="odd">
+<td><strong>Dendroscope</strong></td>
+<td>Gráfica (Java)</td>
+<td><code>.newick</code>, <code>.nexus</code></td>
+<td>Manejo eficiente de árboles grandes, herramientas para edición</td>
+<td>Interfaz menos intuitiva</td>
+<td>Árboles grandes o redes filogenéticas</td>
+</tr>
+<tr class="even">
+<td><strong>ETE Toolkit</strong></td>
+<td>Programática (Python)</td>
+<td><code>.newick</code>, <code>.nexus</code>, <code>.phyloxml</code></td>
+<td>Muy flexible, permite anotaciones automáticas, integración con scripts</td>
+<td>Requiere conocimientos de Python</td>
+<td>Automatización y análisis filogenético a escala</td>
+</tr>
+<tr class="odd">
+<td><strong>Archaeopteryx</strong></td>
+<td>Java (GUI o web)</td>
+<td><code>.phyloxml</code>, <code>.newick</code></td>
+<td>Permite explorar árboles enriquecidos con anotaciones evolutivas</td>
+<td>Interfaz antigua, poco intuitiva</td>
+<td>Estudios con anotaciones funcionales complejas</td>
+</tr>
+<tr class="even">
+<td><strong>Jalview</strong></td>
+<td>Gráfica</td>
+<td><code>.aln</code>, <code>.fasta</code>, <code>.nexus</code></td>
+<td>Visualiza alineamientos con árboles combinados</td>
+<td>Árboles simples; limitado en edición de topología</td>
+<td>Relación entre alineamiento y filogenia</td>
+</tr>
+</tbody>
+</table>
+<section id="sugerencia-de-uso" class="level3" data-number="12.3.1">
+<h3 data-number="12.3.1" class="anchored" data-anchor-id="sugerencia-de-uso"><span class="header-section-number">12.3.1</span> 🧭 Sugerencia de uso</h3>
 <ul>
-<li><strong>Modelos de sustitución</strong>: Determinan cómo cambian los residuos a lo largo del tiempo.</li>
-<li><strong>Bootstrap</strong>: Mide la confiabilidad de las ramas.</li>
-<li><strong>Topología</strong>: La forma del árbol; refleja relaciones evolutivas.</li>
+<li>Para análisis rápidos y simples, <code>FigTree</code> es suficiente.</li>
+<li>Para publicaciones interactivas o enriquecidas, <code>iTOL</code> es ideal.</li>
+<li>Para árboles grandes o integrados en pipelines, usa <code>ETE</code> o <code>Dendroscope</code>.</li>
+<li>Para combinar alineamientos y árboles, <code>Jalview</code> ofrece una vista complementaria.</li>
 </ul>
 
 
@@ -930,13 +1000,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./S3_02_trimal.html" class="pagination-link" aria-label="Recorte de alineamientos">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Recorte de alineamientos</span></span>
+      <a href="./S3_04_arboles.html" class="pagination-link" aria-label="Construcción de árboles filogenéticos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./S3_04_visualizacion_arboles.html" class="pagination-link" aria-label="Visualización de árboles filogenéticos">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

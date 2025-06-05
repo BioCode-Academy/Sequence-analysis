@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Instalación de herramientas – Análisis de Secuencias</title>
+<title>10&nbsp; Visualización de conservación con WebLogo – Análisis de Secuencias</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./S1_03_bases_datos.html" rel="next">
-<link href="./S1_01_codigo_conducta.html" rel="prev">
+<link href="./S3_04_arboles.html" rel="next">
+<link href="./S3_02_trimal.html" rel="prev">
 <link href="./images/LogoDavidAlberto.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S1_01_codigo_conducta.html">Módulo 1: Instalación de herramientas y obtención de secuencias</a></li><li class="breadcrumb-item"><a href="./S1_02_instalacion_herramientas.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instalación de herramientas</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_03_weblogo.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Visualización de conservación con WebLogo</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -193,7 +193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S1_02_instalacion_herramientas.html" class="sidebar-item-text sidebar-link active">
+  <a href="./S1_02_instalacion_herramientas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instalación de herramientas</span></span></a>
   </div>
 </li>
@@ -263,7 +263,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S3_03_weblogo.html" class="sidebar-item-text sidebar-link">
+  <a href="./S3_03_weblogo.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Visualización de conservación con WebLogo</span></span></a>
   </div>
 </li>
@@ -297,17 +297,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#herramientas-principales" id="toc-herramientas-principales" class="nav-link active" data-scroll-target="#herramientas-principales"><span class="header-section-number">2.1</span> 🔧 Herramientas principales</a></li>
-  <li><a href="#descargar-la-imagen-docker-personalizada" id="toc-descargar-la-imagen-docker-personalizada" class="nav-link" data-scroll-target="#descargar-la-imagen-docker-personalizada"><span class="header-section-number">2.2</span> Descargar la imagen Docker personalizada</a></li>
+  <li><a href="#qué-es-un-logo-de-secuencia" id="toc-qué-es-un-logo-de-secuencia" class="nav-link active" data-scroll-target="#qué-es-un-logo-de-secuencia"><span class="header-section-number">10.1</span> 🧬 ¿Qué es un logo de secuencia?</a></li>
+  <li><a href="#generación-de-logos-con-weblogo" id="toc-generación-de-logos-con-weblogo" class="nav-link" data-scroll-target="#generación-de-logos-con-weblogo"><span class="header-section-number">10.2</span> 🛠️ Generación de logos con WebLogo</a></li>
+  <li><a href="#interpretación-del-logo" id="toc-interpretación-del-logo" class="nav-link" data-scroll-target="#interpretación-del-logo"><span class="header-section-number">10.3</span> 🔍 Interpretación del logo</a></li>
+  <li><a href="#recomendaciones" id="toc-recomendaciones" class="nav-link" data-scroll-target="#recomendaciones"><span class="header-section-number">10.4</span> 📘 Recomendaciones</a></li>
+  <li><a href="#consejos" id="toc-consejos" class="nav-link" data-scroll-target="#consejos"><span class="header-section-number">10.5</span> 💡 Consejos</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S1_01_codigo_conducta.html">Módulo 1: Instalación de herramientas y obtención de secuencias</a></li><li class="breadcrumb-item"><a href="./S1_02_instalacion_herramientas.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instalación de herramientas</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_03_weblogo.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Visualización de conservación con WebLogo</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instalación de herramientas</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Visualización de conservación con WebLogo</span></h1>
 </div>
 
 
@@ -324,52 +327,79 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En este módulo aprenderás a instalar y preparar tu entorno bioinformático en sistemas basados en Linux (Ubuntu/Debian).</p>
-<section id="herramientas-principales" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="herramientas-principales"><span class="header-section-number">2.1</span> 🔧 Herramientas principales</h2>
-<p>Puedes instalar las herramientas con <code>apt</code> (si están disponibles) o descargarlas desde sus sitios oficiales:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Herramientas de alineamiento y análisis</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install ncbi-blast+ seqkit muscle clustalo mafft fasttree iqtree</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizadores</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install jalview figtree</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Instalar trimal (requiere compilar)</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://github.com/inab/trimal/archive/refs/tags/v1.5.0.tar.gz</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-xvzf</span> v1.5.0.tar.gz</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> trimal-1.5.0/source</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> cp trimal /usr/local/bin/</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Instalar weblogo (requiere pip)</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install weblogo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<blockquote class="blockquote">
-<p>💡 <strong>Recomendación:</strong> Documenta los pasos en un archivo README o script <code>.sh</code> para facilitar futuras instalaciones.</p>
-</blockquote>
+<p>En este módulo aprenderás a generar representaciones gráficas de <strong>regiones conservadas</strong> a partir de alineamientos múltiples utilizando la herramienta <strong>WebLogo</strong>. Estas representaciones permiten identificar posiciones clave en secuencias homólogas.</p>
+<section id="qué-es-un-logo-de-secuencia" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="qué-es-un-logo-de-secuencia"><span class="header-section-number">10.1</span> 🧬 ¿Qué es un logo de secuencia?</h2>
+<p>Un <strong>logo de secuencia</strong> es una representación gráfica de la <strong>conservación de residuos</strong> en un alineamiento múltiple. Las letras más grandes indican mayor conservación en una posición específica. Es útil para:</p>
+<ul>
+<li>Visualizar motivos funcionales (ej. sitios activos).</li>
+<li>Comparar conservación entre proteínas ortólogas.</li>
+<li>Detectar regiones variables o divergentes.</li>
+</ul>
 </section>
-<section id="descargar-la-imagen-docker-personalizada" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="descargar-la-imagen-docker-personalizada"><span class="header-section-number">2.2</span> Descargar la imagen Docker personalizada</h2>
-<p>En caso de usar una imagen Docker, los pasos generales son:</p>
+<section id="generación-de-logos-con-weblogo" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="generación-de-logos-con-weblogo"><span class="header-section-number">10.2</span> 🛠️ Generación de logos con WebLogo</h2>
+<p>WebLogo puede usarse en línea (<a href="https://weblogo.berkeley.edu/">sitio web</a>) o en terminal (requiere instalación previa).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> docker pull davidalbertoge/bioinfo_seq-alig:0.0.1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Logo para proteínas</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">weblogo</span> <span class="at">-f</span> all_protein_trimmed.aln <span class="at">-o</span> all_protein_logo.png</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Logo para CDS</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">weblogo</span> <span class="at">-f</span> all_cds_trimmed.aln <span class="at">-o</span> all_cds_logo.png</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Verificar que se descargó correctamente</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> images</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Resultado esperado:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">REPOSITORY</span>                             TAG       IMAGE ID       CREATED        SIZE</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">davidalbertoge/bioinfo_seq-alig</span>        0.0.1     b99918d2a909   2 months ago   7.54GB</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Para ejecutar un contenedor interactivo:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-v</span> <span class="op">&lt;</span>directorio/trabajo/<span class="op">&gt;</span>:/home/ <span class="at">-it</span> davidalbertoge/bioinfo_seq-alig:0.0.1</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Deberá generar una terminal nueva</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<ul>
+<li><strong><code>-f</code>:</strong> archivo de entrada en formato FASTA o CLUSTAL.</li>
+<li><strong><code>-o</code>:</strong> archivo de salida, usualmente <code>.png</code> o <code>.pdf</code>.</li>
+</ul>
+</section>
+<section id="interpretación-del-logo" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="interpretación-del-logo"><span class="header-section-number">10.3</span> 🔍 Interpretación del logo</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Elemento</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Letra grande</td>
+<td>Residuo altamente conservado</td>
+</tr>
+<tr class="even">
+<td>Letra pequeña</td>
+<td>Residuo variable</td>
+</tr>
+<tr class="odd">
+<td>Altura total de la columna</td>
+<td>Información en bits (conservación total en esa posición)</td>
+</tr>
+<tr class="even">
+<td>Colores</td>
+<td>Representan tipos de residuos (pueden personalizarse)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="recomendaciones" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="recomendaciones"><span class="header-section-number">10.4</span> 📘 Recomendaciones</h2>
+<ul>
+<li>Asegúrate de usar alineamientos recortados y de calidad (por ejemplo, generados con <code>trimal</code>).</li>
+<li>Para mejorar la legibilidad, puedes ajustar el rango de posiciones con <code>--first-index</code> y <code>--last-index</code>.</li>
+<li>WebLogo admite formatos como FASTA, CLUSTAL, MSF y PHYLIP.</li>
+</ul>
+</section>
+<section id="consejos" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="consejos"><span class="header-section-number">10.5</span> 💡 Consejos</h2>
+<ul>
+<li>Usa WebLogo para crear figuras interpretables en artículos o presentaciones.</li>
+<li>Puedes exportar en SVG para edición en Inkscape o Illustrator.</li>
+<li>Considera hacer logos separados por grupos (por ejemplo, ortólogos vs.&nbsp;parálogos) si estás comparando familias.</li>
+</ul>
 
 
 </section>
@@ -938,13 +968,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./S1_01_codigo_conducta.html" class="pagination-link" aria-label="Código de Conducta">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Código de Conducta</span></span>
+      <a href="./S3_02_trimal.html" class="pagination-link" aria-label="Recorte de alineamientos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Recorte de alineamientos</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./S1_03_bases_datos.html" class="pagination-link" aria-label="Bases de datos biológicas">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bases de datos biológicas</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./S3_04_arboles.html" class="pagination-link" aria-label="Construcción de árboles filogenéticos">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
