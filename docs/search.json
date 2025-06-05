@@ -278,7 +278,7 @@
     "href": "S3_01_alineamiento_global.html#ejecutar-alineamientos",
     "title": "8  Alineamiento de secuencias",
     "section": "8.2 ▶️ Ejecutar alineamientos",
-    "text": "8.2 ▶️ Ejecutar alineamientos\n\n# Con MAFFT\nmafft all_protein.fasta &gt; all_protein_mafft.aln\nmafft all_cds.fasta &gt; all_cds_mafft.aln\n\n# Con Clustal Omega\nclustalo -i all_protein.fasta -o all_protein_clustalo.aln\nclustalo -i all_cds.fasta -o all_cds_clustalo.aln\n\n# Con MUSCLE\nmuscle -in all_protein.fasta -out all_protein_muscle.aln\nmuscle -in all_cds.fasta -out all_cds_muscle.aln",
+    "text": "8.2 ▶️ Ejecutar alineamientos\n\n# Con MAFFT\nmafft all_protein.fasta &gt; all_protein_mafft.aln\nmafft all_cds.fasta &gt; all_cds_mafft.aln\n\n# Con Clustal Omega\nclustalo -i all_protein.fasta -o all_protein_clustalo.aln\nclustalo -i all_cds.fasta -o all_cds_clustalo.aln\n\n# Con MUSCLE\nmuscle -align all_protein.fasta -output all_protein_muscle.aln\nmuscle -align all_cds.fasta -output all_cds_muscle.aln",
     "crumbs": [
       "Módulo 3: Alineamiento múltiple y análisis filogenético",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Alineamiento de secuencias</span>"
