@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Análisis de Secuencias",
     "section": "",
-    "text": "BioCode Academy\n\n\n\n\n\n\nInformación general\n\n📋 Descripción del curso📌 Sobre el curso📅 Agenda del Curso👤 Instructores\n\n\n¡Bienvenido a este nuevo viaje bioinformático! 🌟 Este curso integra el análisis de secuencias biológicas con el manejo de bases de datos y herramientas especializadas.\n📚 ¿Qué aprenderás?\n\n🧰 Instalar herramientas bioinformáticas\n\n🔍 Buscar similitud entre secuencias\n\n🧬 Alinear secuencias biológicas\n\n🌿 Construir árboles filogenéticos\n\n🧩 Analizar dominios funcionales\n\n🎨 Visualizar la conservación de secuencias\n\n👁 Explorar visualmente datos biológicos\n\n\n✅ Todo esto a través de ejemplos prácticos, con orientación paso a paso, en un entorno Linux.\n\n\n\n\n⌛ Duración: 8 horas (2 horas diarias)\n💬 Idioma: Español\n📍 Ubicación: Virtual (Teams)\n📝 Modalidad: Práctico (80%) + Teórico (20%)\nRequerimientos:\n\n💻 Laptop\n🌐 Conexión a internet\n🐧 Ambiente Unix/WSL\n\n\n\nSE REQUIERE CONOCIMIENTO PREVIO EN PROGRAMACIÓN\n\n\n\n\n📘 Día 1\n🔧 Módulo 1: Instalación de herramientas y obtención de secuencias\n🎯 Objetivo: Preparar el entorno computacional e introducir la obtención de secuencias desde bases de datos públicas.\nActividades:\n\n🔥 Bienvenida e introducción\n\nPresentación del curso y del instructor\nCódigo de conducta y dinámica rápida de presentación\n\n💻 Instalación de herramientas bioinformáticas\n\nncbi-blast+, seqkit, muscle, clustalo, mafft, trimal, fasttree, iqtree\nVisualizadores: jalview, figtree\nUtilidad adicional: weblogo\n\n🌐 Bases de datos biológicas y descarga de secuencias\n\nNavegación en UniProt y NCBI\nDescarga y visualización de secuencias FASTA\n\n\n\n\n📙 Día 2\n🧬 Módulo 2: Alineamientos locales mediante BLAST\n🎯 Objetivo: Aplicar BLAST para realizar búsquedas de similitud, tanto en línea como localmente.\nActividades:\n\n🧾 Homología\n\nDefinición de homología, ortologos, parálogos\nHerramientas para búsqueda de homología\n\n🌍 Uso de BLAST en línea\n\nBúsqueda contra UniProt y NCBI\nDescarga e interpretación de resultados\n\n🧾 BLAST local en terminal\n\nCreación de bases de datos locales con makeblastdb\nEjecución de blastp y tblastn\nRecuperación de secuencias relevantes con seqkit\n\n📂 Filtrado y organización de resultados\n\nSelección de los mejores hits\nUnión y clasificación de secuencias para análisis posterior\n\n\n\n\n📗 Día 3\n🌳 Módulo 3: Alineamiento múltiple y análisis filogenético\n🎯 Objetivo: Generar alineamientos múltiples y construir árboles filogenéticos básicos.\nActividades:\n\n🧬 Alineamiento de secuencias\n\nUso de MAFFT, Clustal Omega y Muscle\nComparación de resultados y calidad\n\n✂️ Recorte de alineamientos\n\nUso de trimal para limpiar alineamientos\nIdentificación de regiones conservadas\n\n🎨 Visualización de conservación con WebLogo\n\nGeneración de logos a partir de alineamientos recortados\nInterpretación de regiones altamente conservada\n\n🌿 Construcción de árboles filogenéticos\n\nGeneración de árboles con fasttree\nDiscusión de conceptos filogenéticos básicos\n\n👁 Visualización de arboles\n\nAlineamientos en Jalview\nÁrboles en FigTree\n\n\n\n\n📕 Día 4\n🧩 Módulo 4: Análisis de dominios y conservación de secuencias\n🎯 Objetivo: Identificar dominios funcionales en secuencias y visualizar su conservación.\nActividades:\n\n🔍 Análisis de dominios con InterProScan\n\nEnvío de secuencias y descarga de resultados .tsv\nExtracción de dominios Pfam\n\n🧠 Búsqueda de dominios con HMMER\n\nPreparación de la base de datos Pfam-A\nEjecución de hmmscan, hmmfetch, hmmsearch\n\n\n\n\n📕 Día 5\n🧬 Módulo 5: Modelado proteico y análisis estructural\n🎯 Objetivo: Predecir estructuras de proteínas con herramientas de inteligencia artificial, visualizarlas y compararlas estructuralmente.\nActividades:\n\n🧠 Introducción al modelado estructural\n\nTipos de estructura: primaria a cuaternaria\nPrincipios del modelado con IA: AlphaFold, Boltz-1, entre otras\n\n⚙️ Predicción de estructuras\n\nEntrada de secuencia FASTA\nInterpretación de resultados: pLDDT, PAE\n\n🔍 Comparación con otras herramientas\n\nIntroducción a Boltz-1, RoseTTAFold y ESMFold\nDiscusión sobre precisión, velocidad y aplicabilidad\n\n🧩 Visualización y análisis en ChimeraX\n\nCarga y exploración de archivos .pdb\nColoreado por confianza estructural\nIdentificación de regiones funcionales\n\n🔄 Alineamiento de modelos estructurales\n\nSuperposición de estructuras con ChimeraX\nEvaluación visual de similitudes y diferencias\n\n\n\n\n\nDavid Alberto García Estrada\n\nCandidato a Doctor en Biología Integrativa, UGA, Cinvestav.\nCo-fundador de BioCode Academy\nContacto\n\n🔗 Github\n📨 albert_dge@hotmail.com\n📨 david.garcia.e@cinvestav.mx\n📨 biocodeacademy@gmail.com",
+    "text": "BioCode Academy\n\n\n\n\n\n\nInformación general\n\n📋 Descripción del curso📌 Sobre el curso📅 Agenda del Curso👤 Instructores\n\n\n¡Bienvenido a este nuevo viaje bioinformático! 🌟 Este curso integra el análisis de secuencias biológicas con el manejo de bases de datos y herramientas especializadas.\n📚 ¿Qué aprenderás?\n\n🧰 Instalar herramientas bioinformáticas\n\n🔍 Buscar similitud entre secuencias\n\n🧬 Alinear secuencias biológicas\n\n🌿 Construir árboles filogenéticos\n\n🧩 Analizar dominios funcionales\n\n🎨 Visualizar la conservación de secuencias\n\n👁 Explorar visualmente datos biológicos\n\n\n✅ Todo esto a través de ejemplos prácticos, con orientación paso a paso, en un entorno Linux.\n\n\n\n\n⌛ Duración: 8 horas (2 horas diarias)\n💬 Idioma: Español\n📍 Ubicación: Virtual (Teams)\n📝 Modalidad: Práctico (80%) + Teórico (20%)\nRequerimientos:\n\n💻 Laptop\n🌐 Conexión a internet\n🐧 Ambiente Unix/WSL\n\n\n\nSE REQUIERE CONOCIMIENTO PREVIO EN PROGRAMACIÓN\n\n\n\n\n📘 Día 1\n🔧 Módulo 1: Instalación de herramientas y obtención de secuencias\n🎯 Objetivo: Preparar el entorno computacional e introducir la obtención de secuencias desde bases de datos públicas.\nActividades:\n\n🔥 Bienvenida e introducción\n\nPresentación del curso y del instructor\nCódigo de conducta y dinámica rápida de presentación\n\n💻 Instalación de herramientas bioinformáticas\n\nncbi-blast+, seqkit, muscle, clustalo, mafft, trimal, fasttree, iqtree\nVisualizadores: jalview, figtree\nUtilidad adicional: weblogo\n\n🌐 Bases de datos biológicas y descarga de secuencias\n\nNavegación en UniProt y NCBI\nDescarga y visualización de secuencias FASTA\n\n\n\n\n📙 Día 2\n🧬 Módulo 2: Alineamientos locales mediante BLAST\n🎯 Objetivo: Aplicar BLAST para realizar búsquedas de similitud, tanto en línea como localmente.\nActividades:\n\n🧾 Homología\n\nDefinición de homología, ortologos, parálogos\nHerramientas para búsqueda de homología\n\n🌍 Uso de BLAST en línea\n\nBúsqueda contra UniProt y NCBI\nDescarga e interpretación de resultados\n\n🧾 BLAST local en terminal\n\nCreación de bases de datos locales con makeblastdb\nEjecución de blastp y tblastn\nRecuperación de secuencias relevantes con seqkit\n\n📂 Filtrado y organización de resultados\n\nSelección de los mejores hits\nUnión y clasificación de secuencias para análisis posterior\n\n\n\n\n📗 Día 3\n🌳 Módulo 3: Alineamiento múltiple y análisis filogenético\n🎯 Objetivo: Generar alineamientos múltiples y construir árboles filogenéticos básicos.\nActividades:\n\n🧬 Alineamiento de secuencias\n\nUso de MAFFT, Clustal Omega y Muscle\nComparación de resultados y calidad\n\n✂️ Recorte de alineamientos\n\nUso de trimal para limpiar alineamientos\nIdentificación de regiones conservadas\n\n🎨 Visualización de conservación con WebLogo\n\nGeneración de logos a partir de alineamientos recortados\nInterpretación de regiones altamente conservada\n\n🌿 Construcción de árboles filogenéticos\n\nGeneración de árboles con fasttree\nDiscusión de conceptos filogenéticos básicos\n\n👁 Visualización de arboles\n\nAlineamientos en Jalview\nÁrboles en FigTree\n\n\n\n\n📕 Día 4\n🧩 Módulo 4: Análisis de dominios y conservación de secuencias\n🎯 Objetivo: Identificar dominios funcionales en secuencias y visualizar su conservación.\nActividades:\n\n🔍 Análisis de dominios con InterProScan\n\nEnvío de secuencias y descarga de resultados .tsv\nExtracción de dominios Pfam\n\n🧠 Búsqueda de dominios con HMMER\n\nPreparación de la base de datos Pfam-A\nEjecución de hmmscan, hmmfetch, hmmsearch\n\n\n\n\n📕 Día 5\n🧬 Módulo 5: Modelado proteico y análisis estructural\n🎯 Objetivo: Predecir estructuras de proteínas con herramientas de inteligencia artificial, visualizarlas y compararlas estructuralmente.\nActividades:\n\n🧠 Introducción al modelado estructural\n\nTipos de estructura: primaria a cuaternaria\nPrincipios del modelado con IA: AlphaFold, Boltz-1, entre otras\n\n⚙️ Predicción de estructuras\n\nEntrada de secuencia FASTA\nInterpretación de resultados: pLDDT, PAE\n\n🧩 Visualización y análisis en ChimeraX\n\nCarga y exploración de archivos .pdb\nColoreado por confianza estructural\nIdentificación de regiones funcionales\n\n🔄 Alineamiento de modelos estructurales\n\nSuperposición de estructuras con ChimeraX\nEvaluación visual de similitudes y diferencias\n\n\n\n\n\nDavid Alberto García Estrada\n\nCandidato a Doctor en Biología Integrativa, UGA, Cinvestav.\nCo-fundador de BioCode Academy\nContacto\n\n🔗 Github\n📨 albert_dge@hotmail.com\n📨 david.garcia.e@cinvestav.mx\n📨 biocodeacademy@gmail.com",
     "crumbs": [
       "Información general"
     ]
@@ -480,6 +480,422 @@
     "crumbs": [
       "Módulo 3: Alineamiento múltiple y análisis filogenético",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Visualización de árboles filogenéticos</span>"
+    ]
+  },
+  {
+    "objectID": "S4_01_interproscan.html",
+    "href": "S4_01_interproscan.html",
+    "title": "13  Análisis de dominios con InterProScan",
+    "section": "",
+    "text": "13.1 🧬 InterProScan en línea\nEn este módulo aprenderás cómo identificar dominios conservados en proteínas utilizando la herramienta en línea InterProScan, enfocándonos especialmente en la obtención de dominios Pfam.\nAccede al sitio web de InterProScan desde el siguiente enlace:\n🔗 https://www.ebi.ac.uk/interpro/search/sequence/",
+    "crumbs": [
+      "Módulo 4: Análisis de dominios y conservación de secuencias",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Análisis de dominios con InterProScan</span>"
+    ]
+  },
+  {
+    "objectID": "S4_01_interproscan.html#interproscan-en-línea",
+    "href": "S4_01_interproscan.html#interproscan-en-línea",
+    "title": "13  Análisis de dominios con InterProScan",
+    "section": "",
+    "text": "13.1.1 📥 Ingreso de secuencia\nPrimero, visualiza o imprime en terminal la secuencia que deseas analizar:\n\ncat P06780.fasta\n\n\nCopia la secuencia desde tu archivo .fasta.\nPega la secuencia en la caja de búsqueda del sitio web.\nEjecuta el análisis.\nDescarga los resultados en formato .tsv una vez completado.\n\n\n\n13.1.2 📂 Organización de resultados\nRenombra y filtra el archivo descargado para enfocarte únicamente en los dominios Pfam:\n\n# Mueve el archivo descargado a tu directorio de trabajo\nmv $HOME/Downloads/iprscan5-*.tsv iprscan_pfam.tsv\n\n# Filtra y extrae columnas clave relacionadas con Pfam\ngrep \"Pfam\" iprscan_pfam.tsv | cut -f 4,5\n\n\nLa columna 4 corresponde al ID del dominio (por ejemplo, PF00069).\nLa columna 5 corresponde al nombre o descripción del dominio.\n\n\n\n13.1.3 📝 Nota\nAdemás de Pfam, InterProScan puede detectar otros tipos de anotaciones como SMART, ProSite, TIGRFAMs y más. Si deseas ampliar el análisis, puedes conservar todas las filas del archivo .tsv y usar herramientas como Excel, LibreOffice Calc o R para filtrar y explorar los datos.",
+    "crumbs": [
+      "Módulo 4: Análisis de dominios y conservación de secuencias",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Análisis de dominios con InterProScan</span>"
+    ]
+  },
+  {
+    "objectID": "S4_02_hmmer.html",
+    "href": "S4_02_hmmer.html",
+    "title": "14  Análisis de dominios con HMMER y Pfam",
+    "section": "",
+    "text": "14.1 📦 Preparación de la base de datos Pfam\nEn este módulo aprenderás a identificar dominios conservados en proteínas utilizando la herramienta HMMER junto con la base de datos Pfam. Este enfoque se basa en Modelos Ocultos de Markov (HMM) y es especialmente útil para búsquedas locales en terminal.\nPrimero debes descargar y preparar la base de datos Pfam para búsquedas locales.\n# Descargar la base de datos Pfam-A\nwget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz\n\n# Descomprimir el archivo\ngunzip Pfam-A.hmm.gz\n\n# Indexar la base de datos para su uso con HMMER\nhmmpress Pfam-A.hmm",
+    "crumbs": [
+      "Módulo 4: Análisis de dominios y conservación de secuencias",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Análisis de dominios con HMMER y Pfam</span>"
+    ]
+  },
+  {
+    "objectID": "S4_02_hmmer.html#búsqueda-de-dominios-en-una-proteína-específica",
+    "href": "S4_02_hmmer.html#búsqueda-de-dominios-en-una-proteína-específica",
+    "title": "14  Análisis de dominios con HMMER y Pfam",
+    "section": "14.2 🔍 Búsqueda de dominios en una proteína específica",
+    "text": "14.2 🔍 Búsqueda de dominios en una proteína específica\nRealiza una búsqueda de todos los dominios presentes en una proteína individual (por ejemplo, P06780.fasta).\n\nhmmscan --domtblout pfam_P06780.out Pfam-A.hmm P06780.fasta\n\n\nEl archivo pfam_P06780.out contiene los dominios encontrados en formato tabular.\nPuedes filtrar por significancia usando herramientas como grep, awk o R.",
+    "crumbs": [
+      "Módulo 4: Análisis de dominios y conservación de secuencias",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Análisis de dominios con HMMER y Pfam</span>"
+    ]
+  },
+  {
+    "objectID": "S4_02_hmmer.html#búsqueda-de-un-dominio-específico-en-múltiples-secuencias",
+    "href": "S4_02_hmmer.html#búsqueda-de-un-dominio-específico-en-múltiples-secuencias",
+    "title": "14  Análisis de dominios con HMMER y Pfam",
+    "section": "14.3 🧬 Búsqueda de un dominio específico en múltiples secuencias",
+    "text": "14.3 🧬 Búsqueda de un dominio específico en múltiples secuencias\nSupongamos que quieres buscar el dominio PF00071 en todas las secuencias de all_protein.fasta.\n\n14.3.1 🧲 Extraer el modelo HMM del dominio de interés\n\nhmmfetch Pfam-A.hmm PF00071.27 &gt; PF00071.hmm\n\n\n\n14.3.2 📜 Obtener el alineamiento en formato Stockholm (opcional)\nEsto es útil si deseas reconstruir árboles o hacer perfiles propios.\n\nawk \"/PF00071.27/,/\\/\\// {print}\" Pfam-A.seed &gt; input/PF00071.sto\n\n\n\n14.3.3 🔬 Buscar el dominio en todas las secuencias\n\nhmmsearch --domtblout PF00071_hmmer.out PF00071.hmm all_protein.fasta\n\n\nEl resultado en PF00071_hmmer.out mostrará todas las secuencias que contienen el dominio.\nPuedes procesarlo con seqkit, cut, awk, o cargarlo en R para un análisis más detallado.",
+    "crumbs": [
+      "Módulo 4: Análisis de dominios y conservación de secuencias",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Análisis de dominios con HMMER y Pfam</span>"
+    ]
+  },
+  {
+    "objectID": "S4_02_hmmer.html#nota",
+    "href": "S4_02_hmmer.html#nota",
+    "title": "14  Análisis de dominios con HMMER y Pfam",
+    "section": "14.4 📘 Nota",
+    "text": "14.4 📘 Nota\n\nEl archivo Pfam-A.seed contiene los alineamientos originales de cada familia en formato Stockholm, útil para reconstrucción filogenética.\nhmmscan se usa para buscar todos los dominios en una o varias secuencias.\nhmmsearch se usa para buscar un dominio específico en muchas secuencias.",
+    "crumbs": [
+      "Módulo 4: Análisis de dominios y conservación de secuencias",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Análisis de dominios con HMMER y Pfam</span>"
+    ]
+  },
+  {
+    "objectID": "S5_01_introduccion_modelado.html",
+    "href": "S5_01_introduccion_modelado.html",
+    "title": "15  Introducción al modelado estructural",
+    "section": "",
+    "text": "15.1 🧬 Niveles de organización estructural de una proteína\nEn este módulo se introducen los principios fundamentales del modelado estructural de proteínas, cubriendo desde la estructura primaria hasta la cuaternaria, así como el uso de herramientas basadas en inteligencia artificial (IA) como AlphaFold y Boltz-1.",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
+    ]
+  },
+  {
+    "objectID": "S5_01_introduccion_modelado.html#niveles-de-organización-estructural-de-una-proteína",
+    "href": "S5_01_introduccion_modelado.html#niveles-de-organización-estructural-de-una-proteína",
+    "title": "15  Introducción al modelado estructural",
+    "section": "",
+    "text": "Nivel\nDescripción breve\nEjemplo visual/conceptual\n\n\n\n\nPrimaria\nSecuencia lineal de aminoácidos (residuos)\nMKTIIALSYIFCLVFADYKDDDDK\n\n\nSecundaria\nPlegamientos locales como hélices α o láminas β\nHélice α en una proteína transmembranal\n\n\nTerciaria\nEstructura tridimensional completa de una cadena polipeptídica\nDominio catalítico de una enzima\n\n\nCuaternaria\nAsociación de múltiples cadenas polipeptídicas (subunidades)\nHemoglobina con 4 subunidades",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
+    ]
+  },
+  {
+    "objectID": "S5_01_introduccion_modelado.html#por-qué-modelar-estructuras",
+    "href": "S5_01_introduccion_modelado.html#por-qué-modelar-estructuras",
+    "title": "15  Introducción al modelado estructural",
+    "section": "15.2 🧠 ¿Por qué modelar estructuras?",
+    "text": "15.2 🧠 ¿Por qué modelar estructuras?\n\nEntender la función a partir de la forma.\nPredecir sitios activos, de unión a ligandos o a otras proteínas.\nComplementar estudios evolutivos con información estructural.\nGuiar experimentos de diseño racional, docking, mutagénesis o ingeniería de proteínas.",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
+    ]
+  },
+  {
+    "objectID": "S5_01_introduccion_modelado.html#modelado-estructural-con-inteligencia-artificial",
+    "href": "S5_01_introduccion_modelado.html#modelado-estructural-con-inteligencia-artificial",
+    "title": "15  Introducción al modelado estructural",
+    "section": "15.3 🤖 Modelado estructural con inteligencia artificial",
+    "text": "15.3 🤖 Modelado estructural con inteligencia artificial\nEn los últimos años, herramientas basadas en IA han revolucionado el campo del modelado proteico.\n\n\n\n\n\n\n\n\n\nHerramienta\nFuente / institución\nTecnología base\nUso principal\n\n\n\n\nAlphaFold\nDeepMind (Google)\nRedes neuronales profundas\nPredicción de estructuras a partir de secuencia\n\n\nBoltz-1\nUniversidad Nacional Autónoma de México (ejemplo)\nMachine Learning (Ensemble)\nModelado rápido en servidores académicos\n\n\nRoseTTAFold\nBaker Lab (U. Washington)\nRedes de atención (transformers)\nAlternativa a AlphaFold, más modular\n\n\nI-TASSER\nZhang Lab\nBasado en plantillas y IA\nModelado por homología + refinamiento",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
+    ]
+  },
+  {
+    "objectID": "S5_01_introduccion_modelado.html#entrada-necesaria",
+    "href": "S5_01_introduccion_modelado.html#entrada-necesaria",
+    "title": "15  Introducción al modelado estructural",
+    "section": "15.4 📂 Entrada necesaria",
+    "text": "15.4 📂 Entrada necesaria\nPara todas estas herramientas, la entrada básica es una secuencia en formato FASTA:\n\ncat P06780.fasta\n\n\nAsegúrate de tener una secuencia sin errores (sin residuos no estándar, sin caracteres especiales) y de al menos 50 aminoácidos para obtener modelos confiables.",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
+    ]
+  },
+  {
+    "objectID": "S5_01_introduccion_modelado.html#plataformas-en-línea-disponibles",
+    "href": "S5_01_introduccion_modelado.html#plataformas-en-línea-disponibles",
+    "title": "15  Introducción al modelado estructural",
+    "section": "15.5 📡 Plataformas en línea disponibles",
+    "text": "15.5 📡 Plataformas en línea disponibles\n\n\n\nPlataforma web\nURL\nRequiere cuenta\nTiempo de espera\nComentario\n\n\n\n\nAlphaFold DB\nalphafold.ebi.ac.uk\nSi (Google)\nN/A (consulta modelos ya hechos)\nSólo consulta, no genera nuevos\n\n\nColabFold\ncolab.research.google.com\nSí (Google)\nMedio\nModelo de AlphaFold accesible desde Google Colab\n\n\nBoltz-1 Web\ngithub.com/jwohlwend/boltz\nSí\nBajo\nRápido, para proyectos educativos o exploratorios\n\n\nI-TASSER server\nzhanggroup.org/I-TASSER\nNo\nMedio a largo\nModelo basado en plantillas (si existen)",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
+    ]
+  },
+  {
+    "objectID": "S5_01_introduccion_modelado.html#siguientes-pasos",
+    "href": "S5_01_introduccion_modelado.html#siguientes-pasos",
+    "title": "15  Introducción al modelado estructural",
+    "section": "15.6 🧭 Siguientes pasos",
+    "text": "15.6 🧭 Siguientes pasos\nUna vez que obtengas tu modelo, puedes:\n\nVisualizar la estructura tridimensional con herramientas como PyMOL, Chimera o ChimeraX.\nEvaluar su calidad usando puntuaciones como pLDDT (AlphaFold) o C-score (I-TASSER).\nComparar estructuras con otras proteínas (estructura-conservación).\nUsarlo para modelado funcional, docking, diseño o anotación estructural.",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
+    ]
+  },
+  {
+    "objectID": "S5_01_introduccion_modelado.html#en-resumen",
+    "href": "S5_01_introduccion_modelado.html#en-resumen",
+    "title": "15  Introducción al modelado estructural",
+    "section": "15.7 📌 En resumen",
+    "text": "15.7 📌 En resumen\n\nEl modelado estructural predice la forma 3D de una proteína a partir de su secuencia.\nHerramientas modernas como AlphaFold permiten hacerlo con precisión sin necesidad de cristalografía.\nLa interpretación de los modelos depende del contexto biológico y debe ir acompañada de análisis funcionales y evolutivos.",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
+    ]
+  },
+  {
+    "objectID": "S5_02_prediccion.html",
+    "href": "S5_02_prediccion.html",
+    "title": "16  Predicción de estructuras",
+    "section": "",
+    "text": "16.1 🧾 Entrada en formato FASTA\nEn este módulo aprenderás a interpretar los valores de confianza y precisión de los modelos.\nToda predicción estructural parte de una secuencia en formato FASTA, por ejemplo:\ncat P06780.fasta\n⚠️ Asegúrate de que:",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Predicción de estructuras</span>"
+    ]
+  },
+  {
+    "objectID": "S5_02_prediccion.html#entrada-en-formato-fasta",
+    "href": "S5_02_prediccion.html#entrada-en-formato-fasta",
+    "title": "16  Predicción de estructuras",
+    "section": "",
+    "text": "La secuencia esté limpia (sin caracteres inválidos).\nTenga un número suficiente de residuos (recomendado: &gt; 50 aa).\nEl encabezado comience con &gt; seguido de un identificador",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Predicción de estructuras</span>"
+    ]
+  },
+  {
+    "objectID": "S5_02_prediccion.html#interpretación-de-resultados",
+    "href": "S5_02_prediccion.html#interpretación-de-resultados",
+    "title": "16  Predicción de estructuras",
+    "section": "16.2 📈 Interpretación de resultados",
+    "text": "16.2 📈 Interpretación de resultados\nLas herramientas de predicción devuelven archivos con extensiones como .pdb, junto con métricas de calidad del modelo.\n\n16.2.1 🟨 pLDDT (per-residue Local Distance Difference Test)\n\nSignificado: predice qué tan confiable es la posición de cada átomo respecto al modelo.\nVisualización: colores aplicados directamente sobre el modelo estructural (azul = alta confianza, rojo = baja).\nEscala: 0–100.\n\n\n\n\npLDDT\nConfianza\n\n\n\n\n&gt;90\nMuy alta\n\n\n70–90\nAlta\n\n\n50–70\nBaja\n\n\n&lt;50\nMuy baja (desorden)\n\n\n\n\n🧠 En proteínas, se aproxima a lDDT-Cα pero con mayor precisión. Para ácidos nucleicos, se usa un radio de 30 Å. Para ligandos, solo se consideran distancias con los polímeros, no otros ligandos.\n\n\n🌟 Puedes visualizar el modelo con colores según pLDDT en ChimeraX o PyMOL para detectar regiones confiables o móviles.\n\n\n\n16.2.2 🧩 PAE (Predicted Aligned Error)\n\nSignificado: estimación del error esperado entre dos regiones (i, j) del modelo.\nFormato: matriz cuadrada simétrica que representa la incertidumbre en la relación entre pares de residuos.\nUnidades: Ångstroms (distancia).\nÚtil para evaluar relaciones entre dominios o subunidades.\nSe interpreta como una mapa de calor, donde los valores bajos indican mayor confianza estructural.\n\n\n🔬 Muy útil para saber si dos regiones están bien orientadas entre sí (por ejemplo, dominios móviles, loops flexibles, etc.).\n\nVisualizable como mapa de calor:\n\n\n\nValor PAE\nConfianza relacional\n\n\n\n\n&lt;5 Å\nAlta\n\n\n&gt;10 Å\nBaja\n\n\n\n\n\n16.2.3 🧬 pTM e ipTM – Evaluación del modelo global\n\npTM (predicted TM-score):\n\nMide la precisión global del modelo.\nÚtil para evaluar si el plegamiento total es confiable.\n\nValores: 0 a 1.\n\n0.5 = el modelo es similar a la estructura real.\n&lt;0.5 = baja precisión global.\n\n\n\nipTM (interfacial predicted TM-score):\n\nEvalúa la precisión de la orientación relativa entre subunidades (en complejos).\nIdeal para estructuras multímero o ensamblajes.\n\n\n\n\n\nScore\nInterpretación\n\n\n\n\n&gt;0.8\nAlta confianza estructural\n\n\n0.6–0.8\nZona gris, posible confianza\n\n\n&lt;0.6\nPredicción probablemente fallida\n\n\n\n\n🔬 Nota: con secuencias muy cortas (&lt;20 residuos), pTM puede no ser confiable. En ese caso, se prioriza el uso de pLDDT y PAE.",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Predicción de estructuras</span>"
+    ]
+  },
+  {
+    "objectID": "S5_02_prediccion.html#ejemplo",
+    "href": "S5_02_prediccion.html#ejemplo",
+    "title": "16  Predicción de estructuras",
+    "section": "16.3 Ejemplo",
+    "text": "16.3 Ejemplo",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Predicción de estructuras</span>"
+    ]
+  },
+  {
+    "objectID": "S5_02_prediccion.html#archivos-de-salida-típicos",
+    "href": "S5_02_prediccion.html#archivos-de-salida-típicos",
+    "title": "16  Predicción de estructuras",
+    "section": "16.4 📦 Archivos de salida típicos",
+    "text": "16.4 📦 Archivos de salida típicos\n\n\n\n\n\n\n\nArchivo\nContenido\n\n\n\n\nmodel.pdb\nModelo estructural en formato 3D estándar\n\n\nranking_debug.json\nRanking de confianza de los modelos generados\n\n\nplddt_scores.txt\nConfianza por átomo o residuo\n\n\npae.png o pae.json\nMatriz visual o numérica del error entre residuos\n\n\npredicted_aligned_error\nArchivo numérico completo para análisis con scripts",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Predicción de estructuras</span>"
+    ]
+  },
+  {
+    "objectID": "S5_02_prediccion.html#recomendaciones",
+    "href": "S5_02_prediccion.html#recomendaciones",
+    "title": "16  Predicción de estructuras",
+    "section": "16.5 🧭 Recomendaciones",
+    "text": "16.5 🧭 Recomendaciones\n\nUsa pLDDT para identificar regiones confiables y poco confiables.\nAnaliza PAE si tu proteína tiene dominios móviles o interacción con otras.\nUsa pTM/ipTM para evaluar modelos completos o complejos multímero.\nVisualiza con ChimeraX para examinar colores por confianza.",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Predicción de estructuras</span>"
+    ]
+  },
+  {
+    "objectID": "S5_02_prediccion.html#conclusión",
+    "href": "S5_02_prediccion.html#conclusión",
+    "title": "16  Predicción de estructuras",
+    "section": "16.6 📌 Conclusión",
+    "text": "16.6 📌 Conclusión\nLas predicciones estructurales actuales permiten obtener modelos de alta calidad. Sin embargo, su interpretación debe combinar métricas locales (pLDDT), relacionales (PAE) y globales (pTM, ipTM) para asegurar un uso biológicamente informado y confiable del modelo.",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Predicción de estructuras</span>"
+    ]
+  },
+  {
+    "objectID": "S5_03_chimerax.html",
+    "href": "S5_03_chimerax.html",
+    "title": "17  Visualización y análisis en ChimeraX",
+    "section": "",
+    "text": "17.1 🧬 Abrir un modelo estructural\nEn este módulo aprenderás a explorar modelos tridimensionales predichos utilizando ChimeraX, una herramienta moderna y poderosa para el análisis estructural. Se enfatiza la interpretación visual de la calidad de la predicción (pLDDT), así como la identificación de posibles regiones funcionales.\nopen model.pdb\nO usa la interfaz gráfica:",
+    "crumbs": [
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
+    ]
+  },
+  {
+    "objectID": "S5_03_chimerax.html#abrir-un-modelo-estructural",
+    "href": "S5_03_chimerax.html#abrir-un-modelo-estructural",
+    "title": "17  Visualización y análisis en ChimeraX",
+    "section": "",
+    "text": "Instala ChimeraX desde: UCSF ChimeraX\nAbre el programa y ejecuta en la línea de comandos:\n\n\n\n\nFile &gt; Open y selecciona tu archivo .pdb.",
+    "crumbs": [
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
+    ]
+  },
+  {
+    "objectID": "S5_03_chimerax.html#colorear-por-confianza-estructural-plddt",
+    "href": "S5_03_chimerax.html#colorear-por-confianza-estructural-plddt",
+    "title": "17  Visualización y análisis en ChimeraX",
+    "section": "17.2 🎨 Colorear por confianza estructural (pLDDT)",
+    "text": "17.2 🎨 Colorear por confianza estructural (pLDDT)\n\nSi el archivo .pdb proviene de AlphaFold o ColabFold, contiene puntuaciones de pLDDT como valores en la columna B-factor.\nPuedes colorear la estructura según estos valores con el siguiente comando en ChimeraX:\n\n\ncolor byattribute bfactor palette blue:green:yellow:red\n\n\n\n\npLDDT\nColor\nConfianza\n\n\n\n\n&gt;90\nAzul\nMuy alta\n\n\n70–90\nVerde\nAlta\n\n\n50–70\nAmarillo\nBaja\n\n\n&lt;50\nRojo\nMuy baja\n\n\n\n\n🎯 Este esquema te permite visualizar rápidamente qué partes del modelo son confiables y cuáles deben tratarse con precaución.",
+    "crumbs": [
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
+    ]
+  },
+  {
+    "objectID": "S5_03_chimerax.html#identificación-de-regiones-funcionales",
+    "href": "S5_03_chimerax.html#identificación-de-regiones-funcionales",
+    "title": "17  Visualización y análisis en ChimeraX",
+    "section": "17.3 🔍 Identificación de regiones funcionales",
+    "text": "17.3 🔍 Identificación de regiones funcionales\n\n17.3.1 Visualiza residuos clave\nPara marcar residuos específicos (por ejemplo, un sitio activo o de unión):\n\nselect :145\nlabel sel\n\nTambién puedes seleccionar rangos:\n\nselect :145-160\n\n\n\n17.3.2 Vista de superficie\nPara observar posibles sitios de interacción:\n\nsurface\ntransparency 0.5\n\n\n\n17.3.3 Medir distancias o ángulos\nHerramientas como distance, angle, y torsion están disponibles:\n\ndistance :50@CA :120@CA",
+    "crumbs": [
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
+    ]
+  },
+  {
+    "objectID": "S5_03_chimerax.html#cargar-anotaciones-adicionales",
+    "href": "S5_03_chimerax.html#cargar-anotaciones-adicionales",
+    "title": "17  Visualización y análisis en ChimeraX",
+    "section": "17.4 🌐 Cargar anotaciones adicionales",
+    "text": "17.4 🌐 Cargar anotaciones adicionales\nPuedes integrar anotaciones desde UniProt o bases de datos externas si el modelo tiene un ID asociado. Por ejemplo:\n\nopen uniprot:Q9Y6K9\n\nEsto descarga y visualiza directamente desde AlphaFold DB si está disponible.",
+    "crumbs": [
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
+    ]
+  },
+  {
+    "objectID": "S5_03_chimerax.html#exportar-imágenes",
+    "href": "S5_03_chimerax.html#exportar-imágenes",
+    "title": "17  Visualización y análisis en ChimeraX",
+    "section": "17.5 📷 Exportar imágenes",
+    "text": "17.5 📷 Exportar imágenes\nPara guardar una imagen de tu vista actual:\n\nsave ~/Desktop/estructura.png supersample 3\n\n\n🖼️ Usa supersample para mayor calidad de exportación.",
+    "crumbs": [
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
+    ]
+  },
+  {
+    "objectID": "S5_03_chimerax.html#buenas-prácticas",
+    "href": "S5_03_chimerax.html#buenas-prácticas",
+    "title": "17  Visualización y análisis en ChimeraX",
+    "section": "17.6 ✅ Buenas prácticas",
+    "text": "17.6 ✅ Buenas prácticas\n\nSiempre revisa las regiones de baja confianza antes de hacer inferencias funcionales.\nUsa estructuras experimentales (si existen) para validar lo predicho.\nDocumenta cualquier modificación o resalte visual en capturas.",
+    "crumbs": [
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
+    ]
+  },
+  {
+    "objectID": "S5_03_chimerax.html#conclusión",
+    "href": "S5_03_chimerax.html#conclusión",
+    "title": "17  Visualización y análisis en ChimeraX",
+    "section": "17.7 📌 Conclusión",
+    "text": "17.7 📌 Conclusión\nChimeraX permite una exploración rica e interactiva de modelos estructurales. La combinación de visualización por pLDDT y anotaciones funcionales facilita un análisis más riguroso y biológicamente relevante de las predicciones.",
+    "crumbs": [
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
+    ]
+  },
+  {
+    "objectID": "S5_04_alineamiento_modelos.html",
+    "href": "S5_04_alineamiento_modelos.html",
+    "title": "18  Alineamiento de modelos estructurales",
+    "section": "",
+    "text": "18.1 🧬 Cargar múltiples estructuras\nEn este módulo aprenderás a alinear y comparar modelos tridimensionales utilizando ChimeraX, enfocándote en la evaluación visual de similitudes y diferencias estructurales.\nAbre los modelos que deseas alinear. Por ejemplo:\nopen model1.pdb\nopen model2.pdb\nChimeraX asignará identificadores como #1, #2, etc., para referirse a cada modelo cargado.",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Alineamiento de modelos estructurales</span>"
+    ]
+  },
+  {
+    "objectID": "S5_04_alineamiento_modelos.html#superposición-automática-de-estructuras",
+    "href": "S5_04_alineamiento_modelos.html#superposición-automática-de-estructuras",
+    "title": "18  Alineamiento de modelos estructurales",
+    "section": "18.2 🔄 Superposición automática de estructuras",
+    "text": "18.2 🔄 Superposición automática de estructuras\nUsa el comando matchmaker, que alinea modelos basándose en sus cadenas:\n\nmatchmaker #2 to #1\n\nEsto alineará el modelo #2 sobre el #1 usando la mejor correspondencia estructural.\n\n📌 Puedes especificar regiones o cadenas específicas si es necesario, por ejemplo:\n\n\nmatchmaker #2/A:10-100 to #1/A:10-100",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Alineamiento de modelos estructurales</span>"
+    ]
+  },
+  {
+    "objectID": "S5_04_alineamiento_modelos.html#evaluación-visual-de-similitudes-y-diferencias",
+    "href": "S5_04_alineamiento_modelos.html#evaluación-visual-de-similitudes-y-diferencias",
+    "title": "18  Alineamiento de modelos estructurales",
+    "section": "18.3 🎨 Evaluación visual de similitudes y diferencias",
+    "text": "18.3 🎨 Evaluación visual de similitudes y diferencias\n\n18.3.1 Cambiar colores para facilitar la comparación:\n\ncolor #1 cornflowerblue\ncolor #2 orange\n\n\n\n18.3.2 Ajustar transparencia para ver estructuras superpuestas:\n\ntransparency 0.4 #2\n\n\n\n18.3.3 Mostrar el RMSD (desviación cuadrática media):\n\nDespués del alineamiento, ChimeraX reportará automáticamente el RMSD en la consola.\nPara volver a calcularlo explícitamente:\n\n\nrmsd #1/A:10-100 #2/A:10-100",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Alineamiento de modelos estructurales</span>"
+    ]
+  },
+  {
+    "objectID": "S5_04_alineamiento_modelos.html#comparar-residuos-equivalentes",
+    "href": "S5_04_alineamiento_modelos.html#comparar-residuos-equivalentes",
+    "title": "18  Alineamiento de modelos estructurales",
+    "section": "18.4 📏 Comparar residuos equivalentes",
+    "text": "18.4 📏 Comparar residuos equivalentes\nPuedes mostrar líneas de correspondencia entre residuos alineados:\n\nmatch show true\n\nY activar etiquetas:\n\nlabel sel",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Alineamiento de modelos estructurales</span>"
+    ]
+  },
+  {
+    "objectID": "S5_04_alineamiento_modelos.html#exportar-la-comparación-estructural",
+    "href": "S5_04_alineamiento_modelos.html#exportar-la-comparación-estructural",
+    "title": "18  Alineamiento de modelos estructurales",
+    "section": "18.5 📷 Exportar la comparación estructural",
+    "text": "18.5 📷 Exportar la comparación estructural\nPara guardar una imagen de la comparación:\n\nsave ~/Desktop/alineamiento_modelos.png supersample 3",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Alineamiento de modelos estructurales</span>"
+    ]
+  },
+  {
+    "objectID": "S5_04_alineamiento_modelos.html#buenas-prácticas",
+    "href": "S5_04_alineamiento_modelos.html#buenas-prácticas",
+    "title": "18  Alineamiento de modelos estructurales",
+    "section": "18.6 ✅ Buenas prácticas",
+    "text": "18.6 ✅ Buenas prácticas\n\nUsa estructuras de alta confianza (pLDDT &gt; 70) para comparar regiones confiables.\nLimita el alineamiento a regiones homólogas o funcionales si los modelos son divergentes.\nConsidera otras herramientas (como TM-align) si necesitas comparaciones cuantitativas más detalladas.",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Alineamiento de modelos estructurales</span>"
+    ]
+  },
+  {
+    "objectID": "S5_04_alineamiento_modelos.html#conclusión",
+    "href": "S5_04_alineamiento_modelos.html#conclusión",
+    "title": "18  Alineamiento de modelos estructurales",
+    "section": "18.7 🧠 Conclusión",
+    "text": "18.7 🧠 Conclusión\nEl alineamiento estructural es una herramienta poderosa para evaluar similitudes funcionales, conservación evolutiva o validar modelos generados. Con ChimeraX, puedes obtener una evaluación tanto visual como numérica de estas comparaciones de manera intuitiva y precisa.",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Alineamiento de modelos estructurales</span>"
+    ]
+  },
+  {
+    "objectID": "conclusiones.html",
+    "href": "conclusiones.html",
+    "title": "Conclusión del Curso",
+    "section": "",
+    "text": "📚 Resumen General\nA lo largo de cinco días, hemos recorrido todo el flujo de trabajo para el análisis de secuencias y estructuras proteicas:",
+    "crumbs": [
+      "Conclusión del Curso"
+    ]
+  },
+  {
+    "objectID": "conclusiones.html#resumen-general",
+    "href": "conclusiones.html#resumen-general",
+    "title": "Conclusión del Curso",
+    "section": "",
+    "text": "Preparación del entorno\n\nInstalación de herramientas bioinformáticas clave (BLAST+, SeqKit, MAFFT, etc.).\n\nDescarga y manejo de secuencias desde UniProt y NCBI.\n\nBúsqueda de homologías con BLAST\n\nUso de BLAST en línea (UniProt y NCBI) para obtener secuencias interesantes.\n\nEjecución local de BLAST (blastp, tblastn) y organización de resultados.\n\nAlineamiento múltiple y filogenia\n\nGeneración de alineamientos con MAFFT, Clustal Omega y MUSCLE.\n\nRecorte de regiones poco informativas con trimAl.\n\nVisualización de conservación con WebLogo.\n\nConstrucción de árboles filogenéticos con FastTree e IQ-TREE.\n\nAnálisis de dominios y conservación\n\nIdentificación de dominios funcionales con InterProScan y extracción de dominios Pfam.\n\nBúsqueda de dominios mediante HMMER (hmmscan/hmmsearch).\n\nModelado y análisis estructural\n\nIntroducción a IA para predicción estructural (AlphaFold, Boltz-1).\n\nInterpretación de métricas de calidad: pLDDT, PAE, pTM e ipTM.\n\nVisualización de modelos en ChimeraX: coloreado por confianza y análisis funcional.\n\nSuperposición y comparación de modelos estructurales con ChimeraX.",
+    "crumbs": [
+      "Conclusión del Curso"
+    ]
+  },
+  {
+    "objectID": "conclusiones.html#puntos-clave-y-aprendizajes",
+    "href": "conclusiones.html#puntos-clave-y-aprendizajes",
+    "title": "Conclusión del Curso",
+    "section": "🎯 Puntos Clave y Aprendizajes",
+    "text": "🎯 Puntos Clave y Aprendizajes\n\n1. Entorno Reproducible\n\nLa correcta instalación y configuración de herramientas es fundamental para asegurar que los análisis sean reproducibles en distintos sistemas.\n\nOrganizar directorios (blast_db/, blast_results/, alignments/, models/) facilita el flujo de trabajo y la trazabilidad.\n\n\n\n2. Búsqueda y Filtrado de Homólogos\n\nComprender conceptos de homología, ortología y paralogía sirve de base para seleccionar secuencias relevantes.\n\nBLAST en línea vs BLAST local: cada uno aporta ventajas (bases de datos actualizadas vs procesamiento masivo).\n\nFiltrar los mejores hits y organizar secuencias en archivos consolidados (all_protein.fasta, all_cds.fasta) resulta esencial para pasos posteriores.\n\n\n\n3. Alineamientos y Filogenia\n\nHerramientas como MAFFT, Clustal Omega y MUSCLE ofrecen diferentes equilibrios entre velocidad y precisión.\n\nRecortar alineamientos con trimAl elimina regiones ruidosas y mejora la confiabilidad de los árboles.\n\nLos logos de conservación (WebLogo) facilitan la detección visual de motivos funcionales.\n\nLa construcción de árboles con FastTree (rápido) e IQ-TREE (modelo automático + bootstrap) proporciona distintos niveles de rigor.\n\n\n\n4. Análisis de Dominios\n\nInterProScan permite identificar dominios conocidos en un entorno web, mientras que HMMER ofrece búsquedas locales contra Pfam.\n\nSaber extraer modelos HMM específicos (por ejemplo, PF00071) y buscar en grandes conjuntos de secuencias aumenta la resolución funcional del estudio.\n\n\n\n5. Modelado Estructural\n\nLas predicciones de AlphaFold y herramientas similares revolucionan el acceso a modelos 3D de alta calidad sin cristalografía física.\n\nMétricas como pLDDT (confianza atómica), PAE (error entre pares de residuos), pTM e ipTM (calidad global y de interfase) permiten evaluar modelos de forma objetiva.\n\nVerificar regiones de baja confianza antes de inferir funciones es una buena práctica.\n\n\n\n6. Visualización y Comparación Estructural\n\nChimeraX es una plataforma flexible para:\n\nCargar y explorar modelos .pdb.\n\nColorear por pLDDT para identificar regiones confiables.\n\nSuperponer estructuras con matchmaker y comparar residuos equivalentes.\n\nGenerar imágenes de alta calidad para reportes y publicaciones.",
+    "crumbs": [
+      "Conclusión del Curso"
+    ]
+  },
+  {
+    "objectID": "conclusiones.html#aplicaciones-y-siguientes-pasos",
+    "href": "conclusiones.html#aplicaciones-y-siguientes-pasos",
+    "title": "Conclusión del Curso",
+    "section": "🚀 Aplicaciones y Siguientes Pasos",
+    "text": "🚀 Aplicaciones y Siguientes Pasos\n\nInvestigación Funcional\n\nCombinar información de dominios, conservación y estructura para proponer sitios activos o posibles mutaciones.\n\nDiseñar experimentos de mutagénesis para validar predicciones.\n\nEstudios Evolutivos\n\nIntegrar árboles filogenéticos con datos de conservación estructural para inferir cambios evolutivos críticos.\n\nAnalizar la evolución de dominios proteicos dentro de familias o géneros.\n\nBiología Computacional Avanzada\n\nAutomatizar flujos de trabajo (p. ej., pipelines en Snakemake o Nextflow) que incluyan BLAST, alineamiento, filogenia y predicción estructural.\n\nImplementar análisis de gran escala (metagenomas, proteomas completos) con recursos de cómputo de alto rendimiento.\n\nDesarrollo de Servicios Web o App\n\nIntegrar estos módulos en aplicaciones Shiny o dashboards para usuarios sin conocimientos de línea de comandos.\n\nCrear repositorios con ejemplos de casos de estudio (por ejemplo, familias proteicas de interés biotecnológico).",
+    "crumbs": [
+      "Conclusión del Curso"
+    ]
+  },
+  {
+    "objectID": "conclusiones.html#reflexión-final",
+    "href": "conclusiones.html#reflexión-final",
+    "title": "Conclusión del Curso",
+    "section": "🌟 Reflexión Final",
+    "text": "🌟 Reflexión Final\nEste curso ha proporcionado las herramientas y el marco conceptual para abordar un análisis integral desde la secuencia hasta la estructura. Más allá de aprender comandos aislados, se trata de comprender la lógica detrás de cada paso:\n\nPor qué recortar un alineamiento puede cambiar un árbol.\n\nCómo un bajo pLDDT indica flexibilidad o falta de información.\n\nLa importancia de contrastar predicciones con datos experimentales o anotaciones de base de datos.\n\nCon este conocimiento, estás en capacidad de diseñar proyectos propios, evaluar resultados críticamente y explorar nuevas aplicaciones en investigación o docencia. ¡Mucho éxito en tus proyectos futuros!",
+    "crumbs": [
+      "Conclusión del Curso"
     ]
   }
 ]

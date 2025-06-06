@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>11&nbsp; Construcción de árboles filogenéticos – Análisis de Secuencias</title>
+<title>16&nbsp; Predicción de estructuras – Análisis de Secuencias</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./S3_05_visualizacion_arboles.html" rel="next">
-<link href="./S3_03_weblogo.html" rel="prev">
+<link href="./S5_03_chimerax.html" rel="next">
+<link href="./S5_01_introduccion_modelado.html" rel="prev">
 <link href="./images/LogoDavidAlberto.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_04_arboles.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S5_02_prediccion.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Predicción de estructuras</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -269,7 +269,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S3_04_arboles.html" class="sidebar-item-text sidebar-link active">
+  <a href="./S3_04_arboles.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span></a>
   </div>
 </li>
@@ -326,20 +326,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#generación-de-árboles-con-fasttree" id="toc-generación-de-árboles-con-fasttree" class="nav-link active" data-scroll-target="#generación-de-árboles-con-fasttree"><span class="header-section-number">11.1</span> ⚡ Generación de árboles con <code>FastTree</code></a></li>
-  <li><a href="#construcción-con-iq-tree" id="toc-construcción-con-iq-tree" class="nav-link" data-scroll-target="#construcción-con-iq-tree"><span class="header-section-number">11.2</span> 🧠 Construcción con IQ-TREE</a>
+  <li><a href="#entrada-en-formato-fasta" id="toc-entrada-en-formato-fasta" class="nav-link active" data-scroll-target="#entrada-en-formato-fasta"><span class="header-section-number">16.1</span> 🧾 Entrada en formato FASTA</a></li>
+  <li><a href="#interpretación-de-resultados" id="toc-interpretación-de-resultados" class="nav-link" data-scroll-target="#interpretación-de-resultados"><span class="header-section-number">16.2</span> 📈 Interpretación de resultados</a>
   <ul>
-  <li><a href="#conceptos-básicos-para-profundizar" id="toc-conceptos-básicos-para-profundizar" class="nav-link" data-scroll-target="#conceptos-básicos-para-profundizar"><span class="header-section-number">11.2.1</span> 📘 Conceptos básicos (para profundizar)</a></li>
+  <li><a href="#plddt-per-residue-local-distance-difference-test" id="toc-plddt-per-residue-local-distance-difference-test" class="nav-link" data-scroll-target="#plddt-per-residue-local-distance-difference-test"><span class="header-section-number">16.2.1</span> 🟨 pLDDT (per-residue Local Distance Difference Test)</a></li>
+  <li><a href="#pae-predicted-aligned-error" id="toc-pae-predicted-aligned-error" class="nav-link" data-scroll-target="#pae-predicted-aligned-error"><span class="header-section-number">16.2.2</span> 🧩 PAE (Predicted Aligned Error)</a></li>
+  <li><a href="#ptm-e-iptm-evaluación-del-modelo-global" id="toc-ptm-e-iptm-evaluación-del-modelo-global" class="nav-link" data-scroll-target="#ptm-e-iptm-evaluación-del-modelo-global"><span class="header-section-number">16.2.3</span> 🧬 pTM e ipTM – Evaluación del modelo global</a></li>
   </ul></li>
+  <li><a href="#ejemplo" id="toc-ejemplo" class="nav-link" data-scroll-target="#ejemplo"><span class="header-section-number">16.3</span> Ejemplo</a></li>
+  <li><a href="#archivos-de-salida-típicos" id="toc-archivos-de-salida-típicos" class="nav-link" data-scroll-target="#archivos-de-salida-típicos"><span class="header-section-number">16.4</span> 📦 Archivos de salida típicos</a></li>
+  <li><a href="#recomendaciones" id="toc-recomendaciones" class="nav-link" data-scroll-target="#recomendaciones"><span class="header-section-number">16.5</span> 🧭 Recomendaciones</a></li>
+  <li><a href="#conclusión" id="toc-conclusión" class="nav-link" data-scroll-target="#conclusión"><span class="header-section-number">16.6</span> 📌 Conclusión</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_04_arboles.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S5_02_prediccion.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Predicción de estructuras</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></h1>
+<h1 class="title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Predicción de estructuras</span></h1>
 </div>
 
 
@@ -356,49 +362,202 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En este módulo aprenderás a <strong>generar árboles filogenéticos</strong> a partir de alineamientos múltiples recortados, utilizando herramientas rápidas y robustas como <code>FastTree</code> e <code>IQ-TREE</code>.</p>
-<section id="generación-de-árboles-con-fasttree" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="generación-de-árboles-con-fasttree"><span class="header-section-number">11.1</span> ⚡ Generación de árboles con <code>FastTree</code></h2>
-<p><code>FastTree</code> es una herramienta rápida y eficiente para construir árboles a partir de alineamientos, especialmente útil para grandes conjuntos de datos.</p>
+<p>En este módulo aprenderás a interpretar los valores de <strong>confianza</strong> y <strong>precisión</strong> de los modelos.</p>
+<section id="entrada-en-formato-fasta" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="entrada-en-formato-fasta"><span class="header-section-number">16.1</span> 🧾 Entrada en formato FASTA</h2>
+<p>Toda predicción estructural parte de una <strong>secuencia en formato FASTA</strong>, por ejemplo:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con proteínas</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">fasttree</span> all_protein_trimmed.aln <span class="op">&gt;</span> all_protein.tree</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con CDS</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">fasttree</span> all_cds_trimmed.aln <span class="op">&gt;</span> all_cds.tree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> P06780.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>⚠️ Asegúrate de que:</p>
+<ul>
+<li>La secuencia esté limpia (sin caracteres inválidos).</li>
+<li>Tenga un número suficiente de residuos (<strong>recomendado: &gt; 50 aa</strong>).</li>
+<li>El encabezado comience con <code>&gt;</code> seguido de un identificador</li>
+</ul>
+</section>
+<section id="interpretación-de-resultados" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="interpretación-de-resultados"><span class="header-section-number">16.2</span> 📈 Interpretación de resultados</h2>
+<p>Las herramientas de predicción devuelven archivos con extensiones como <code>.pdb</code>, junto con métricas de calidad del modelo.</p>
+<section id="plddt-per-residue-local-distance-difference-test" class="level3" data-number="16.2.1">
+<h3 data-number="16.2.1" class="anchored" data-anchor-id="plddt-per-residue-local-distance-difference-test"><span class="header-section-number">16.2.1</span> 🟨 pLDDT (per-residue Local Distance Difference Test)</h3>
+<ul>
+<li><strong>Significado</strong>: predice qué tan confiable es la posición de cada átomo respecto al modelo.</li>
+<li><strong>Visualización</strong>: colores aplicados directamente sobre el modelo estructural (azul = alta confianza, rojo = baja).</li>
+<li><strong>Escala</strong>: 0–100.</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>pLDDT</th>
+<th>Confianza</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>&gt;90</td>
+<td>Muy alta</td>
+</tr>
+<tr class="even">
+<td>70–90</td>
+<td>Alta</td>
+</tr>
+<tr class="odd">
+<td>50–70</td>
+<td>Baja</td>
+</tr>
+<tr class="even">
+<td>&lt;50</td>
+<td>Muy baja (desorden)</td>
+</tr>
+</tbody>
+</table>
 <blockquote class="blockquote">
-<p>🔍 Usa aproximaciones de máxima verosimilitud (ML) con heurísticas rápidas.</p>
+<p>🧠 En proteínas, se aproxima a lDDT-Cα pero con mayor precisión. Para ácidos nucleicos, se usa un radio de 30 Å. Para ligandos, solo se consideran distancias con los polímeros, no otros ligandos.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>🌟 Puedes visualizar el modelo con colores según pLDDT en ChimeraX o PyMOL para detectar regiones confiables o móviles.</p>
 </blockquote>
 </section>
-<section id="construcción-con-iq-tree" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="construcción-con-iq-tree"><span class="header-section-number">11.2</span> 🧠 Construcción con IQ-TREE</h2>
-<p><code>IQ-TREE</code> es una herramienta más avanzada que permite:</p>
+<section id="pae-predicted-aligned-error" class="level3" data-number="16.2.2">
+<h3 data-number="16.2.2" class="anchored" data-anchor-id="pae-predicted-aligned-error"><span class="header-section-number">16.2.2</span> 🧩 PAE (Predicted Aligned Error)</h3>
 <ul>
-<li>Selección automática del mejor modelo evolutivo</li>
-<li>Bootstrapping ultrarrápido</li>
-<li>Análisis más detallado</li>
+<li><strong>Significado</strong>: estimación del error esperado entre dos regiones (i, j) del modelo.</li>
+<li><strong>Formato</strong>: matriz cuadrada simétrica que representa la <strong>incertidumbre en la relación entre pares de residuos</strong>.</li>
+<li><strong>Unidades</strong>: Ångstroms (distancia).</li>
+<li>Útil para <strong>evaluar relaciones entre dominios o subunidades</strong>.</li>
+<li>Se interpreta como una <strong>mapa de calor</strong>, donde los valores bajos indican mayor confianza estructural.</li>
 </ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con proteínas (modelo automático)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree</span> <span class="at">-s</span> all_protein_trimmed.aln <span class="at">-m</span> TEST <span class="at">-bb</span> 1000 <span class="at">-nt</span> AUTO</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con CDS (modelo automático)</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree</span> <span class="at">-s</span> all_cds_trimmed.aln <span class="at">-m</span> TEST <span class="at">-bb</span> 1000 <span class="at">-nt</span> AUTO</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 <blockquote class="blockquote">
-<p>📌 -m TEST: prueba múltiples modelos y selecciona el mejor. 📌 -bb 1000: realiza 1000 replicaciones de bootstrap ultrarrápido.</p>
+<p>🔬 Muy útil para saber si dos regiones están bien orientadas entre sí (por ejemplo, dominios móviles, loops flexibles, etc.).</p>
 </blockquote>
-<section id="conceptos-básicos-para-profundizar" class="level3" data-number="11.2.1">
-<h3 data-number="11.2.1" class="anchored" data-anchor-id="conceptos-básicos-para-profundizar"><span class="header-section-number">11.2.1</span> 📘 Conceptos básicos (para profundizar)</h3>
-<ul>
-<li><strong>Modelos de sustitución</strong>: Determinan cómo cambian los residuos a lo largo del tiempo.</li>
-<li><strong>Bootstrap</strong>: Mide la confiabilidad de las ramas.</li>
-<li><strong>Topología</strong>: La forma del árbol; refleja relaciones evolutivas.</li>
-</ul>
-
-
+<p>Visualizable como mapa de calor:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Valor PAE</th>
+<th>Confianza relacional</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>&lt;5 Å</td>
+<td>Alta</td>
+</tr>
+<tr class="even">
+<td>&gt;10 Å</td>
+<td>Baja</td>
+</tr>
+</tbody>
+</table>
 </section>
+<section id="ptm-e-iptm-evaluación-del-modelo-global" class="level3" data-number="16.2.3">
+<h3 data-number="16.2.3" class="anchored" data-anchor-id="ptm-e-iptm-evaluación-del-modelo-global"><span class="header-section-number">16.2.3</span> 🧬 pTM e ipTM – Evaluación del modelo global</h3>
+<ul>
+<li><strong>pTM (predicted TM-score)</strong>:
+<ul>
+<li>Mide la <strong>precisión global del modelo</strong>.</li>
+<li>Útil para evaluar si el <strong>plegamiento total</strong> es confiable.
+<ul>
+<li><strong>Valores</strong>: 0 a 1.
+<ul>
+<li><strong>0.5</strong> = el modelo es similar a la estructura real.</li>
+<li><strong>&lt;0.5</strong> = baja precisión global.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><strong>ipTM (interfacial predicted TM-score)</strong>:
+<ul>
+<li>Evalúa la <strong>precisión de la orientación relativa</strong> entre <strong>subunidades</strong> (en complejos).</li>
+<li>Ideal para estructuras multímero o ensamblajes.</li>
+</ul></li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Score</th>
+<th>Interpretación</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>&gt;0.8</td>
+<td>Alta confianza estructural</td>
+</tr>
+<tr class="even">
+<td>0.6–0.8</td>
+<td>Zona gris, posible confianza</td>
+</tr>
+<tr class="odd">
+<td>&lt;0.6</td>
+<td>Predicción probablemente fallida</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p>🔬 Nota: con secuencias muy cortas (&lt;20 residuos), pTM puede no ser confiable. En ese caso, se prioriza el uso de <strong>pLDDT</strong> y <strong>PAE</strong>.</p>
+</blockquote>
+</section>
+</section>
+<section id="ejemplo" class="level2" data-number="16.3">
+<h2 data-number="16.3" class="anchored" data-anchor-id="ejemplo"><span class="header-section-number">16.3</span> Ejemplo</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/valores_modelado.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="archivos-de-salida-típicos" class="level2" data-number="16.4">
+<h2 data-number="16.4" class="anchored" data-anchor-id="archivos-de-salida-típicos"><span class="header-section-number">16.4</span> 📦 Archivos de salida típicos</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Archivo</th>
+<th>Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>model.pdb</code></td>
+<td>Modelo estructural en formato 3D estándar</td>
+</tr>
+<tr class="even">
+<td><code>ranking_debug.json</code></td>
+<td>Ranking de confianza de los modelos generados</td>
+</tr>
+<tr class="odd">
+<td><code>plddt_scores.txt</code></td>
+<td>Confianza por átomo o residuo</td>
+</tr>
+<tr class="even">
+<td><code>pae.png</code> o <code>pae.json</code></td>
+<td>Matriz visual o numérica del error entre residuos</td>
+</tr>
+<tr class="odd">
+<td><code>predicted_aligned_error</code></td>
+<td>Archivo numérico completo para análisis con scripts</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="recomendaciones" class="level2" data-number="16.5">
+<h2 data-number="16.5" class="anchored" data-anchor-id="recomendaciones"><span class="header-section-number">16.5</span> 🧭 Recomendaciones</h2>
+<ul>
+<li>Usa <strong>pLDDT</strong> para identificar regiones confiables y poco confiables.</li>
+<li>Analiza <strong>PAE</strong> si tu proteína tiene dominios móviles o interacción con otras.</li>
+<li>Usa <strong>pTM/ipTM</strong> para evaluar modelos completos o complejos multímero.</li>
+<li>Visualiza con <strong>ChimeraX</strong> para examinar colores por confianza.</li>
+</ul>
+</section>
+<section id="conclusión" class="level2" data-number="16.6">
+<h2 data-number="16.6" class="anchored" data-anchor-id="conclusión"><span class="header-section-number">16.6</span> 📌 Conclusión</h2>
+<p>Las predicciones estructurales actuales permiten obtener modelos de alta calidad. Sin embargo, su interpretación debe combinar métricas locales (pLDDT), relacionales (PAE) y globales (pTM, ipTM) para asegurar un uso biológicamente informado y confiable del modelo.</p>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -965,13 +1124,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./S3_03_weblogo.html" class="pagination-link" aria-label="Visualización de conservación con WebLogo">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Visualización de conservación con WebLogo</span></span>
+      <a href="./S5_01_introduccion_modelado.html" class="pagination-link" aria-label="Introducción al modelado estructural">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Introducción al modelado estructural</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./S3_05_visualizacion_arboles.html" class="pagination-link" aria-label="Visualización de árboles filogenéticos">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./S5_03_chimerax.html" class="pagination-link" aria-label="Visualización y análisis en ChimeraX">
+        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Visualización y análisis en ChimeraX</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>11&nbsp; Construcción de árboles filogenéticos – Análisis de Secuencias</title>
+<title>18&nbsp; Alineamiento de modelos estructurales – Análisis de Secuencias</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./S3_05_visualizacion_arboles.html" rel="next">
-<link href="./S3_03_weblogo.html" rel="prev">
+<link href="./conclusiones.html" rel="next">
+<link href="./S5_03_chimerax.html" rel="prev">
 <link href="./images/LogoDavidAlberto.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_04_arboles.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S5_04_alineamiento_modelos.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Alineamiento de modelos estructurales</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -269,7 +269,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S3_04_arboles.html" class="sidebar-item-text sidebar-link active">
+  <a href="./S3_04_arboles.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span></a>
   </div>
 </li>
@@ -326,20 +326,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#generación-de-árboles-con-fasttree" id="toc-generación-de-árboles-con-fasttree" class="nav-link active" data-scroll-target="#generación-de-árboles-con-fasttree"><span class="header-section-number">11.1</span> ⚡ Generación de árboles con <code>FastTree</code></a></li>
-  <li><a href="#construcción-con-iq-tree" id="toc-construcción-con-iq-tree" class="nav-link" data-scroll-target="#construcción-con-iq-tree"><span class="header-section-number">11.2</span> 🧠 Construcción con IQ-TREE</a>
+  <li><a href="#cargar-múltiples-estructuras" id="toc-cargar-múltiples-estructuras" class="nav-link active" data-scroll-target="#cargar-múltiples-estructuras"><span class="header-section-number">18.1</span> 🧬 Cargar múltiples estructuras</a></li>
+  <li><a href="#superposición-automática-de-estructuras" id="toc-superposición-automática-de-estructuras" class="nav-link" data-scroll-target="#superposición-automática-de-estructuras"><span class="header-section-number">18.2</span> 🔄 Superposición automática de estructuras</a></li>
+  <li><a href="#evaluación-visual-de-similitudes-y-diferencias" id="toc-evaluación-visual-de-similitudes-y-diferencias" class="nav-link" data-scroll-target="#evaluación-visual-de-similitudes-y-diferencias"><span class="header-section-number">18.3</span> 🎨 Evaluación visual de similitudes y diferencias</a>
   <ul>
-  <li><a href="#conceptos-básicos-para-profundizar" id="toc-conceptos-básicos-para-profundizar" class="nav-link" data-scroll-target="#conceptos-básicos-para-profundizar"><span class="header-section-number">11.2.1</span> 📘 Conceptos básicos (para profundizar)</a></li>
+  <li><a href="#cambiar-colores-para-facilitar-la-comparación" id="toc-cambiar-colores-para-facilitar-la-comparación" class="nav-link" data-scroll-target="#cambiar-colores-para-facilitar-la-comparación"><span class="header-section-number">18.3.1</span> Cambiar colores para facilitar la comparación:</a></li>
+  <li><a href="#ajustar-transparencia-para-ver-estructuras-superpuestas" id="toc-ajustar-transparencia-para-ver-estructuras-superpuestas" class="nav-link" data-scroll-target="#ajustar-transparencia-para-ver-estructuras-superpuestas"><span class="header-section-number">18.3.2</span> Ajustar transparencia para ver estructuras superpuestas:</a></li>
+  <li><a href="#mostrar-el-rmsd-desviación-cuadrática-media" id="toc-mostrar-el-rmsd-desviación-cuadrática-media" class="nav-link" data-scroll-target="#mostrar-el-rmsd-desviación-cuadrática-media"><span class="header-section-number">18.3.3</span> Mostrar el RMSD (desviación cuadrática media):</a></li>
   </ul></li>
+  <li><a href="#comparar-residuos-equivalentes" id="toc-comparar-residuos-equivalentes" class="nav-link" data-scroll-target="#comparar-residuos-equivalentes"><span class="header-section-number">18.4</span> 📏 Comparar residuos equivalentes</a></li>
+  <li><a href="#exportar-la-comparación-estructural" id="toc-exportar-la-comparación-estructural" class="nav-link" data-scroll-target="#exportar-la-comparación-estructural"><span class="header-section-number">18.5</span> 📷 Exportar la comparación estructural</a></li>
+  <li><a href="#buenas-prácticas" id="toc-buenas-prácticas" class="nav-link" data-scroll-target="#buenas-prácticas"><span class="header-section-number">18.6</span> ✅ Buenas prácticas</a></li>
+  <li><a href="#conclusión" id="toc-conclusión" class="nav-link" data-scroll-target="#conclusión"><span class="header-section-number">18.7</span> 🧠 Conclusión</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_04_arboles.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S5_04_alineamiento_modelos.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Alineamiento de modelos estructurales</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></h1>
+<h1 class="title"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Alineamiento de modelos estructurales</span></h1>
 </div>
 
 
@@ -356,49 +363,87 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En este módulo aprenderás a <strong>generar árboles filogenéticos</strong> a partir de alineamientos múltiples recortados, utilizando herramientas rápidas y robustas como <code>FastTree</code> e <code>IQ-TREE</code>.</p>
-<section id="generación-de-árboles-con-fasttree" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="generación-de-árboles-con-fasttree"><span class="header-section-number">11.1</span> ⚡ Generación de árboles con <code>FastTree</code></h2>
-<p><code>FastTree</code> es una herramienta rápida y eficiente para construir árboles a partir de alineamientos, especialmente útil para grandes conjuntos de datos.</p>
+<p>En este módulo aprenderás a alinear y comparar modelos tridimensionales utilizando <strong>ChimeraX</strong>, enfocándote en la evaluación visual de similitudes y diferencias estructurales.</p>
+<section id="cargar-múltiples-estructuras" class="level2" data-number="18.1">
+<h2 data-number="18.1" class="anchored" data-anchor-id="cargar-múltiples-estructuras"><span class="header-section-number">18.1</span> 🧬 Cargar múltiples estructuras</h2>
+<p>Abre los modelos que deseas alinear. Por ejemplo:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con proteínas</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">fasttree</span> all_protein_trimmed.aln <span class="op">&gt;</span> all_protein.tree</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con CDS</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">fasttree</span> all_cds_trimmed.aln <span class="op">&gt;</span> all_cds.tree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">open</span> model1.pdb</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">open</span> model2.pdb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
-<p>🔍 Usa aproximaciones de máxima verosimilitud (ML) con heurísticas rápidas.</p>
-</blockquote>
+<p>ChimeraX asignará identificadores como <code>#1</code>, <code>#2</code>, etc., para referirse a cada modelo cargado.</p>
 </section>
-<section id="construcción-con-iq-tree" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="construcción-con-iq-tree"><span class="header-section-number">11.2</span> 🧠 Construcción con IQ-TREE</h2>
-<p><code>IQ-TREE</code> es una herramienta más avanzada que permite:</p>
+<section id="superposición-automática-de-estructuras" class="level2" data-number="18.2">
+<h2 data-number="18.2" class="anchored" data-anchor-id="superposición-automática-de-estructuras"><span class="header-section-number">18.2</span> 🔄 Superposición automática de estructuras</h2>
+<p>Usa el comando <code>matchmaker</code>, que alinea modelos basándose en sus cadenas:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">matchmaker</span> <span class="co">#2 to #1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Esto alineará el modelo <code>#2</code> sobre el <code>#1</code> usando la mejor correspondencia estructural.</p>
+<blockquote class="blockquote">
+<p>📌 Puedes especificar regiones o cadenas específicas si es necesario, por ejemplo:</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">matchmaker</span> <span class="co">#2/A:10-100 to #1/A:10-100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="evaluación-visual-de-similitudes-y-diferencias" class="level2" data-number="18.3">
+<h2 data-number="18.3" class="anchored" data-anchor-id="evaluación-visual-de-similitudes-y-diferencias"><span class="header-section-number">18.3</span> 🎨 Evaluación visual de similitudes y diferencias</h2>
+<section id="cambiar-colores-para-facilitar-la-comparación" class="level3" data-number="18.3.1">
+<h3 data-number="18.3.1" class="anchored" data-anchor-id="cambiar-colores-para-facilitar-la-comparación"><span class="header-section-number">18.3.1</span> Cambiar colores para facilitar la comparación:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">color</span> <span class="co">#1 cornflowerblue</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">color</span> <span class="co">#2 orange</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="ajustar-transparencia-para-ver-estructuras-superpuestas" class="level3" data-number="18.3.2">
+<h3 data-number="18.3.2" class="anchored" data-anchor-id="ajustar-transparencia-para-ver-estructuras-superpuestas"><span class="header-section-number">18.3.2</span> Ajustar transparencia para ver estructuras superpuestas:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">transparency</span> 0.4 <span class="co">#2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="mostrar-el-rmsd-desviación-cuadrática-media" class="level3" data-number="18.3.3">
+<h3 data-number="18.3.3" class="anchored" data-anchor-id="mostrar-el-rmsd-desviación-cuadrática-media"><span class="header-section-number">18.3.3</span> Mostrar el RMSD (desviación cuadrática media):</h3>
 <ul>
-<li>Selección automática del mejor modelo evolutivo</li>
-<li>Bootstrapping ultrarrápido</li>
-<li>Análisis más detallado</li>
+<li>Después del alineamiento, ChimeraX reportará automáticamente el RMSD en la consola.</li>
+<li>Para volver a calcularlo explícitamente:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con proteínas (modelo automático)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree</span> <span class="at">-s</span> all_protein_trimmed.aln <span class="at">-m</span> TEST <span class="at">-bb</span> 1000 <span class="at">-nt</span> AUTO</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con CDS (modelo automático)</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree</span> <span class="at">-s</span> all_cds_trimmed.aln <span class="at">-m</span> TEST <span class="at">-bb</span> 1000 <span class="at">-nt</span> AUTO</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">rmsd</span> <span class="co">#1/A:10-100 #2/A:10-100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
-<p>📌 -m TEST: prueba múltiples modelos y selecciona el mejor. 📌 -bb 1000: realiza 1000 replicaciones de bootstrap ultrarrápido.</p>
-</blockquote>
-<section id="conceptos-básicos-para-profundizar" class="level3" data-number="11.2.1">
-<h3 data-number="11.2.1" class="anchored" data-anchor-id="conceptos-básicos-para-profundizar"><span class="header-section-number">11.2.1</span> 📘 Conceptos básicos (para profundizar)</h3>
-<ul>
-<li><strong>Modelos de sustitución</strong>: Determinan cómo cambian los residuos a lo largo del tiempo.</li>
-<li><strong>Bootstrap</strong>: Mide la confiabilidad de las ramas.</li>
-<li><strong>Topología</strong>: La forma del árbol; refleja relaciones evolutivas.</li>
-</ul>
-
-
 </section>
+</section>
+<section id="comparar-residuos-equivalentes" class="level2" data-number="18.4">
+<h2 data-number="18.4" class="anchored" data-anchor-id="comparar-residuos-equivalentes"><span class="header-section-number">18.4</span> 📏 Comparar residuos equivalentes</h2>
+<p>Puedes mostrar líneas de correspondencia entre residuos alineados:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">match</span> show true</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Y activar etiquetas:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">label</span> sel</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="exportar-la-comparación-estructural" class="level2" data-number="18.5">
+<h2 data-number="18.5" class="anchored" data-anchor-id="exportar-la-comparación-estructural"><span class="header-section-number">18.5</span> 📷 Exportar la comparación estructural</h2>
+<p>Para guardar una imagen de la comparación:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">save</span> ~/Desktop/alineamiento_modelos.png supersample 3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="buenas-prácticas" class="level2" data-number="18.6">
+<h2 data-number="18.6" class="anchored" data-anchor-id="buenas-prácticas"><span class="header-section-number">18.6</span> ✅ Buenas prácticas</h2>
+<ul>
+<li>Usa estructuras de alta confianza (pLDDT &gt; 70) para comparar regiones confiables.</li>
+<li>Limita el alineamiento a regiones homólogas o funcionales si los modelos son divergentes.</li>
+<li>Considera otras herramientas (como TM-align) si necesitas comparaciones cuantitativas más detalladas.</li>
+</ul>
+</section>
+<section id="conclusión" class="level2" data-number="18.7">
+<h2 data-number="18.7" class="anchored" data-anchor-id="conclusión"><span class="header-section-number">18.7</span> 🧠 Conclusión</h2>
+<p>El alineamiento estructural es una herramienta poderosa para evaluar similitudes funcionales, conservación evolutiva o validar modelos generados. Con <strong>ChimeraX</strong>, puedes obtener una evaluación tanto visual como numérica de estas comparaciones de manera intuitiva y precisa.</p>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -965,13 +1010,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./S3_03_weblogo.html" class="pagination-link" aria-label="Visualización de conservación con WebLogo">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Visualización de conservación con WebLogo</span></span>
+      <a href="./S5_03_chimerax.html" class="pagination-link" aria-label="Visualización y análisis en ChimeraX">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Visualización y análisis en ChimeraX</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./S3_05_visualizacion_arboles.html" class="pagination-link" aria-label="Visualización de árboles filogenéticos">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./conclusiones.html" class="pagination-link" aria-label="Conclusión del Curso">
+        <span class="nav-page-text">Conclusión del Curso</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

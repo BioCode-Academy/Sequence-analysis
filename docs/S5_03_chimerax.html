@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>11&nbsp; Construcción de árboles filogenéticos – Análisis de Secuencias</title>
+<title>17&nbsp; Visualización y análisis en ChimeraX – Análisis de Secuencias</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./S3_05_visualizacion_arboles.html" rel="next">
-<link href="./S3_03_weblogo.html" rel="prev">
+<link href="./S5_04_alineamiento_modelos.html" rel="next">
+<link href="./S5_02_prediccion.html" rel="prev">
 <link href="./images/LogoDavidAlberto.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_04_arboles.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S5_03_chimerax.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Visualización y análisis en ChimeraX</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -269,7 +269,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S3_04_arboles.html" class="sidebar-item-text sidebar-link active">
+  <a href="./S3_04_arboles.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span></a>
   </div>
 </li>
@@ -326,20 +326,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#generación-de-árboles-con-fasttree" id="toc-generación-de-árboles-con-fasttree" class="nav-link active" data-scroll-target="#generación-de-árboles-con-fasttree"><span class="header-section-number">11.1</span> ⚡ Generación de árboles con <code>FastTree</code></a></li>
-  <li><a href="#construcción-con-iq-tree" id="toc-construcción-con-iq-tree" class="nav-link" data-scroll-target="#construcción-con-iq-tree"><span class="header-section-number">11.2</span> 🧠 Construcción con IQ-TREE</a>
+  <li><a href="#abrir-un-modelo-estructural" id="toc-abrir-un-modelo-estructural" class="nav-link active" data-scroll-target="#abrir-un-modelo-estructural"><span class="header-section-number">17.1</span> 🧬 Abrir un modelo estructural</a></li>
+  <li><a href="#colorear-por-confianza-estructural-plddt" id="toc-colorear-por-confianza-estructural-plddt" class="nav-link" data-scroll-target="#colorear-por-confianza-estructural-plddt"><span class="header-section-number">17.2</span> 🎨 Colorear por confianza estructural (<strong>pLDDT</strong>)</a></li>
+  <li><a href="#identificación-de-regiones-funcionales" id="toc-identificación-de-regiones-funcionales" class="nav-link" data-scroll-target="#identificación-de-regiones-funcionales"><span class="header-section-number">17.3</span> 🔍 Identificación de regiones funcionales</a>
   <ul>
-  <li><a href="#conceptos-básicos-para-profundizar" id="toc-conceptos-básicos-para-profundizar" class="nav-link" data-scroll-target="#conceptos-básicos-para-profundizar"><span class="header-section-number">11.2.1</span> 📘 Conceptos básicos (para profundizar)</a></li>
+  <li><a href="#visualiza-residuos-clave" id="toc-visualiza-residuos-clave" class="nav-link" data-scroll-target="#visualiza-residuos-clave"><span class="header-section-number">17.3.1</span> Visualiza residuos clave</a></li>
+  <li><a href="#vista-de-superficie" id="toc-vista-de-superficie" class="nav-link" data-scroll-target="#vista-de-superficie"><span class="header-section-number">17.3.2</span> Vista de superficie</a></li>
+  <li><a href="#medir-distancias-o-ángulos" id="toc-medir-distancias-o-ángulos" class="nav-link" data-scroll-target="#medir-distancias-o-ángulos"><span class="header-section-number">17.3.3</span> Medir distancias o ángulos</a></li>
   </ul></li>
+  <li><a href="#cargar-anotaciones-adicionales" id="toc-cargar-anotaciones-adicionales" class="nav-link" data-scroll-target="#cargar-anotaciones-adicionales"><span class="header-section-number">17.4</span> 🌐 Cargar anotaciones adicionales</a></li>
+  <li><a href="#exportar-imágenes" id="toc-exportar-imágenes" class="nav-link" data-scroll-target="#exportar-imágenes"><span class="header-section-number">17.5</span> 📷 Exportar imágenes</a></li>
+  <li><a href="#buenas-prácticas" id="toc-buenas-prácticas" class="nav-link" data-scroll-target="#buenas-prácticas"><span class="header-section-number">17.6</span> ✅ Buenas prácticas</a></li>
+  <li><a href="#conclusión" id="toc-conclusión" class="nav-link" data-scroll-target="#conclusión"><span class="header-section-number">17.7</span> 📌 Conclusión</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_04_arboles.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S5_03_chimerax.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Visualización y análisis en ChimeraX</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></h1>
+<h1 class="title"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Visualización y análisis en ChimeraX</span></h1>
 </div>
 
 
@@ -356,49 +363,126 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En este módulo aprenderás a <strong>generar árboles filogenéticos</strong> a partir de alineamientos múltiples recortados, utilizando herramientas rápidas y robustas como <code>FastTree</code> e <code>IQ-TREE</code>.</p>
-<section id="generación-de-árboles-con-fasttree" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="generación-de-árboles-con-fasttree"><span class="header-section-number">11.1</span> ⚡ Generación de árboles con <code>FastTree</code></h2>
-<p><code>FastTree</code> es una herramienta rápida y eficiente para construir árboles a partir de alineamientos, especialmente útil para grandes conjuntos de datos.</p>
+<p>En este módulo aprenderás a explorar modelos tridimensionales predichos utilizando <strong>ChimeraX</strong>, una herramienta moderna y poderosa para el análisis estructural. Se enfatiza la interpretación visual de la calidad de la predicción (pLDDT), así como la identificación de posibles regiones funcionales.</p>
+<section id="abrir-un-modelo-estructural" class="level2" data-number="17.1">
+<h2 data-number="17.1" class="anchored" data-anchor-id="abrir-un-modelo-estructural"><span class="header-section-number">17.1</span> 🧬 Abrir un modelo estructural</h2>
+<ol type="1">
+<li>Instala ChimeraX desde: <a href="https://www.cgl.ucsf.edu/chimerax/download.html">UCSF ChimeraX</a></li>
+<li>Abre el programa y ejecuta en la línea de comandos:</li>
+</ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con proteínas</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">fasttree</span> all_protein_trimmed.aln <span class="op">&gt;</span> all_protein.tree</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con CDS</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">fasttree</span> all_cds_trimmed.aln <span class="op">&gt;</span> all_cds.tree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">open</span> model.pdb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
-<p>🔍 Usa aproximaciones de máxima verosimilitud (ML) con heurísticas rápidas.</p>
-</blockquote>
-</section>
-<section id="construcción-con-iq-tree" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="construcción-con-iq-tree"><span class="header-section-number">11.2</span> 🧠 Construcción con IQ-TREE</h2>
-<p><code>IQ-TREE</code> es una herramienta más avanzada que permite:</p>
+<p>O usa la interfaz gráfica:</p>
 <ul>
-<li>Selección automática del mejor modelo evolutivo</li>
-<li>Bootstrapping ultrarrápido</li>
-<li>Análisis más detallado</li>
+<li><code>File</code> &gt; <code>Open</code> y selecciona tu archivo <code>.pdb</code>.</li>
+</ul>
+</section>
+<section id="colorear-por-confianza-estructural-plddt" class="level2" data-number="17.2">
+<h2 data-number="17.2" class="anchored" data-anchor-id="colorear-por-confianza-estructural-plddt"><span class="header-section-number">17.2</span> 🎨 Colorear por confianza estructural (<strong>pLDDT</strong>)</h2>
+<ul>
+<li>Si el archivo <code>.pdb</code> proviene de <strong>AlphaFold</strong> o <strong>ColabFold</strong>, contiene puntuaciones de <strong>pLDDT</strong> como valores en la columna <strong>B-factor</strong>.</li>
+<li>Puedes colorear la estructura según estos valores con el siguiente comando en ChimeraX:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con proteínas (modelo automático)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree</span> <span class="at">-s</span> all_protein_trimmed.aln <span class="at">-m</span> TEST <span class="at">-bb</span> 1000 <span class="at">-nt</span> AUTO</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con CDS (modelo automático)</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree</span> <span class="at">-s</span> all_cds_trimmed.aln <span class="at">-m</span> TEST <span class="at">-bb</span> 1000 <span class="at">-nt</span> AUTO</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">color</span> byattribute bfactor palette blue:green:yellow:red</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>pLDDT</th>
+<th>Color</th>
+<th>Confianza</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>&gt;90</td>
+<td>Azul</td>
+<td>Muy alta</td>
+</tr>
+<tr class="even">
+<td>70–90</td>
+<td>Verde</td>
+<td>Alta</td>
+</tr>
+<tr class="odd">
+<td>50–70</td>
+<td>Amarillo</td>
+<td>Baja</td>
+</tr>
+<tr class="even">
+<td>&lt;50</td>
+<td>Rojo</td>
+<td>Muy baja</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p>🎯 Este esquema te permite visualizar rápidamente qué partes del modelo son confiables y cuáles deben tratarse con precaución.</p>
+</blockquote>
+</section>
+<section id="identificación-de-regiones-funcionales" class="level2" data-number="17.3">
+<h2 data-number="17.3" class="anchored" data-anchor-id="identificación-de-regiones-funcionales"><span class="header-section-number">17.3</span> 🔍 Identificación de regiones funcionales</h2>
+<section id="visualiza-residuos-clave" class="level3" data-number="17.3.1">
+<h3 data-number="17.3.1" class="anchored" data-anchor-id="visualiza-residuos-clave"><span class="header-section-number">17.3.1</span> Visualiza residuos clave</h3>
+<p>Para marcar residuos específicos (por ejemplo, un sitio activo o de unión):</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">select</span> <span class="ex">:145</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">label</span> sel</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>También puedes seleccionar rangos:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">select</span> <span class="ex">:145-160</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="vista-de-superficie" class="level3" data-number="17.3.2">
+<h3 data-number="17.3.2" class="anchored" data-anchor-id="vista-de-superficie"><span class="header-section-number">17.3.2</span> Vista de superficie</h3>
+<p>Para observar posibles sitios de interacción:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">surface</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">transparency</span> 0.5</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="medir-distancias-o-ángulos" class="level3" data-number="17.3.3">
+<h3 data-number="17.3.3" class="anchored" data-anchor-id="medir-distancias-o-ángulos"><span class="header-section-number">17.3.3</span> Medir distancias o ángulos</h3>
+<p>Herramientas como <code>distance</code>, <code>angle</code>, y <code>torsion</code> están disponibles:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">distance</span> :50@CA :120@CA</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="cargar-anotaciones-adicionales" class="level2" data-number="17.4">
+<h2 data-number="17.4" class="anchored" data-anchor-id="cargar-anotaciones-adicionales"><span class="header-section-number">17.4</span> 🌐 Cargar anotaciones adicionales</h2>
+<p>Puedes integrar anotaciones desde UniProt o bases de datos externas si el modelo tiene un ID asociado. Por ejemplo:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">open</span> uniprot:Q9Y6K9</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Esto descarga y visualiza directamente desde AlphaFold DB si está disponible.</p>
+</section>
+<section id="exportar-imágenes" class="level2" data-number="17.5">
+<h2 data-number="17.5" class="anchored" data-anchor-id="exportar-imágenes"><span class="header-section-number">17.5</span> 📷 Exportar imágenes</h2>
+<p>Para guardar una imagen de tu vista actual:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">save</span> ~/Desktop/estructura.png supersample 3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <blockquote class="blockquote">
-<p>📌 -m TEST: prueba múltiples modelos y selecciona el mejor. 📌 -bb 1000: realiza 1000 replicaciones de bootstrap ultrarrápido.</p>
+<p>🖼️ Usa supersample para mayor calidad de exportación.</p>
 </blockquote>
-<section id="conceptos-básicos-para-profundizar" class="level3" data-number="11.2.1">
-<h3 data-number="11.2.1" class="anchored" data-anchor-id="conceptos-básicos-para-profundizar"><span class="header-section-number">11.2.1</span> 📘 Conceptos básicos (para profundizar)</h3>
-<ul>
-<li><strong>Modelos de sustitución</strong>: Determinan cómo cambian los residuos a lo largo del tiempo.</li>
-<li><strong>Bootstrap</strong>: Mide la confiabilidad de las ramas.</li>
-<li><strong>Topología</strong>: La forma del árbol; refleja relaciones evolutivas.</li>
-</ul>
-
-
 </section>
+<section id="buenas-prácticas" class="level2" data-number="17.6">
+<h2 data-number="17.6" class="anchored" data-anchor-id="buenas-prácticas"><span class="header-section-number">17.6</span> ✅ Buenas prácticas</h2>
+<ul>
+<li>Siempre revisa las regiones de <strong>baja confianza</strong> antes de hacer inferencias funcionales.</li>
+<li>Usa estructuras experimentales (si existen) para validar lo predicho.</li>
+<li>Documenta cualquier modificación o resalte visual en capturas.</li>
+</ul>
+</section>
+<section id="conclusión" class="level2" data-number="17.7">
+<h2 data-number="17.7" class="anchored" data-anchor-id="conclusión"><span class="header-section-number">17.7</span> 📌 Conclusión</h2>
+<p><strong>ChimeraX</strong> permite una exploración rica e interactiva de modelos estructurales. La combinación de visualización por <strong>pLDDT</strong> y anotaciones funcionales facilita un análisis más riguroso y biológicamente relevante de las predicciones.</p>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -965,13 +1049,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./S3_03_weblogo.html" class="pagination-link" aria-label="Visualización de conservación con WebLogo">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Visualización de conservación con WebLogo</span></span>
+      <a href="./S5_02_prediccion.html" class="pagination-link" aria-label="Predicción de estructuras">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Predicción de estructuras</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./S3_05_visualizacion_arboles.html" class="pagination-link" aria-label="Visualización de árboles filogenéticos">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./S5_04_alineamiento_modelos.html" class="pagination-link" aria-label="Alineamiento de modelos estructurales">
+        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Alineamiento de modelos estructurales</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

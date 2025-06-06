@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/BioCode-Academy/index.html</loc>
-    <lastmod>2025-06-04T13:48:06.946Z</lastmod>
+    <lastmod>2025-06-06T04:40:12.869Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/BioCode-Academy/S1_01_codigo_conducta.html</loc>
@@ -53,7 +53,35 @@
     <lastmod>2025-06-04T13:25:42.985Z</lastmod>
   </url>
   <url>
+    <loc>https://github.com/BioCode-Academy/S4_01_interproscan.html</loc>
+    <lastmod>2025-06-06T04:11:01.690Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/BioCode-Academy/S4_02_hmmer.html</loc>
+    <lastmod>2025-06-05T22:15:15.293Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/BioCode-Academy/S5_01_introduccion_modelado.html</loc>
+    <lastmod>2025-06-06T04:11:52.520Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/BioCode-Academy/S5_02_prediccion.html</loc>
+    <lastmod>2025-06-06T04:11:49.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/BioCode-Academy/S5_03_chimerax.html</loc>
+    <lastmod>2025-06-06T04:25:36.238Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/BioCode-Academy/S5_04_alineamiento_modelos.html</loc>
+    <lastmod>2025-06-06T04:31:28.147Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/BioCode-Academy/conclusiones.html</loc>
+    <lastmod>2025-06-06T04:40:08.476Z</lastmod>
+  </url>
+  <url>
     <loc>https://github.com/BioCode-Academy/references.html</loc>
-    <lastmod>2025-05-28T21:34:59.389Z</lastmod>
+    <lastmod>2025-06-06T04:40:10.464Z</lastmod>
   </url>
 </urlset>

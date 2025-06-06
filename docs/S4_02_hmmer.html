@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>11&nbsp; Construcción de árboles filogenéticos – Análisis de Secuencias</title>
+<title>14&nbsp; Análisis de dominios con HMMER y Pfam – Análisis de Secuencias</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./S3_05_visualizacion_arboles.html" rel="next">
-<link href="./S3_03_weblogo.html" rel="prev">
+<link href="./S5_01_introduccion_modelado.html" rel="next">
+<link href="./S4_01_interproscan.html" rel="prev">
 <link href="./images/LogoDavidAlberto.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_04_arboles.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S4_01_interproscan.html">Módulo 4: Análisis de dominios y conservación de secuencias</a></li><li class="breadcrumb-item"><a href="./S4_02_hmmer.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Análisis de dominios con HMMER y Pfam</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -269,7 +269,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S3_04_arboles.html" class="sidebar-item-text sidebar-link active">
+  <a href="./S3_04_arboles.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span></a>
   </div>
 </li>
@@ -298,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S4_02_hmmer.html" class="sidebar-item-text sidebar-link">
+  <a href="./S4_02_hmmer.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Análisis de dominios con HMMER y Pfam</span></span></a>
   </div>
 </li>
@@ -326,20 +326,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#generación-de-árboles-con-fasttree" id="toc-generación-de-árboles-con-fasttree" class="nav-link active" data-scroll-target="#generación-de-árboles-con-fasttree"><span class="header-section-number">11.1</span> ⚡ Generación de árboles con <code>FastTree</code></a></li>
-  <li><a href="#construcción-con-iq-tree" id="toc-construcción-con-iq-tree" class="nav-link" data-scroll-target="#construcción-con-iq-tree"><span class="header-section-number">11.2</span> 🧠 Construcción con IQ-TREE</a>
+  <li><a href="#preparación-de-la-base-de-datos-pfam" id="toc-preparación-de-la-base-de-datos-pfam" class="nav-link active" data-scroll-target="#preparación-de-la-base-de-datos-pfam"><span class="header-section-number">14.1</span> 📦 Preparación de la base de datos Pfam</a></li>
+  <li><a href="#búsqueda-de-dominios-en-una-proteína-específica" id="toc-búsqueda-de-dominios-en-una-proteína-específica" class="nav-link" data-scroll-target="#búsqueda-de-dominios-en-una-proteína-específica"><span class="header-section-number">14.2</span> 🔍 Búsqueda de dominios en una proteína específica</a></li>
+  <li><a href="#búsqueda-de-un-dominio-específico-en-múltiples-secuencias" id="toc-búsqueda-de-un-dominio-específico-en-múltiples-secuencias" class="nav-link" data-scroll-target="#búsqueda-de-un-dominio-específico-en-múltiples-secuencias"><span class="header-section-number">14.3</span> 🧬 Búsqueda de un dominio específico en múltiples secuencias</a>
   <ul>
-  <li><a href="#conceptos-básicos-para-profundizar" id="toc-conceptos-básicos-para-profundizar" class="nav-link" data-scroll-target="#conceptos-básicos-para-profundizar"><span class="header-section-number">11.2.1</span> 📘 Conceptos básicos (para profundizar)</a></li>
+  <li><a href="#extraer-el-modelo-hmm-del-dominio-de-interés" id="toc-extraer-el-modelo-hmm-del-dominio-de-interés" class="nav-link" data-scroll-target="#extraer-el-modelo-hmm-del-dominio-de-interés"><span class="header-section-number">14.3.1</span> 🧲 Extraer el modelo HMM del dominio de interés</a></li>
+  <li><a href="#obtener-el-alineamiento-en-formato-stockholm-opcional" id="toc-obtener-el-alineamiento-en-formato-stockholm-opcional" class="nav-link" data-scroll-target="#obtener-el-alineamiento-en-formato-stockholm-opcional"><span class="header-section-number">14.3.2</span> 📜 Obtener el alineamiento en formato Stockholm (opcional)</a></li>
+  <li><a href="#buscar-el-dominio-en-todas-las-secuencias" id="toc-buscar-el-dominio-en-todas-las-secuencias" class="nav-link" data-scroll-target="#buscar-el-dominio-en-todas-las-secuencias"><span class="header-section-number">14.3.3</span> 🔬 Buscar el dominio en todas las secuencias</a></li>
   </ul></li>
+  <li><a href="#nota" id="toc-nota" class="nav-link" data-scroll-target="#nota"><span class="header-section-number">14.4</span> 📘 Nota</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_04_arboles.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S4_01_interproscan.html">Módulo 4: Análisis de dominios y conservación de secuencias</a></li><li class="breadcrumb-item"><a href="./S4_02_hmmer.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Análisis de dominios con HMMER y Pfam</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></h1>
+<h1 class="title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Análisis de dominios con HMMER y Pfam</span></h1>
 </div>
 
 
@@ -356,49 +360,68 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En este módulo aprenderás a <strong>generar árboles filogenéticos</strong> a partir de alineamientos múltiples recortados, utilizando herramientas rápidas y robustas como <code>FastTree</code> e <code>IQ-TREE</code>.</p>
-<section id="generación-de-árboles-con-fasttree" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="generación-de-árboles-con-fasttree"><span class="header-section-number">11.1</span> ⚡ Generación de árboles con <code>FastTree</code></h2>
-<p><code>FastTree</code> es una herramienta rápida y eficiente para construir árboles a partir de alineamientos, especialmente útil para grandes conjuntos de datos.</p>
+<p>En este módulo aprenderás a identificar <strong>dominios conservados</strong> en proteínas utilizando la herramienta <strong>HMMER</strong> junto con la base de datos <strong>Pfam</strong>. Este enfoque se basa en <strong>Modelos Ocultos de Markov</strong> (<strong>HMM</strong>) y es especialmente útil para búsquedas locales en terminal.</p>
+<section id="preparación-de-la-base-de-datos-pfam" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="preparación-de-la-base-de-datos-pfam"><span class="header-section-number">14.1</span> 📦 Preparación de la base de datos Pfam</h2>
+<p>Primero debes descargar y preparar la base de datos Pfam para búsquedas locales.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con proteínas</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">fasttree</span> all_protein_trimmed.aln <span class="op">&gt;</span> all_protein.tree</span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Descargar la base de datos Pfam-A</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con CDS</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">fasttree</span> all_cds_trimmed.aln <span class="op">&gt;</span> all_cds.tree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Descomprimir el archivo</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">gunzip</span> Pfam-A.hmm.gz</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Indexar la base de datos para su uso con HMMER</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">hmmpress</span> Pfam-A.hmm</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
-<p>🔍 Usa aproximaciones de máxima verosimilitud (ML) con heurísticas rápidas.</p>
-</blockquote>
 </section>
-<section id="construcción-con-iq-tree" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="construcción-con-iq-tree"><span class="header-section-number">11.2</span> 🧠 Construcción con IQ-TREE</h2>
-<p><code>IQ-TREE</code> es una herramienta más avanzada que permite:</p>
-<ul>
-<li>Selección automática del mejor modelo evolutivo</li>
-<li>Bootstrapping ultrarrápido</li>
-<li>Análisis más detallado</li>
-</ul>
+<section id="búsqueda-de-dominios-en-una-proteína-específica" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="búsqueda-de-dominios-en-una-proteína-específica"><span class="header-section-number">14.2</span> 🔍 Búsqueda de dominios en una proteína específica</h2>
+<p>Realiza una búsqueda de todos los dominios presentes en una proteína individual (por ejemplo, <code>P06780.fasta</code>).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con proteínas (modelo automático)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree</span> <span class="at">-s</span> all_protein_trimmed.aln <span class="at">-m</span> TEST <span class="at">-bb</span> 1000 <span class="at">-nt</span> AUTO</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con CDS (modelo automático)</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree</span> <span class="at">-s</span> all_cds_trimmed.aln <span class="at">-m</span> TEST <span class="at">-bb</span> 1000 <span class="at">-nt</span> AUTO</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">hmmscan</span> <span class="at">--domtblout</span> pfam_P06780.out Pfam-A.hmm P06780.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
-<p>📌 -m TEST: prueba múltiples modelos y selecciona el mejor. 📌 -bb 1000: realiza 1000 replicaciones de bootstrap ultrarrápido.</p>
-</blockquote>
-<section id="conceptos-básicos-para-profundizar" class="level3" data-number="11.2.1">
-<h3 data-number="11.2.1" class="anchored" data-anchor-id="conceptos-básicos-para-profundizar"><span class="header-section-number">11.2.1</span> 📘 Conceptos básicos (para profundizar)</h3>
 <ul>
-<li><strong>Modelos de sustitución</strong>: Determinan cómo cambian los residuos a lo largo del tiempo.</li>
-<li><strong>Bootstrap</strong>: Mide la confiabilidad de las ramas.</li>
-<li><strong>Topología</strong>: La forma del árbol; refleja relaciones evolutivas.</li>
+<li>El archivo <code>pfam_P06780.out</code> contiene los dominios encontrados en formato tabular.</li>
+<li>Puedes filtrar por significancia usando herramientas como <code>grep</code>, <code>awk</code> o <code>R</code>.</li>
+</ul>
+</section>
+<section id="búsqueda-de-un-dominio-específico-en-múltiples-secuencias" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="búsqueda-de-un-dominio-específico-en-múltiples-secuencias"><span class="header-section-number">14.3</span> 🧬 Búsqueda de un dominio específico en múltiples secuencias</h2>
+<p>Supongamos que quieres buscar el dominio <strong>PF00071</strong> en todas las secuencias de <code>all_protein.fasta</code>.</p>
+<section id="extraer-el-modelo-hmm-del-dominio-de-interés" class="level3" data-number="14.3.1">
+<h3 data-number="14.3.1" class="anchored" data-anchor-id="extraer-el-modelo-hmm-del-dominio-de-interés"><span class="header-section-number">14.3.1</span> 🧲 Extraer el modelo HMM del dominio de interés</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">hmmfetch</span> Pfam-A.hmm PF00071.27 <span class="op">&gt;</span> PF00071.hmm</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="obtener-el-alineamiento-en-formato-stockholm-opcional" class="level3" data-number="14.3.2">
+<h3 data-number="14.3.2" class="anchored" data-anchor-id="obtener-el-alineamiento-en-formato-stockholm-opcional"><span class="header-section-number">14.3.2</span> 📜 Obtener el alineamiento en formato Stockholm (opcional)</h3>
+<p>Esto es útil si deseas reconstruir árboles o hacer perfiles propios.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">awk</span> <span class="st">"/PF00071.27/,/\/\// {print}"</span> Pfam-A.seed <span class="op">&gt;</span> input/PF00071.sto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="buscar-el-dominio-en-todas-las-secuencias" class="level3" data-number="14.3.3">
+<h3 data-number="14.3.3" class="anchored" data-anchor-id="buscar-el-dominio-en-todas-las-secuencias"><span class="header-section-number">14.3.3</span> 🔬 Buscar el dominio en todas las secuencias</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">hmmsearch</span> <span class="at">--domtblout</span> PF00071_hmmer.out PF00071.hmm all_protein.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>El resultado en <code>PF00071_hmmer.out</code> mostrará todas las secuencias que contienen el dominio.</li>
+<li>Puedes procesarlo con <code>seqkit</code>, <code>cut</code>, <code>awk</code>, o cargarlo en <code>R</code> para un análisis más detallado.</li>
+</ul>
+</section>
+</section>
+<section id="nota" class="level2" data-number="14.4">
+<h2 data-number="14.4" class="anchored" data-anchor-id="nota"><span class="header-section-number">14.4</span> 📘 Nota</h2>
+<ul>
+<li>El archivo <code>Pfam-A.seed</code> contiene los alineamientos originales de cada familia en formato <strong>Stockholm</strong>, útil para reconstrucción filogenética.</li>
+<li><code>hmmscan</code> se usa para buscar todos los dominios en una o varias secuencias.</li>
+<li><code>hmmsearch</code> se usa para buscar un dominio específico en muchas secuencias.</li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -965,13 +988,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./S3_03_weblogo.html" class="pagination-link" aria-label="Visualización de conservación con WebLogo">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Visualización de conservación con WebLogo</span></span>
+      <a href="./S4_01_interproscan.html" class="pagination-link" aria-label="Análisis de dominios con InterProScan">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Análisis de dominios con InterProScan</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./S3_05_visualizacion_arboles.html" class="pagination-link" aria-label="Visualización de árboles filogenéticos">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./S5_01_introduccion_modelado.html" class="pagination-link" aria-label="Introducción al modelado estructural">
+        <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Introducción al modelado estructural</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>11&nbsp; Construcción de árboles filogenéticos – Análisis de Secuencias</title>
+<title>Conclusión del Curso – Análisis de Secuencias</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -64,8 +30,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./S3_05_visualizacion_arboles.html" rel="next">
-<link href="./S3_03_weblogo.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./S5_04_alineamiento_modelos.html" rel="prev">
 <link href="./images/LogoDavidAlberto.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +84,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_04_arboles.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./conclusiones.html">Conclusión del Curso</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -269,7 +235,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S3_04_arboles.html" class="sidebar-item-text sidebar-link active">
+  <a href="./S3_04_arboles.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span></a>
   </div>
 </li>
@@ -306,7 +272,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./conclusiones.html" class="sidebar-item-text sidebar-link">
+  <a href="./conclusiones.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Conclusión del Curso</span></a>
   </div>
 </li>
@@ -326,20 +292,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#generación-de-árboles-con-fasttree" id="toc-generación-de-árboles-con-fasttree" class="nav-link active" data-scroll-target="#generación-de-árboles-con-fasttree"><span class="header-section-number">11.1</span> ⚡ Generación de árboles con <code>FastTree</code></a></li>
-  <li><a href="#construcción-con-iq-tree" id="toc-construcción-con-iq-tree" class="nav-link" data-scroll-target="#construcción-con-iq-tree"><span class="header-section-number">11.2</span> 🧠 Construcción con IQ-TREE</a>
+  <li><a href="#resumen-general" id="toc-resumen-general" class="nav-link active" data-scroll-target="#resumen-general">📚 Resumen General</a></li>
+  <li><a href="#puntos-clave-y-aprendizajes" id="toc-puntos-clave-y-aprendizajes" class="nav-link" data-scroll-target="#puntos-clave-y-aprendizajes">🎯 Puntos Clave y Aprendizajes</a>
   <ul>
-  <li><a href="#conceptos-básicos-para-profundizar" id="toc-conceptos-básicos-para-profundizar" class="nav-link" data-scroll-target="#conceptos-básicos-para-profundizar"><span class="header-section-number">11.2.1</span> 📘 Conceptos básicos (para profundizar)</a></li>
+  <li><a href="#entorno-reproducible" id="toc-entorno-reproducible" class="nav-link" data-scroll-target="#entorno-reproducible">1. Entorno Reproducible</a></li>
+  <li><a href="#búsqueda-y-filtrado-de-homólogos" id="toc-búsqueda-y-filtrado-de-homólogos" class="nav-link" data-scroll-target="#búsqueda-y-filtrado-de-homólogos">2. Búsqueda y Filtrado de Homólogos</a></li>
+  <li><a href="#alineamientos-y-filogenia" id="toc-alineamientos-y-filogenia" class="nav-link" data-scroll-target="#alineamientos-y-filogenia">3. Alineamientos y Filogenia</a></li>
+  <li><a href="#análisis-de-dominios" id="toc-análisis-de-dominios" class="nav-link" data-scroll-target="#análisis-de-dominios">4. Análisis de Dominios</a></li>
+  <li><a href="#modelado-estructural" id="toc-modelado-estructural" class="nav-link" data-scroll-target="#modelado-estructural">5. Modelado Estructural</a></li>
+  <li><a href="#visualización-y-comparación-estructural" id="toc-visualización-y-comparación-estructural" class="nav-link" data-scroll-target="#visualización-y-comparación-estructural">6. Visualización y Comparación Estructural</a></li>
   </ul></li>
+  <li><a href="#aplicaciones-y-siguientes-pasos" id="toc-aplicaciones-y-siguientes-pasos" class="nav-link" data-scroll-target="#aplicaciones-y-siguientes-pasos">🚀 Aplicaciones y Siguientes Pasos</a></li>
+  <li><a href="#reflexión-final" id="toc-reflexión-final" class="nav-link" data-scroll-target="#reflexión-final">🌟 Reflexión Final</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_04_arboles.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></h1>
+<h1 class="title">Conclusión del Curso</h1>
 </div>
 
 
@@ -356,49 +329,162 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En este módulo aprenderás a <strong>generar árboles filogenéticos</strong> a partir de alineamientos múltiples recortados, utilizando herramientas rápidas y robustas como <code>FastTree</code> e <code>IQ-TREE</code>.</p>
-<section id="generación-de-árboles-con-fasttree" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="generación-de-árboles-con-fasttree"><span class="header-section-number">11.1</span> ⚡ Generación de árboles con <code>FastTree</code></h2>
-<p><code>FastTree</code> es una herramienta rápida y eficiente para construir árboles a partir de alineamientos, especialmente útil para grandes conjuntos de datos.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con proteínas</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">fasttree</span> all_protein_trimmed.aln <span class="op">&gt;</span> all_protein.tree</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con CDS</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">fasttree</span> all_cds_trimmed.aln <span class="op">&gt;</span> all_cds.tree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<blockquote class="blockquote">
-<p>🔍 Usa aproximaciones de máxima verosimilitud (ML) con heurísticas rápidas.</p>
-</blockquote>
+<section id="resumen-general" class="level2">
+<h2 class="anchored" data-anchor-id="resumen-general">📚 Resumen General</h2>
+<p>A lo largo de cinco días, hemos recorrido todo el flujo de trabajo para el análisis de secuencias y estructuras proteicas:</p>
+<ol type="1">
+<li><strong>Preparación del entorno</strong>
+<ul>
+<li>Instalación de herramientas bioinformáticas clave (BLAST+, SeqKit, MAFFT, etc.).<br>
+</li>
+<li>Descarga y manejo de secuencias desde UniProt y NCBI.</li>
+</ul></li>
+<li><strong>Búsqueda de homologías con BLAST</strong>
+<ul>
+<li>Uso de BLAST en línea (UniProt y NCBI) para obtener secuencias interesantes.<br>
+</li>
+<li>Ejecución local de BLAST (blastp, tblastn) y organización de resultados.</li>
+</ul></li>
+<li><strong>Alineamiento múltiple y filogenia</strong>
+<ul>
+<li>Generación de alineamientos con MAFFT, Clustal Omega y MUSCLE.<br>
+</li>
+<li>Recorte de regiones poco informativas con trimAl.<br>
+</li>
+<li>Visualización de conservación con WebLogo.<br>
+</li>
+<li>Construcción de árboles filogenéticos con FastTree e IQ-TREE.</li>
+</ul></li>
+<li><strong>Análisis de dominios y conservación</strong>
+<ul>
+<li>Identificación de dominios funcionales con InterProScan y extracción de dominios Pfam.<br>
+</li>
+<li>Búsqueda de dominios mediante HMMER (hmmscan/hmmsearch).</li>
+</ul></li>
+<li><strong>Modelado y análisis estructural</strong>
+<ul>
+<li>Introducción a IA para predicción estructural (AlphaFold, Boltz-1).<br>
+</li>
+<li>Interpretación de métricas de calidad: pLDDT, PAE, pTM e ipTM.<br>
+</li>
+<li>Visualización de modelos en ChimeraX: coloreado por confianza y análisis funcional.<br>
+</li>
+<li>Superposición y comparación de modelos estructurales con ChimeraX.</li>
+</ul></li>
+</ol>
+<hr>
 </section>
-<section id="construcción-con-iq-tree" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="construcción-con-iq-tree"><span class="header-section-number">11.2</span> 🧠 Construcción con IQ-TREE</h2>
-<p><code>IQ-TREE</code> es una herramienta más avanzada que permite:</p>
+<section id="puntos-clave-y-aprendizajes" class="level2">
+<h2 class="anchored" data-anchor-id="puntos-clave-y-aprendizajes">🎯 Puntos Clave y Aprendizajes</h2>
+<section id="entorno-reproducible" class="level3">
+<h3 class="anchored" data-anchor-id="entorno-reproducible">1. Entorno Reproducible</h3>
 <ul>
-<li>Selección automática del mejor modelo evolutivo</li>
-<li>Bootstrapping ultrarrápido</li>
-<li>Análisis más detallado</li>
+<li>La correcta <strong>instalación y configuración</strong> de herramientas es fundamental para asegurar que los análisis sean reproducibles en distintos sistemas.<br>
+</li>
+<li>Organizar directorios (blast_db/, blast_results/, alignments/, models/) facilita el flujo de trabajo y la trazabilidad.</li>
 </ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con proteínas (modelo automático)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree</span> <span class="at">-s</span> all_protein_trimmed.aln <span class="at">-m</span> TEST <span class="at">-bb</span> 1000 <span class="at">-nt</span> AUTO</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con CDS (modelo automático)</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree</span> <span class="at">-s</span> all_cds_trimmed.aln <span class="at">-m</span> TEST <span class="at">-bb</span> 1000 <span class="at">-nt</span> AUTO</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<blockquote class="blockquote">
-<p>📌 -m TEST: prueba múltiples modelos y selecciona el mejor. 📌 -bb 1000: realiza 1000 replicaciones de bootstrap ultrarrápido.</p>
-</blockquote>
-<section id="conceptos-básicos-para-profundizar" class="level3" data-number="11.2.1">
-<h3 data-number="11.2.1" class="anchored" data-anchor-id="conceptos-básicos-para-profundizar"><span class="header-section-number">11.2.1</span> 📘 Conceptos básicos (para profundizar)</h3>
+</section>
+<section id="búsqueda-y-filtrado-de-homólogos" class="level3">
+<h3 class="anchored" data-anchor-id="búsqueda-y-filtrado-de-homólogos">2. Búsqueda y Filtrado de Homólogos</h3>
 <ul>
-<li><strong>Modelos de sustitución</strong>: Determinan cómo cambian los residuos a lo largo del tiempo.</li>
-<li><strong>Bootstrap</strong>: Mide la confiabilidad de las ramas.</li>
-<li><strong>Topología</strong>: La forma del árbol; refleja relaciones evolutivas.</li>
+<li>Comprender conceptos de <strong>homología, ortología y paralogía</strong> sirve de base para seleccionar secuencias relevantes.<br>
+</li>
+<li>BLAST en línea vs BLAST local: cada uno aporta ventajas (bases de datos actualizadas vs procesamiento masivo).<br>
+</li>
+<li>Filtrar los mejores hits y organizar secuencias en archivos consolidados (<code>all_protein.fasta</code>, <code>all_cds.fasta</code>) resulta esencial para pasos posteriores.</li>
 </ul>
+</section>
+<section id="alineamientos-y-filogenia" class="level3">
+<h3 class="anchored" data-anchor-id="alineamientos-y-filogenia">3. Alineamientos y Filogenia</h3>
+<ul>
+<li>Herramientas como <strong>MAFFT, Clustal Omega y MUSCLE</strong> ofrecen diferentes equilibrios entre velocidad y precisión.<br>
+</li>
+<li>Recortar alineamientos con <strong>trimAl</strong> elimina regiones ruidosas y mejora la confiabilidad de los árboles.<br>
+</li>
+<li>Los <strong>logos de conservación</strong> (WebLogo) facilitan la detección visual de motivos funcionales.<br>
+</li>
+<li>La construcción de árboles con <strong>FastTree</strong> (rápido) e <strong>IQ-TREE</strong> (modelo automático + bootstrap) proporciona distintos niveles de rigor.</li>
+</ul>
+</section>
+<section id="análisis-de-dominios" class="level3">
+<h3 class="anchored" data-anchor-id="análisis-de-dominios">4. Análisis de Dominios</h3>
+<ul>
+<li><strong>InterProScan</strong> permite identificar dominios conocidos en un entorno web, mientras que <strong>HMMER</strong> ofrece búsquedas locales contra Pfam.<br>
+</li>
+<li>Saber extraer modelos HMM específicos (por ejemplo, PF00071) y buscar en grandes conjuntos de secuencias aumenta la resolución funcional del estudio.</li>
+</ul>
+</section>
+<section id="modelado-estructural" class="level3">
+<h3 class="anchored" data-anchor-id="modelado-estructural">5. Modelado Estructural</h3>
+<ul>
+<li>Las predicciones de <strong>AlphaFold</strong> y herramientas similares revolucionan el acceso a modelos 3D de alta calidad sin cristalografía física.<br>
+</li>
+<li>Métricas como <strong>pLDDT</strong> (confianza atómica), <strong>PAE</strong> (error entre pares de residuos), <strong>pTM</strong> e <strong>ipTM</strong> (calidad global y de interfase) permiten evaluar modelos de forma objetiva.<br>
+</li>
+<li>Verificar regiones de baja confianza antes de inferir funciones es una buena práctica.</li>
+</ul>
+</section>
+<section id="visualización-y-comparación-estructural" class="level3">
+<h3 class="anchored" data-anchor-id="visualización-y-comparación-estructural">6. Visualización y Comparación Estructural</h3>
+<ul>
+<li><strong>ChimeraX</strong> es una plataforma flexible para:
+<ul>
+<li>Cargar y explorar modelos <code>.pdb</code>.<br>
+</li>
+<li>Colorear por pLDDT para identificar regiones confiables.<br>
+</li>
+<li>Superponer estructuras con <code>matchmaker</code> y comparar residuos equivalentes.<br>
+</li>
+<li>Generar imágenes de alta calidad para reportes y publicaciones.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="aplicaciones-y-siguientes-pasos" class="level2">
+<h2 class="anchored" data-anchor-id="aplicaciones-y-siguientes-pasos">🚀 Aplicaciones y Siguientes Pasos</h2>
+<ol type="1">
+<li><strong>Investigación Funcional</strong>
+<ul>
+<li>Combinar información de dominios, conservación y estructura para proponer sitios activos o posibles mutaciones.<br>
+</li>
+<li>Diseñar experimentos de mutagénesis para validar predicciones.</li>
+</ul></li>
+<li><strong>Estudios Evolutivos</strong>
+<ul>
+<li>Integrar árboles filogenéticos con datos de conservación estructural para inferir cambios evolutivos críticos.<br>
+</li>
+<li>Analizar la evolución de dominios proteicos dentro de familias o géneros.</li>
+</ul></li>
+<li><strong>Biología Computacional Avanzada</strong>
+<ul>
+<li>Automatizar flujos de trabajo (p.&nbsp;ej., pipelines en Snakemake o Nextflow) que incluyan BLAST, alineamiento, filogenia y predicción estructural.<br>
+</li>
+<li>Implementar análisis de gran escala (metagenomas, proteomas completos) con recursos de cómputo de alto rendimiento.</li>
+</ul></li>
+<li><strong>Desarrollo de Servicios Web o App</strong>
+<ul>
+<li>Integrar estos módulos en aplicaciones Shiny o dashboards para usuarios sin conocimientos de línea de comandos.<br>
+</li>
+<li>Crear repositorios con ejemplos de casos de estudio (por ejemplo, familias proteicas de interés biotecnológico).</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="reflexión-final" class="level2">
+<h2 class="anchored" data-anchor-id="reflexión-final">🌟 Reflexión Final</h2>
+<p>Este curso ha proporcionado las herramientas y el marco conceptual para abordar un <strong>análisis integral</strong> desde la secuencia hasta la estructura. Más allá de aprender comandos aislados, se trata de <strong>comprender la lógica</strong> detrás de cada paso:</p>
+<ul>
+<li>Por qué recortar un alineamiento puede cambiar un árbol.<br>
+</li>
+<li>Cómo un bajo pLDDT indica flexibilidad o falta de información.<br>
+</li>
+<li>La importancia de contrastar predicciones con datos experimentales o anotaciones de base de datos.</li>
+</ul>
+<p>Con este conocimiento, estás en capacidad de diseñar proyectos propios, evaluar resultados críticamente y explorar nuevas aplicaciones en investigación o docencia. ¡Mucho éxito en tus proyectos futuros!</p>
+<hr>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -965,13 +1051,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./S3_03_weblogo.html" class="pagination-link" aria-label="Visualización de conservación con WebLogo">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Visualización de conservación con WebLogo</span></span>
+      <a href="./S5_04_alineamiento_modelos.html" class="pagination-link" aria-label="Alineamiento de modelos estructurales">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Alineamiento de modelos estructurales</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./S3_05_visualizacion_arboles.html" class="pagination-link" aria-label="Visualización de árboles filogenéticos">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

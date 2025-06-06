@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>11&nbsp; Construcción de árboles filogenéticos – Análisis de Secuencias</title>
+<title>15&nbsp; Introducción al modelado estructural – Análisis de Secuencias</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./S3_05_visualizacion_arboles.html" rel="next">
-<link href="./S3_03_weblogo.html" rel="prev">
+<link href="./S5_02_prediccion.html" rel="next">
+<link href="./S4_02_hmmer.html" rel="prev">
 <link href="./images/LogoDavidAlberto.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_04_arboles.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S5_01_introduccion_modelado.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Introducción al modelado estructural</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -269,7 +269,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S3_04_arboles.html" class="sidebar-item-text sidebar-link active">
+  <a href="./S3_04_arboles.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></span></a>
   </div>
 </li>
@@ -326,20 +326,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#generación-de-árboles-con-fasttree" id="toc-generación-de-árboles-con-fasttree" class="nav-link active" data-scroll-target="#generación-de-árboles-con-fasttree"><span class="header-section-number">11.1</span> ⚡ Generación de árboles con <code>FastTree</code></a></li>
-  <li><a href="#construcción-con-iq-tree" id="toc-construcción-con-iq-tree" class="nav-link" data-scroll-target="#construcción-con-iq-tree"><span class="header-section-number">11.2</span> 🧠 Construcción con IQ-TREE</a>
-  <ul>
-  <li><a href="#conceptos-básicos-para-profundizar" id="toc-conceptos-básicos-para-profundizar" class="nav-link" data-scroll-target="#conceptos-básicos-para-profundizar"><span class="header-section-number">11.2.1</span> 📘 Conceptos básicos (para profundizar)</a></li>
-  </ul></li>
+  <li><a href="#niveles-de-organización-estructural-de-una-proteína" id="toc-niveles-de-organización-estructural-de-una-proteína" class="nav-link active" data-scroll-target="#niveles-de-organización-estructural-de-una-proteína"><span class="header-section-number">15.1</span> 🧬 Niveles de organización estructural de una proteína</a></li>
+  <li><a href="#por-qué-modelar-estructuras" id="toc-por-qué-modelar-estructuras" class="nav-link" data-scroll-target="#por-qué-modelar-estructuras"><span class="header-section-number">15.2</span> 🧠 ¿Por qué modelar estructuras?</a></li>
+  <li><a href="#modelado-estructural-con-inteligencia-artificial" id="toc-modelado-estructural-con-inteligencia-artificial" class="nav-link" data-scroll-target="#modelado-estructural-con-inteligencia-artificial"><span class="header-section-number">15.3</span> 🤖 Modelado estructural con inteligencia artificial</a></li>
+  <li><a href="#entrada-necesaria" id="toc-entrada-necesaria" class="nav-link" data-scroll-target="#entrada-necesaria"><span class="header-section-number">15.4</span> 📂 Entrada necesaria</a></li>
+  <li><a href="#plataformas-en-línea-disponibles" id="toc-plataformas-en-línea-disponibles" class="nav-link" data-scroll-target="#plataformas-en-línea-disponibles"><span class="header-section-number">15.5</span> 📡 Plataformas en línea disponibles</a></li>
+  <li><a href="#siguientes-pasos" id="toc-siguientes-pasos" class="nav-link" data-scroll-target="#siguientes-pasos"><span class="header-section-number">15.6</span> 🧭 Siguientes pasos</a></li>
+  <li><a href="#en-resumen" id="toc-en-resumen" class="nav-link" data-scroll-target="#en-resumen"><span class="header-section-number">15.7</span> 📌 En resumen</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_alineamiento_global.html">Módulo 3: Alineamiento múltiple y análisis filogenético</a></li><li class="breadcrumb-item"><a href="./S3_04_arboles.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S5_01_introduccion_modelado.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Introducción al modelado estructural</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Construcción de árboles filogenéticos</span></h1>
+<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Introducción al modelado estructural</span></h1>
 </div>
 
 
@@ -356,49 +358,175 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En este módulo aprenderás a <strong>generar árboles filogenéticos</strong> a partir de alineamientos múltiples recortados, utilizando herramientas rápidas y robustas como <code>FastTree</code> e <code>IQ-TREE</code>.</p>
-<section id="generación-de-árboles-con-fasttree" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="generación-de-árboles-con-fasttree"><span class="header-section-number">11.1</span> ⚡ Generación de árboles con <code>FastTree</code></h2>
-<p><code>FastTree</code> es una herramienta rápida y eficiente para construir árboles a partir de alineamientos, especialmente útil para grandes conjuntos de datos.</p>
+<p>En este módulo se introducen los principios fundamentales del <strong>modelado estructural de proteínas</strong>, cubriendo desde la estructura primaria hasta la cuaternaria, así como el uso de herramientas basadas en <strong>inteligencia artificial (IA)</strong> como AlphaFold y Boltz-1.</p>
+<section id="niveles-de-organización-estructural-de-una-proteína" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="niveles-de-organización-estructural-de-una-proteína"><span class="header-section-number">15.1</span> 🧬 Niveles de organización estructural de una proteína</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 47%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nivel</th>
+<th>Descripción breve</th>
+<th>Ejemplo visual/conceptual</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Primaria</strong></td>
+<td>Secuencia lineal de aminoácidos (residuos)</td>
+<td><code>MKTIIALSYIFCLVFADYKDDDDK</code></td>
+</tr>
+<tr class="even">
+<td><strong>Secundaria</strong></td>
+<td>Plegamientos locales como <strong>hélices α</strong> o <strong>láminas β</strong></td>
+<td><strong>Hélice α</strong> en una proteína transmembranal</td>
+</tr>
+<tr class="odd">
+<td><strong>Terciaria</strong></td>
+<td>Estructura tridimensional completa de una cadena polipeptídica</td>
+<td>Dominio catalítico de una enzima</td>
+</tr>
+<tr class="even">
+<td><strong>Cuaternaria</strong></td>
+<td>Asociación de múltiples cadenas polipeptídicas (subunidades)</td>
+<td>Hemoglobina con 4 subunidades</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="por-qué-modelar-estructuras" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="por-qué-modelar-estructuras"><span class="header-section-number">15.2</span> 🧠 ¿Por qué modelar estructuras?</h2>
+<ul>
+<li>Entender la <strong>función</strong> a partir de la forma.</li>
+<li>Predecir sitios activos, de unión a ligandos o a otras proteínas.</li>
+<li>Complementar estudios evolutivos con información estructural.</li>
+<li>Guiar experimentos de diseño racional, docking, mutagénesis o ingeniería de proteínas.</li>
+</ul>
+</section>
+<section id="modelado-estructural-con-inteligencia-artificial" class="level2" data-number="15.3">
+<h2 data-number="15.3" class="anchored" data-anchor-id="modelado-estructural-con-inteligencia-artificial"><span class="header-section-number">15.3</span> 🤖 Modelado estructural con inteligencia artificial</h2>
+<p>En los últimos años, herramientas basadas en IA han revolucionado el campo del modelado proteico.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Herramienta</th>
+<th>Fuente / institución</th>
+<th>Tecnología base</th>
+<th>Uso principal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>AlphaFold</strong></td>
+<td>DeepMind (Google)</td>
+<td>Redes neuronales profundas</td>
+<td>Predicción de estructuras a partir de secuencia</td>
+</tr>
+<tr class="even">
+<td><strong>Boltz-1</strong></td>
+<td>Universidad Nacional Autónoma de México (ejemplo)</td>
+<td>Machine Learning (Ensemble)</td>
+<td>Modelado rápido en servidores académicos</td>
+</tr>
+<tr class="odd">
+<td><strong>RoseTTAFold</strong></td>
+<td>Baker Lab (U. Washington)</td>
+<td>Redes de atención (transformers)</td>
+<td>Alternativa a AlphaFold, más modular</td>
+</tr>
+<tr class="even">
+<td><strong>I-TASSER</strong></td>
+<td>Zhang Lab</td>
+<td>Basado en plantillas y IA</td>
+<td>Modelado por homología + refinamiento</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="entrada-necesaria" class="level2" data-number="15.4">
+<h2 data-number="15.4" class="anchored" data-anchor-id="entrada-necesaria"><span class="header-section-number">15.4</span> 📂 Entrada necesaria</h2>
+<p>Para todas estas herramientas, la <strong>entrada básica</strong> es una secuencia en formato FASTA:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con proteínas</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">fasttree</span> all_protein_trimmed.aln <span class="op">&gt;</span> all_protein.tree</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con CDS</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">fasttree</span> all_cds_trimmed.aln <span class="op">&gt;</span> all_cds.tree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> P06780.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <blockquote class="blockquote">
-<p>🔍 Usa aproximaciones de máxima verosimilitud (ML) con heurísticas rápidas.</p>
+<p>Asegúrate de tener una secuencia sin errores (sin residuos no estándar, sin caracteres especiales) y de al menos 50 aminoácidos para obtener modelos confiables.</p>
 </blockquote>
 </section>
-<section id="construcción-con-iq-tree" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="construcción-con-iq-tree"><span class="header-section-number">11.2</span> 🧠 Construcción con IQ-TREE</h2>
-<p><code>IQ-TREE</code> es una herramienta más avanzada que permite:</p>
+<section id="plataformas-en-línea-disponibles" class="level2" data-number="15.5">
+<h2 data-number="15.5" class="anchored" data-anchor-id="plataformas-en-línea-disponibles"><span class="header-section-number">15.5</span> 📡 Plataformas en línea disponibles</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Plataforma web</th>
+<th>URL</th>
+<th>Requiere cuenta</th>
+<th>Tiempo de espera</th>
+<th>Comentario</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>AlphaFold DB</strong></td>
+<td><a href="https://alphafold.ebi.ac.uk">alphafold.ebi.ac.uk</a></td>
+<td>Si (Google)</td>
+<td>N/A (consulta modelos ya hechos)</td>
+<td>Sólo consulta, no genera nuevos</td>
+</tr>
+<tr class="even">
+<td><strong>ColabFold</strong></td>
+<td><a href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2_mmseqs2.ipynb">colab.research.google.com</a></td>
+<td>Sí (Google)</td>
+<td>Medio</td>
+<td>Modelo de AlphaFold accesible desde Google Colab</td>
+</tr>
+<tr class="odd">
+<td><strong>Boltz-1 Web</strong></td>
+<td><a href="https://github.com/jwohlwend/boltz">github.com/jwohlwend/boltz</a></td>
+<td>Sí</td>
+<td>Bajo</td>
+<td>Rápido, para proyectos educativos o exploratorios</td>
+</tr>
+<tr class="even">
+<td><strong>I-TASSER server</strong></td>
+<td><a href="https://zhanggroup.org/I-TASSER/">zhanggroup.org/I-TASSER</a></td>
+<td>No</td>
+<td>Medio a largo</td>
+<td>Modelo basado en plantillas (si existen)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="siguientes-pasos" class="level2" data-number="15.6">
+<h2 data-number="15.6" class="anchored" data-anchor-id="siguientes-pasos"><span class="header-section-number">15.6</span> 🧭 Siguientes pasos</h2>
+<p>Una vez que obtengas tu modelo, puedes:</p>
 <ul>
-<li>Selección automática del mejor modelo evolutivo</li>
-<li>Bootstrapping ultrarrápido</li>
-<li>Análisis más detallado</li>
+<li><strong>Visualizar la estructura</strong> tridimensional con herramientas como PyMOL, Chimera o ChimeraX.</li>
+<li>Evaluar su <strong>calidad</strong> usando puntuaciones como pLDDT (AlphaFold) o C-score (I-TASSER).</li>
+<li>Comparar estructuras con otras proteínas (estructura-conservación).</li>
+<li>Usarlo para modelado funcional, docking, diseño o anotación estructural.</li>
 </ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con proteínas (modelo automático)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree</span> <span class="at">-s</span> all_protein_trimmed.aln <span class="at">-m</span> TEST <span class="at">-bb</span> 1000 <span class="at">-nt</span> AUTO</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Árbol con CDS (modelo automático)</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree</span> <span class="at">-s</span> all_cds_trimmed.aln <span class="at">-m</span> TEST <span class="at">-bb</span> 1000 <span class="at">-nt</span> AUTO</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<blockquote class="blockquote">
-<p>📌 -m TEST: prueba múltiples modelos y selecciona el mejor. 📌 -bb 1000: realiza 1000 replicaciones de bootstrap ultrarrápido.</p>
-</blockquote>
-<section id="conceptos-básicos-para-profundizar" class="level3" data-number="11.2.1">
-<h3 data-number="11.2.1" class="anchored" data-anchor-id="conceptos-básicos-para-profundizar"><span class="header-section-number">11.2.1</span> 📘 Conceptos básicos (para profundizar)</h3>
+</section>
+<section id="en-resumen" class="level2" data-number="15.7">
+<h2 data-number="15.7" class="anchored" data-anchor-id="en-resumen"><span class="header-section-number">15.7</span> 📌 En resumen</h2>
 <ul>
-<li><strong>Modelos de sustitución</strong>: Determinan cómo cambian los residuos a lo largo del tiempo.</li>
-<li><strong>Bootstrap</strong>: Mide la confiabilidad de las ramas.</li>
-<li><strong>Topología</strong>: La forma del árbol; refleja relaciones evolutivas.</li>
+<li>El modelado estructural <strong>predice la forma 3D de una proteína a partir de su secuencia</strong>.</li>
+<li>Herramientas modernas como AlphaFold permiten hacerlo con precisión sin necesidad de cristalografía.</li>
+<li>La interpretación de los modelos depende del contexto biológico y debe ir acompañada de análisis funcionales y evolutivos.</li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -965,13 +1093,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./S3_03_weblogo.html" class="pagination-link" aria-label="Visualización de conservación con WebLogo">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Visualización de conservación con WebLogo</span></span>
+      <a href="./S4_02_hmmer.html" class="pagination-link" aria-label="Análisis de dominios con HMMER y Pfam">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Análisis de dominios con HMMER y Pfam</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./S3_05_visualizacion_arboles.html" class="pagination-link" aria-label="Visualización de árboles filogenéticos">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Visualización de árboles filogenéticos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./S5_02_prediccion.html" class="pagination-link" aria-label="Predicción de estructuras">
+        <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Predicción de estructuras</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
