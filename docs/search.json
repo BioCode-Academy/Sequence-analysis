@@ -555,6 +555,7 @@
     "section": "",
     "text": "15.1 🧬 Niveles de organización estructural de una proteína\nEn este módulo se introducen los principios fundamentales del modelado estructural de proteínas, cubriendo desde la estructura primaria hasta la cuaternaria, así como el uso de herramientas basadas en inteligencia artificial (IA) como AlphaFold y Boltz-1.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
     ]
   },
@@ -565,6 +566,7 @@
     "section": "",
     "text": "Nivel\nDescripción breve\nEjemplo visual/conceptual\n\n\n\n\nPrimaria\nSecuencia lineal de aminoácidos (residuos)\nMKTIIALSYIFCLVFADYKDDDDK\n\n\nSecundaria\nPlegamientos locales como hélices α o láminas β\nHélice α en una proteína transmembranal\n\n\nTerciaria\nEstructura tridimensional completa de una cadena polipeptídica\nDominio catalítico de una enzima\n\n\nCuaternaria\nAsociación de múltiples cadenas polipeptídicas (subunidades)\nHemoglobina con 4 subunidades",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
     ]
   },
@@ -575,6 +577,7 @@
     "section": "15.2 🧠 ¿Por qué modelar estructuras?",
     "text": "15.2 🧠 ¿Por qué modelar estructuras?\n\nEntender la función a partir de la forma.\nPredecir sitios activos, de unión a ligandos o a otras proteínas.\nComplementar estudios evolutivos con información estructural.\nGuiar experimentos de diseño racional, docking, mutagénesis o ingeniería de proteínas.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
     ]
   },
@@ -585,6 +588,7 @@
     "section": "15.3 🤖 Modelado estructural con inteligencia artificial",
     "text": "15.3 🤖 Modelado estructural con inteligencia artificial\nEn los últimos años, herramientas basadas en IA han revolucionado el campo del modelado proteico.\n\n\n\n\n\n\n\n\n\nHerramienta\nFuente / institución\nTecnología base\nUso principal\n\n\n\n\nAlphaFold\nDeepMind (Google)\nRedes neuronales profundas\nPredicción de estructuras a partir de secuencia\n\n\nBoltz-1\nUniversidad Nacional Autónoma de México (ejemplo)\nMachine Learning (Ensemble)\nModelado rápido en servidores académicos\n\n\nRoseTTAFold\nBaker Lab (U. Washington)\nRedes de atención (transformers)\nAlternativa a AlphaFold, más modular\n\n\nI-TASSER\nZhang Lab\nBasado en plantillas y IA\nModelado por homología + refinamiento",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
     ]
   },
@@ -595,6 +599,7 @@
     "section": "15.4 📂 Entrada necesaria",
     "text": "15.4 📂 Entrada necesaria\nPara todas estas herramientas, la entrada básica es una secuencia en formato FASTA:\n\ncat P06780.fasta\n\n\nAsegúrate de tener una secuencia sin errores (sin residuos no estándar, sin caracteres especiales) y de al menos 50 aminoácidos para obtener modelos confiables.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
     ]
   },
@@ -605,6 +610,7 @@
     "section": "15.5 📡 Plataformas en línea disponibles",
     "text": "15.5 📡 Plataformas en línea disponibles\n\n\n\nPlataforma web\nURL\nRequiere cuenta\nTiempo de espera\nComentario\n\n\n\n\nAlphaFold DB\nalphafold.ebi.ac.uk\nSi (Google)\nN/A (consulta modelos ya hechos)\nSólo consulta, no genera nuevos\n\n\nColabFold\ncolab.research.google.com\nSí (Google)\nMedio\nModelo de AlphaFold accesible desde Google Colab\n\n\nBoltz-1 Web\ngithub.com/jwohlwend/boltz\nSí\nBajo\nRápido, para proyectos educativos o exploratorios\n\n\nI-TASSER server\nzhanggroup.org/I-TASSER\nNo\nMedio a largo\nModelo basado en plantillas (si existen)",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
     ]
   },
@@ -615,6 +621,7 @@
     "section": "15.6 🧭 Siguientes pasos",
     "text": "15.6 🧭 Siguientes pasos\nUna vez que obtengas tu modelo, puedes:\n\nVisualizar la estructura tridimensional con herramientas como PyMOL, Chimera o ChimeraX.\nEvaluar su calidad usando puntuaciones como pLDDT (AlphaFold) o C-score (I-TASSER).\nComparar estructuras con otras proteínas (estructura-conservación).\nUsarlo para modelado funcional, docking, diseño o anotación estructural.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
     ]
   },
@@ -625,6 +632,7 @@
     "section": "15.7 📌 En resumen",
     "text": "15.7 📌 En resumen\n\nEl modelado estructural predice la forma 3D de una proteína a partir de su secuencia.\nHerramientas modernas como AlphaFold permiten hacerlo con precisión sin necesidad de cristalografía.\nLa interpretación de los modelos depende del contexto biológico y debe ir acompañada de análisis funcionales y evolutivos.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Introducción al modelado estructural</span>"
     ]
   },
@@ -635,6 +643,7 @@
     "section": "",
     "text": "16.1 🧾 Entrada en formato FASTA\nEn este módulo aprenderás a interpretar los valores de confianza y precisión de los modelos.\nToda predicción estructural parte de una secuencia en formato FASTA, por ejemplo:\ncat P06780.fasta\n⚠️ Asegúrate de que:",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Predicción de estructuras</span>"
     ]
   },
@@ -645,6 +654,7 @@
     "section": "",
     "text": "La secuencia esté limpia (sin caracteres inválidos).\nTenga un número suficiente de residuos (recomendado: &gt; 50 aa).\nEl encabezado comience con &gt; seguido de un identificador",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Predicción de estructuras</span>"
     ]
   },
@@ -655,6 +665,7 @@
     "section": "16.2 📈 Interpretación de resultados",
     "text": "16.2 📈 Interpretación de resultados\nLas herramientas de predicción devuelven archivos con extensiones como .pdb, junto con métricas de calidad del modelo.\n\n16.2.1 🟨 pLDDT (per-residue Local Distance Difference Test)\n\nSignificado: predice qué tan confiable es la posición de cada átomo respecto al modelo.\nVisualización: colores aplicados directamente sobre el modelo estructural (azul = alta confianza, rojo = baja).\nEscala: 0–100.\n\n\n\n\npLDDT\nConfianza\n\n\n\n\n&gt;90\nMuy alta\n\n\n70–90\nAlta\n\n\n50–70\nBaja\n\n\n&lt;50\nMuy baja (desorden)\n\n\n\n\n🧠 En proteínas, se aproxima a lDDT-Cα pero con mayor precisión. Para ácidos nucleicos, se usa un radio de 30 Å. Para ligandos, solo se consideran distancias con los polímeros, no otros ligandos.\n\n\n🌟 Puedes visualizar el modelo con colores según pLDDT en ChimeraX o PyMOL para detectar regiones confiables o móviles.\n\n\n\n16.2.2 🧩 PAE (Predicted Aligned Error)\n\nSignificado: estimación del error esperado entre dos regiones (i, j) del modelo.\nFormato: matriz cuadrada simétrica que representa la incertidumbre en la relación entre pares de residuos.\nUnidades: Ångstroms (distancia).\nÚtil para evaluar relaciones entre dominios o subunidades.\nSe interpreta como una mapa de calor, donde los valores bajos indican mayor confianza estructural.\n\n\n🔬 Muy útil para saber si dos regiones están bien orientadas entre sí (por ejemplo, dominios móviles, loops flexibles, etc.).\n\nVisualizable como mapa de calor:\n\n\n\nValor PAE\nConfianza relacional\n\n\n\n\n&lt;5 Å\nAlta\n\n\n&gt;10 Å\nBaja\n\n\n\n\n\n16.2.3 🧬 pTM e ipTM – Evaluación del modelo global\n\npTM (predicted TM-score):\n\nMide la precisión global del modelo.\nÚtil para evaluar si el plegamiento total es confiable.\n\nValores: 0 a 1.\n\n0.5 = el modelo es similar a la estructura real.\n&lt;0.5 = baja precisión global.\n\n\n\nipTM (interfacial predicted TM-score):\n\nEvalúa la precisión de la orientación relativa entre subunidades (en complejos).\nIdeal para estructuras multímero o ensamblajes.\n\n\n\n\n\nScore\nInterpretación\n\n\n\n\n&gt;0.8\nAlta confianza estructural\n\n\n0.6–0.8\nZona gris, posible confianza\n\n\n&lt;0.6\nPredicción probablemente fallida\n\n\n\n\n🔬 Nota: con secuencias muy cortas (&lt;20 residuos), pTM puede no ser confiable. En ese caso, se prioriza el uso de pLDDT y PAE.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Predicción de estructuras</span>"
     ]
   },
@@ -665,6 +676,7 @@
     "section": "16.3 Ejemplo",
     "text": "16.3 Ejemplo",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Predicción de estructuras</span>"
     ]
   },
@@ -675,6 +687,7 @@
     "section": "16.4 📦 Archivos de salida típicos",
     "text": "16.4 📦 Archivos de salida típicos\n\n\n\n\n\n\n\nArchivo\nContenido\n\n\n\n\nmodel.pdb\nModelo estructural en formato 3D estándar\n\n\nranking_debug.json\nRanking de confianza de los modelos generados\n\n\nplddt_scores.txt\nConfianza por átomo o residuo\n\n\npae.png o pae.json\nMatriz visual o numérica del error entre residuos\n\n\npredicted_aligned_error\nArchivo numérico completo para análisis con scripts",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Predicción de estructuras</span>"
     ]
   },
@@ -685,6 +698,7 @@
     "section": "16.5 🧭 Recomendaciones",
     "text": "16.5 🧭 Recomendaciones\n\nUsa pLDDT para identificar regiones confiables y poco confiables.\nAnaliza PAE si tu proteína tiene dominios móviles o interacción con otras.\nUsa pTM/ipTM para evaluar modelos completos o complejos multímero.\nVisualiza con ChimeraX para examinar colores por confianza.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Predicción de estructuras</span>"
     ]
   },
@@ -695,6 +709,7 @@
     "section": "16.6 📌 Conclusión",
     "text": "16.6 📌 Conclusión\nLas predicciones estructurales actuales permiten obtener modelos de alta calidad. Sin embargo, su interpretación debe combinar métricas locales (pLDDT), relacionales (PAE) y globales (pTM, ipTM) para asegurar un uso biológicamente informado y confiable del modelo.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Predicción de estructuras</span>"
     ]
   },
@@ -705,6 +720,7 @@
     "section": "",
     "text": "17.1 🧬 Abrir un modelo estructural\nEn este módulo aprenderás a explorar modelos tridimensionales predichos utilizando ChimeraX, una herramienta moderna y poderosa para el análisis estructural. Se enfatiza la interpretación visual de la calidad de la predicción (pLDDT), así como la identificación de posibles regiones funcionales.\nopen model.pdb\nO usa la interfaz gráfica:",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
     ]
   },
@@ -715,6 +731,7 @@
     "section": "",
     "text": "Instala ChimeraX desde: UCSF ChimeraX\nAbre el programa y ejecuta en la línea de comandos:\n\n\n\n\nFile &gt; Open y selecciona tu archivo .pdb.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
     ]
   },
@@ -725,6 +742,7 @@
     "section": "17.2 🎨 Colorear por confianza estructural (pLDDT)",
     "text": "17.2 🎨 Colorear por confianza estructural (pLDDT)\n\nSi el archivo .pdb proviene de AlphaFold o ColabFold, contiene puntuaciones de pLDDT como valores en la columna B-factor.\nPuedes colorear la estructura según estos valores con el siguiente comando en ChimeraX:\n\n\ncolor byattribute bfactor palette blue:green:yellow:red\n\n\n\n\npLDDT\nColor\nConfianza\n\n\n\n\n&gt;90\nAzul\nMuy alta\n\n\n70–90\nVerde\nAlta\n\n\n50–70\nAmarillo\nBaja\n\n\n&lt;50\nRojo\nMuy baja\n\n\n\n\n🎯 Este esquema te permite visualizar rápidamente qué partes del modelo son confiables y cuáles deben tratarse con precaución.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
     ]
   },
@@ -735,6 +753,7 @@
     "section": "17.3 🔍 Identificación de regiones funcionales",
     "text": "17.3 🔍 Identificación de regiones funcionales\n\n17.3.1 Visualiza residuos clave\nPara marcar residuos específicos (por ejemplo, un sitio activo o de unión):\n\nselect :145\nlabel sel\n\nTambién puedes seleccionar rangos:\n\nselect :145-160\n\n\n\n17.3.2 Vista de superficie\nPara observar posibles sitios de interacción:\n\nsurface\ntransparency 0.5\n\n\n\n17.3.3 Medir distancias o ángulos\nHerramientas como distance, angle, y torsion están disponibles:\n\ndistance :50@CA :120@CA",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
     ]
   },
@@ -745,6 +764,7 @@
     "section": "17.4 🌐 Cargar anotaciones adicionales",
     "text": "17.4 🌐 Cargar anotaciones adicionales\nPuedes integrar anotaciones desde UniProt o bases de datos externas si el modelo tiene un ID asociado. Por ejemplo:\n\nopen uniprot:Q9Y6K9\n\nEsto descarga y visualiza directamente desde AlphaFold DB si está disponible.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
     ]
   },
@@ -755,6 +775,7 @@
     "section": "17.5 📷 Exportar imágenes",
     "text": "17.5 📷 Exportar imágenes\nPara guardar una imagen de tu vista actual:\n\nsave ~/Desktop/estructura.png supersample 3\n\n\n🖼️ Usa supersample para mayor calidad de exportación.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
     ]
   },
@@ -765,6 +786,7 @@
     "section": "17.6 ✅ Buenas prácticas",
     "text": "17.6 ✅ Buenas prácticas\n\nSiempre revisa las regiones de baja confianza antes de hacer inferencias funcionales.\nUsa estructuras experimentales (si existen) para validar lo predicho.\nDocumenta cualquier modificación o resalte visual en capturas.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
     ]
   },
@@ -775,6 +797,7 @@
     "section": "17.7 📌 Conclusión",
     "text": "17.7 📌 Conclusión\nChimeraX permite una exploración rica e interactiva de modelos estructurales. La combinación de visualización por pLDDT y anotaciones funcionales facilita un análisis más riguroso y biológicamente relevante de las predicciones.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Visualización y análisis en ChimeraX</span>"
     ]
   },
@@ -785,6 +808,7 @@
     "section": "",
     "text": "18.1 🧬 Cargar múltiples estructuras\nEn este módulo aprenderás a alinear y comparar modelos tridimensionales utilizando ChimeraX, enfocándote en la evaluación visual de similitudes y diferencias estructurales.\nAbre los modelos que deseas alinear. Por ejemplo:\nopen model1.pdb\nopen model2.pdb\nChimeraX asignará identificadores como #1, #2, etc., para referirse a cada modelo cargado.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Alineamiento de modelos estructurales</span>"
     ]
   },
@@ -795,6 +819,7 @@
     "section": "18.2 🔄 Superposición automática de estructuras",
     "text": "18.2 🔄 Superposición automática de estructuras\nUsa el comando matchmaker, que alinea modelos basándose en sus cadenas:\n\nmatchmaker #2 to #1\n\nEsto alineará el modelo #2 sobre el #1 usando la mejor correspondencia estructural.\n\n📌 Puedes especificar regiones o cadenas específicas si es necesario, por ejemplo:\n\n\nmatchmaker #2/A:10-100 to #1/A:10-100",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Alineamiento de modelos estructurales</span>"
     ]
   },
@@ -805,6 +830,7 @@
     "section": "18.3 🎨 Evaluación visual de similitudes y diferencias",
     "text": "18.3 🎨 Evaluación visual de similitudes y diferencias\n\n18.3.1 Cambiar colores para facilitar la comparación:\n\ncolor #1 cornflowerblue\ncolor #2 orange\n\n\n\n18.3.2 Ajustar transparencia para ver estructuras superpuestas:\n\ntransparency 0.4 #2\n\n\n\n18.3.3 Mostrar el RMSD (desviación cuadrática media):\n\nDespués del alineamiento, ChimeraX reportará automáticamente el RMSD en la consola.\nPara volver a calcularlo explícitamente:\n\n\nrmsd #1/A:10-100 #2/A:10-100",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Alineamiento de modelos estructurales</span>"
     ]
   },
@@ -815,6 +841,7 @@
     "section": "18.4 📏 Comparar residuos equivalentes",
     "text": "18.4 📏 Comparar residuos equivalentes\nPuedes mostrar líneas de correspondencia entre residuos alineados:\n\nmatch show true\n\nY activar etiquetas:\n\nlabel sel",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Alineamiento de modelos estructurales</span>"
     ]
   },
@@ -825,6 +852,7 @@
     "section": "18.5 📷 Exportar la comparación estructural",
     "text": "18.5 📷 Exportar la comparación estructural\nPara guardar una imagen de la comparación:\n\nsave ~/Desktop/alineamiento_modelos.png supersample 3",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Alineamiento de modelos estructurales</span>"
     ]
   },
@@ -835,6 +863,7 @@
     "section": "18.6 ✅ Buenas prácticas",
     "text": "18.6 ✅ Buenas prácticas\n\nUsa estructuras de alta confianza (pLDDT &gt; 70) para comparar regiones confiables.\nLimita el alineamiento a regiones homólogas o funcionales si los modelos son divergentes.\nConsidera otras herramientas (como TM-align) si necesitas comparaciones cuantitativas más detalladas.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Alineamiento de modelos estructurales</span>"
     ]
   },
@@ -845,6 +874,7 @@
     "section": "18.7 🧠 Conclusión",
     "text": "18.7 🧠 Conclusión\nEl alineamiento estructural es una herramienta poderosa para evaluar similitudes funcionales, conservación evolutiva o validar modelos generados. Con ChimeraX, puedes obtener una evaluación tanto visual como numérica de estas comparaciones de manera intuitiva y precisa.",
     "crumbs": [
+      "Módulo 5: Modelado proteico y análisis estructural",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Alineamiento de modelos estructurales</span>"
     ]
   },
